@@ -10,11 +10,10 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var box1: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        box1.layer.cornerRadius = 10
-        box1.layer.masksToBounds = true
-        
+        addBorderRadius(view: &box1)
 
         // Do any additional setup after loading the view.
     }
