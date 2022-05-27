@@ -222,10 +222,10 @@
             </objects>
             <point key="canvasLocation" x="1114.4927536231885" y="95.758928571428569"/>
         </scene>
-        <!--Item-->
+        <!--Movies View Controller-->
         <scene sceneID="CV9-pT-6HQ">
             <objects>
-                <viewController storyboardIdentifier="music" id="4tb-4Y-EKa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="movies" title="Movies View Controller" id="4tb-4Y-EKa" customClass="MoviesViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BHj-Tw-vKZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,7 +280,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jfK-qJ-G7j">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trendingCell" id="jfK-qJ-G7j" customClass="TrendingCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XI6-ys-Lom">
@@ -289,6 +289,10 @@
                                                         </collectionViewCellContentView>
                                                     </collectionViewCell>
                                                 </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="4tb-4Y-EKa" id="UMU-qf-bn1"/>
+                                                    <outlet property="delegate" destination="4tb-4Y-EKa" id="GuZ-op-Dro"/>
+                                                </connections>
                                             </collectionView>
                                         </subviews>
                                     </stackView>
@@ -311,7 +315,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ubA-OV-Xms">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommendedCell" id="ubA-OV-Xms" customClass="RecommendedCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AVg-63-gmz">
@@ -320,6 +324,10 @@
                                                         </collectionViewCellContentView>
                                                     </collectionViewCell>
                                                 </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="4tb-4Y-EKa" id="8s7-6F-GyJ"/>
+                                                    <outlet property="delegate" destination="4tb-4Y-EKa" id="SMB-ah-46N"/>
+                                                </connections>
                                             </collectionView>
                                         </subviews>
                                     </stackView>
@@ -338,6 +346,10 @@
                     <tabBarItem key="tabBarItem" title="Item" id="xsn-IO-HMg">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="recommended" destination="faq-HV-gyW" id="efg-h0-YV5"/>
+                        <outlet property="trending" destination="dr1-sJ-xbi" id="zht-wI-8zq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNc-i8-MFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
