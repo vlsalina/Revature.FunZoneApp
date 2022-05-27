@@ -14,6 +14,7 @@
 		61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61544A64283ED34C00FC70CE /* FunZoneApp.xcdatamodeld */; };
 		61544A68283ED34E00FC70CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61544A67283ED34E00FC70CE /* Assets.xcassets */; };
 		61544A6B283ED34E00FC70CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61544A69283ED34E00FC70CE /* LaunchScreen.storyboard */; };
+		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		61544A67283ED34E00FC70CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61544A6A283ED34E00FC70CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61544A6C283ED34E00FC70CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61DEC5D5284072FD0033838F /* SignUp */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -84,6 +87,14 @@
 			children = (
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		61DEC5D5284072FD0033838F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				61DEC5D6284073290033838F /* SignUpViewController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */,
 				61544A5C283ED34C00FC70CE /* AppDelegate.swift in Sources */,
 				61544A5E283ED34C00FC70CE /* SceneDelegate.swift in Sources */,
+				61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
