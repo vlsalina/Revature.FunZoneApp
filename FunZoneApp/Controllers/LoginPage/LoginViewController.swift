@@ -8,10 +8,12 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
+
+    @IBOutlet weak var box1: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addBorderRadius(view: &box1)
 
         // Do any additional setup after loading the view.
     }

@@ -15,6 +15,8 @@
 		61544A68283ED34E00FC70CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61544A67283ED34E00FC70CE /* Assets.xcassets */; };
 		61544A6B283ED34E00FC70CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61544A69283ED34E00FC70CE /* LaunchScreen.storyboard */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
+		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
+		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		61544A6A283ED34E00FC70CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61544A6C283ED34E00FC70CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		61544A5A283ED34C00FC70CE /* FunZoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				61DEC5DD28407A240033838F /* Helpers */,
 				61544A73283ED41100FC70CE /* Constants */,
 				61544A72283ED3E000FC70CE /* Controllers */,
 				61544A5B283ED34C00FC70CE /* AppDelegate.swift */,
@@ -77,7 +82,8 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				61DEC5D5284072FD0033838F /* SignUp */,
+				61DEC5DA284079210033838F /* LoginPage */,
+				61DEC5D5284072FD0033838F /* SignUpPage */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -89,12 +95,28 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		61DEC5D5284072FD0033838F /* SignUp */ = {
+		61DEC5D5284072FD0033838F /* SignUpPage */ = {
 			isa = PBXGroup;
 			children = (
 				61DEC5D6284073290033838F /* SignUpViewController.swift */,
 			);
-			path = SignUp;
+			path = SignUpPage;
+			sourceTree = "<group>";
+		};
+		61DEC5DA284079210033838F /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				61DEC5DB284079A60033838F /* LoginViewController.swift */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		61DEC5DD28407A240033838F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				61DEC5DE28407B820033838F /* addBorderRadius.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
 				61544A60283ED34C00FC70CE /* ViewController.swift in Sources */,
 				61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */,
+				61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */,
 				61544A5C283ED34C00FC70CE /* AppDelegate.swift in Sources */,
 				61544A5E283ED34C00FC70CE /* SceneDelegate.swift in Sources */,
 				61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */,
