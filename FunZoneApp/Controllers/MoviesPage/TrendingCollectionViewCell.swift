@@ -9,4 +9,5 @@ import UIKit
 
 class TrendingCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var ImageView: UIImageView!
 }

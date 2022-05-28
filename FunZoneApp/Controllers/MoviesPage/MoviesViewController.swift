@@ -26,12 +26,14 @@ class MoviesViewController: UIViewController, UICollectionViewDelegate, UICollec
         if (collectionView == trending) {
             let cell = trending.dequeueReusableCell(withReuseIdentifier: "trendingCell", for: indexPath) as! TrendingCollectionViewCell
             
+            cell.ImageView.image = UIImage(named: "1")
             cell.backgroundColor = UIColor.green
             
             return cell
         } else {
              let cell = recommended.dequeueReusableCell(withReuseIdentifier: "recommendedCell", for: indexPath) as! RecommendedCollectionViewCell
             
+            cell.ImageView.image = UIImage(named: "1")
             cell.backgroundColor = UIColor.orange
             
             return cell
