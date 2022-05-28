@@ -17,9 +17,6 @@
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
-		61DEC5E2284086F10033838F /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5E1284086F10033838F /* MoviesViewController.swift */; };
-		61DEC5E428408B4F0033838F /* TrendingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5E328408B4F0033838F /* TrendingCollectionViewCell.swift */; };
-		61DEC5E628408B5E0033838F /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5E528408B5E0033838F /* RecommendedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +32,6 @@
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
-		61DEC5E1284086F10033838F /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
-		61DEC5E328408B4F0033838F /* TrendingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCollectionViewCell.swift; sourceTree = "<group>"; };
-		61DEC5E528408B5E0033838F /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +123,6 @@
 		61DEC5E0284086C30033838F /* MoviesPage */ = {
 			isa = PBXGroup;
 			children = (
-				61DEC5E1284086F10033838F /* MoviesViewController.swift */,
-				61DEC5E328408B4F0033838F /* TrendingCollectionViewCell.swift */,
-				61DEC5E528408B5E0033838F /* RecommendedCollectionViewCell.swift */,
 			);
 			path = MoviesPage;
 			sourceTree = "<group>";
@@ -212,11 +203,8 @@
 				61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */,
 				61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */,
 				61544A5C283ED34C00FC70CE /* AppDelegate.swift in Sources */,
-				61DEC5E428408B4F0033838F /* TrendingCollectionViewCell.swift in Sources */,
-				61DEC5E628408B5E0033838F /* RecommendedCollectionViewCell.swift in Sources */,
 				61544A5E283ED34C00FC70CE /* SceneDelegate.swift in Sources */,
 				61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */,
-				61DEC5E2284086F10033838F /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
