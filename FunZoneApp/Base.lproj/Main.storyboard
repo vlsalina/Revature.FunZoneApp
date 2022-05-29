@@ -614,6 +614,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="qcB-2x-kNc" secondAttribute="trailing" id="xFZ-cI-M0h"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookImage" destination="qcB-2x-kNc" id="7dc-Ao-cBE"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -635,6 +638,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Amb-XK-fsD"/>
                     <connections>
+                        <outlet property="BooksCollectionView" destination="VvD-QX-mF5" id="9OE-EY-X6i"/>
                         <outlet property="BooksPageActionCollectionView" destination="VGr-QU-H56" id="7Nk-Xu-Zn4"/>
                     </connections>
                 </viewController>
