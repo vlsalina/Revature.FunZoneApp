@@ -12,8 +12,10 @@ class MoviesViewController: UIViewController {
     
     @IBOutlet weak var movieCollectionView: UICollectionView!
     @IBOutlet weak var recommendedCollectionView: UICollectionView!
+    @IBOutlet weak var actionsCollectionView: UICollectionView!
     
     var movies = Movies.FetchMovie()
+    var actions = MoviesViewActions.FetchActions()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,7 @@ class MoviesViewController: UIViewController {
         
         movieCollectionView.dataSource = self
         recommendedCollectionView.dataSource = self
+        actionsCollectionView.dataSource = self
     }
     
 
@@ -42,8 +45,11 @@ extension MoviesViewController : UICollectionViewDataSource {
         
         if (collectionView == movieCollectionView) {
             return movies[0...9].count
-        } else {
+        }
+        else if (collectionView == recommendedCollectionView) {
             return movies[10...].count
+        } else {
+            return actions.count
         }
     }
     
@@ -59,7 +65,8 @@ extension MoviesViewController : UICollectionViewDataSource {
         
         return cell
            
-        } else {
+        }
+        else if (collectionView == recommendedCollectionView){
           let cell = recommendedCollectionView.dequeueReusableCell(withReuseIdentifier: "recommendedCell", for: indexPath) as! RecommendedCollectionViewCell
         
         let movie = movies[indexPath.item]
@@ -69,6 +76,16 @@ extension MoviesViewController : UICollectionViewDataSource {
             return cell
            
         }
+        else {
+            let cell = actionsCollectionView.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! ActionCollectionViewCell
+            
+        let actionType = actions[indexPath.item]
+            cell.actionType = actionType
+            
+            return cell
+            
+        }
+          
         
         
     }

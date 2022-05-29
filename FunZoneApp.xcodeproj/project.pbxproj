@@ -18,6 +18,8 @@
 		61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */; };
 		61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9E2842E12000CABC1C /* MoviesViewController.swift */; };
 		61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DA12842FC1E00CABC1C /* RecommendedCollectionViewCell.swift */; };
+		61A38DA4284337E500CABC1C /* ActionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DA3284337E500CABC1C /* ActionCollectionViewCell.swift */; };
+		61A38DA628433A3400CABC1C /* MoviesViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DA528433A3400CABC1C /* MoviesViewActions.swift */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
@@ -37,6 +39,8 @@
 		61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38D9E2842E12000CABC1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		61A38DA12842FC1E00CABC1C /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
+		61A38DA3284337E500CABC1C /* ActionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCollectionViewCell.swift; sourceTree = "<group>"; };
+		61A38DA528433A3400CABC1C /* MoviesViewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewActions.swift; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				61A38D9A2842DB6C00CABC1C /* Movies.swift */,
+				61A38DA528433A3400CABC1C /* MoviesViewActions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */,
 				61A38D9E2842E12000CABC1C /* MoviesViewController.swift */,
 				61A38DA12842FC1E00CABC1C /* RecommendedCollectionViewCell.swift */,
+				61A38DA3284337E500CABC1C /* ActionCollectionViewCell.swift */,
 			);
 			path = MoviesPage;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
+				61A38DA628433A3400CABC1C /* MoviesViewActions.swift in Sources */,
 				61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */,
 				61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */,
 				61544A60283ED34C00FC70CE /* ViewController.swift in Sources */,
@@ -228,6 +235,7 @@
 				61544A5C283ED34C00FC70CE /* AppDelegate.swift in Sources */,
 				61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */,
 				61544A5E283ED34C00FC70CE /* SceneDelegate.swift in Sources */,
+				61A38DA4284337E500CABC1C /* ActionCollectionViewCell.swift in Sources */,
 				61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
