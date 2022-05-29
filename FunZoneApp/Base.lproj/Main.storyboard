@@ -582,15 +582,54 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-QX-mF5" userLabel="Books Collection View">
+                                <rect key="frame" x="24" y="176" width="366" height="637"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="blf-FT-6Zo">
+                                    <size key="itemSize" width="115" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bookCell" id="1Ss-G6-zeq" userLabel="Book Collection View Cell" customClass="BookCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fh6-W4-ifE">
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="qcB-2x-kNc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="lMt-m9-LvR"/>
+                                                        <constraint firstAttribute="width" constant="115" id="vOr-1C-9St"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="qcB-2x-kNc" secondAttribute="bottom" id="OWf-GC-08i"/>
+                                                <constraint firstItem="qcB-2x-kNc" firstAttribute="top" secondItem="fh6-W4-ifE" secondAttribute="top" id="c6i-EY-axG"/>
+                                                <constraint firstItem="qcB-2x-kNc" firstAttribute="leading" secondItem="fh6-W4-ifE" secondAttribute="leading" id="rWq-NH-oq6"/>
+                                                <constraint firstAttribute="trailing" secondItem="qcB-2x-kNc" secondAttribute="trailing" id="xFZ-cI-M0h"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tpt-Bs-FTB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VGr-QU-H56" firstAttribute="leading" secondItem="tpt-Bs-FTB" secondAttribute="leading" constant="24" id="5EQ-AP-jLa"/>
+                            <constraint firstItem="tpt-Bs-FTB" firstAttribute="bottom" secondItem="VvD-QX-mF5" secondAttribute="bottom" id="CMW-jB-Be2"/>
                             <constraint firstItem="VGr-QU-H56" firstAttribute="top" secondItem="pLm-Qb-bEe" secondAttribute="bottom" constant="15" id="Wau-9O-Mi1"/>
                             <constraint firstItem="pLm-Qb-bEe" firstAttribute="leading" secondItem="tpt-Bs-FTB" secondAttribute="leading" constant="24" id="nyo-Zd-Q4H"/>
+                            <constraint firstItem="VvD-QX-mF5" firstAttribute="top" secondItem="VGr-QU-H56" secondAttribute="bottom" constant="24" id="qq1-pj-V5C"/>
                             <constraint firstItem="tpt-Bs-FTB" firstAttribute="trailing" secondItem="VGr-QU-H56" secondAttribute="trailing" constant="24" id="r6g-Cu-UrX"/>
                             <constraint firstItem="tpt-Bs-FTB" firstAttribute="trailing" secondItem="pLm-Qb-bEe" secondAttribute="trailing" constant="24" id="tM7-i0-ZCi"/>
+                            <constraint firstItem="VvD-QX-mF5" firstAttribute="leading" secondItem="tpt-Bs-FTB" secondAttribute="leading" constant="24" id="uw0-S2-qTa"/>
+                            <constraint firstItem="tpt-Bs-FTB" firstAttribute="trailing" secondItem="VvD-QX-mF5" secondAttribute="trailing" constant="24" id="vjl-8L-dMk"/>
                             <constraint firstItem="pLm-Qb-bEe" firstAttribute="top" secondItem="tpt-Bs-FTB" secondAttribute="top" constant="24" id="wAt-yk-jeG"/>
                         </constraints>
                     </view>
