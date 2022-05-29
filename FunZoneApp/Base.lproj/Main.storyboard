@@ -374,7 +374,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="ait-PM-edF">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommendedCell" id="ait-PM-edF" customClass="RecommendedCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="176" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VMS-6f-mAC">
@@ -445,6 +445,14 @@
                                                         <constraint firstItem="H7t-Ou-Bjl" firstAttribute="top" secondItem="VMS-6f-mAC" secondAttribute="top" id="ihZ-oc-hWc"/>
                                                     </constraints>
                                                 </collectionViewCellContentView>
+                                                <connections>
+                                                    <outlet property="imageView" destination="gE8-tn-7Le" id="jNY-az-8Kt"/>
+                                                    <outlet property="movieImage" destination="gE8-tn-7Le" id="XK7-TV-GCn"/>
+                                                    <outlet property="rating" destination="8bG-Tj-WBO" id="yQ1-Bf-OUi"/>
+                                                    <outlet property="title" destination="fV9-qX-2tx" id="5Nc-zj-OoP"/>
+                                                    <outlet property="type" destination="5U0-em-HLj" id="g5U-Wp-d0t"/>
+                                                    <outlet property="year" destination="NA0-Y9-Jba" id="dwQ-ot-V0d"/>
+                                                </connections>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cSl-oa-Dvd">
                                                 <rect key="frame" x="186" y="0.0" width="176" height="160"/>
@@ -507,6 +515,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="movieCollectionView" destination="G6g-zF-vv1" id="FX7-ph-FBw"/>
+                        <outlet property="recommendedCollectionView" destination="eLC-wM-Qks" id="JqN-nD-mYU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNc-i8-MFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

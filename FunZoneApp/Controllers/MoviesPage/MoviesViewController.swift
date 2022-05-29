@@ -11,6 +11,7 @@ class MoviesViewController: UIViewController {
     
     
     @IBOutlet weak var movieCollectionView: UICollectionView!
+    @IBOutlet weak var recommendedCollectionView: UICollectionView!
     
     var movies = Movies.FetchMovie()
     
@@ -20,6 +21,7 @@ class MoviesViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         movieCollectionView.dataSource = self
+        recommendedCollectionView.dataSource = self
     }
     
 
@@ -37,19 +39,36 @@ class MoviesViewController: UIViewController {
 
 extension MoviesViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return movies[0...9].count
+        
+        if (collectionView == movieCollectionView) {
+            return movies[0...9].count
+        } else {
+            return movies[10...].count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         
-        let cell = movieCollectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! MovieCollectionViewCell
+        if (collectionView == movieCollectionView) {
+         let cell = movieCollectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! MovieCollectionViewCell
         
         let movie = movies[indexPath.item]
         cell.movie = movie
         cell.layer.cornerRadius = 15
         
         return cell
+           
+        } else {
+          let cell = recommendedCollectionView.dequeueReusableCell(withReuseIdentifier: "recommendedCell", for: indexPath) as! RecommendedCollectionViewCell
+        
+        let movie = movies[indexPath.item]
+        cell.movie = movie
+        cell.layer.cornerRadius = 15
+            
+            return cell
+           
+        }
         
         
     }
