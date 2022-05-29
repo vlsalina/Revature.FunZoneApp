@@ -38,6 +38,15 @@ class Movies {
             Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
             Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
             Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
+            Movies(title: "The Art of Sketching ", year: 2000, imageMovie: UIImage(named: "1" )!, rating: "PG", type: "Movie"),
        ]
         
     }
