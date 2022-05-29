@@ -21,7 +21,7 @@ class Movies {
         self.year = year
         self.imageMovie = imageMovie
         self.rating = rating
-        self.type = ""
+        self.type = type
     }
     
     static func FetchMovie () -> [Movies]{
