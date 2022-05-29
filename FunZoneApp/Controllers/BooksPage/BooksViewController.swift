@@ -62,6 +62,7 @@ extension BooksViewController : UICollectionViewDataSource {
         
         let book = books[indexPath.item]
         cell.book = book
+        cell.layer.cornerRadius = 5
         
         return cell
            

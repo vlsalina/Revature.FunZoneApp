@@ -538,7 +538,7 @@
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VGr-QU-H56">
                                 <rect key="frame" x="24" y="117" width="366" height="35"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="UaT-AS-jyx"/>
                                 </constraints>
@@ -584,7 +584,7 @@
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-QX-mF5" userLabel="Books Collection View">
                                 <rect key="frame" x="24" y="176" width="366" height="637"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="blf-FT-6Zo">
                                     <size key="itemSize" width="115" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -622,7 +622,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tpt-Bs-FTB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="VGr-QU-H56" firstAttribute="leading" secondItem="tpt-Bs-FTB" secondAttribute="leading" constant="24" id="5EQ-AP-jLa"/>
                             <constraint firstItem="tpt-Bs-FTB" firstAttribute="bottom" secondItem="VvD-QX-mF5" secondAttribute="bottom" id="CMW-jB-Be2"/>
