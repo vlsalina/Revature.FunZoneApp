@@ -20,6 +20,7 @@
 		61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DA12842FC1E00CABC1C /* RecommendedCollectionViewCell.swift */; };
 		61A38DB22843EE2F00CABC1C /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DB12843EE2F00CABC1C /* BooksViewController.swift */; };
 		61A38DB42843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DB32843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift */; };
+		61A38DB62843F83C00CABC1C /* BooksActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DB52843F83C00CABC1C /* BooksActions.swift */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
@@ -41,6 +42,7 @@
 		61A38DA12842FC1E00CABC1C /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38DB12843EE2F00CABC1C /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		61A38DB32843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		61A38DB52843F83C00CABC1C /* BooksActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksActions.swift; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				61A38D9A2842DB6C00CABC1C /* Movies.swift */,
+				61A38DB52843F83C00CABC1C /* BooksActions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
 				61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */,
+				61A38DB62843F83C00CABC1C /* BooksActions.swift in Sources */,
 				61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */,
 				61544A60283ED34C00FC70CE /* ViewController.swift in Sources */,
 				61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */,

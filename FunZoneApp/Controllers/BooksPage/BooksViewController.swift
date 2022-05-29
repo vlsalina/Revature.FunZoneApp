@@ -12,7 +12,7 @@ class BooksViewController: UIViewController {
     
     @IBOutlet weak var BooksPageActionCollectionView: UICollectionView!
     
-    var actions = ["Favorites", "Audiobooks", "eBooks", "Romance", "Mystery", "Manga", "Fantasy"]
+    var actions = BooksActions.FetchActions()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,8 @@ extension BooksViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = BooksPageActionCollectionView.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! ActionButtonCollectionViewCell
         
-        cell.actionButton.setTitle(actions[indexPath.item], for: UIControl.State.normal)
+        let action = actions[indexPath.row]
+        cell.action = action
         
         return cell
     }
