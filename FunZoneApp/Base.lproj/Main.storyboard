@@ -269,8 +269,8 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="140"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ocG-yK-TKw">
-                                                            <rect key="frame" x="-63" y="-239.5" width="366" height="618"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ocG-yK-TKw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="366" height="618"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-HB-I40">
@@ -324,12 +324,11 @@
                                                     </constraints>
                                                 </collectionViewCellContentView>
                                                 <connections>
-                                                    <outlet property="movie" destination="Lkh-Sa-yt6" id="N17-hb-Vgr"/>
-                                                    <outlet property="movieImage" destination="ocG-yK-TKw" id="sRy-FW-m24"/>
-                                                    <outlet property="rating" destination="pR9-kx-LEm" id="avR-IM-7kG"/>
-                                                    <outlet property="title" destination="Hlk-qS-ZvA" id="cjl-TE-9Me"/>
-                                                    <outlet property="type" destination="Lkh-Sa-yt6" id="YZg-pg-Kr9"/>
-                                                    <outlet property="year" destination="DIn-XK-wbr" id="bi1-ys-hz4"/>
+                                                    <outlet property="movieImage" destination="ocG-yK-TKw" id="6Wa-is-zkj"/>
+                                                    <outlet property="rating" destination="pR9-kx-LEm" id="KqT-2c-6o5"/>
+                                                    <outlet property="title" destination="Hlk-qS-ZvA" id="Xau-Fy-H4B"/>
+                                                    <outlet property="type" destination="Lkh-Sa-yt6" id="9kV-Lk-hTV"/>
+                                                    <outlet property="year" destination="DIn-XK-wbr" id="fot-HQ-HyU"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -354,6 +353,9 @@
                     <tabBarItem key="tabBarItem" title="Item" id="xsn-IO-HMg">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="movieCollectionView" destination="G6g-zF-vv1" id="FX7-ph-FBw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNc-i8-MFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
