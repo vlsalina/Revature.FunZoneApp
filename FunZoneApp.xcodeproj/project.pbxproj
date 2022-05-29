@@ -18,6 +18,8 @@
 		61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */; };
 		61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9E2842E12000CABC1C /* MoviesViewController.swift */; };
 		61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DA12842FC1E00CABC1C /* RecommendedCollectionViewCell.swift */; };
+		61A38DB22843EE2F00CABC1C /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DB12843EE2F00CABC1C /* BooksViewController.swift */; };
+		61A38DB42843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DB32843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
@@ -37,6 +39,8 @@
 		61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38D9E2842E12000CABC1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		61A38DA12842FC1E00CABC1C /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
+		61A38DB12843EE2F00CABC1C /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		61A38DB32843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61A38DB02843EE1900CABC1C /* BooksPage */,
 				61DEC5E0284086C30033838F /* MoviesPage */,
 				61DEC5DA284079210033838F /* LoginPage */,
 				61DEC5D5284072FD0033838F /* SignUpPage */,
@@ -111,6 +116,15 @@
 				61A38D9A2842DB6C00CABC1C /* Movies.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		61A38DB02843EE1900CABC1C /* BooksPage */ = {
+			isa = PBXGroup;
+			children = (
+				61A38DB12843EE2F00CABC1C /* BooksViewController.swift */,
+				61A38DB32843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift */,
+			);
+			path = BooksPage;
 			sourceTree = "<group>";
 		};
 		61DEC5D5284072FD0033838F /* SignUpPage */ = {
@@ -223,8 +237,10 @@
 				61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */,
 				61544A60283ED34C00FC70CE /* ViewController.swift in Sources */,
 				61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */,
+				61A38DB22843EE2F00CABC1C /* BooksViewController.swift in Sources */,
 				61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */,
 				61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */,
+				61A38DB42843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift in Sources */,
 				61544A5C283ED34C00FC70CE /* AppDelegate.swift in Sources */,
 				61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */,
 				61544A5E283ED34C00FC70CE /* SceneDelegate.swift in Sources */,
