@@ -64,7 +64,7 @@ extension MoviesViewController : UICollectionViewDataSource {
         
         let movie = movies[indexPath.item]
         cell.movie = movie
-        cell.layer.cornerRadius = 15
+            cell.movieImage.layer.cornerRadius = 10
             
             return cell
            
