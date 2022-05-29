@@ -536,11 +536,151 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VGr-QU-H56">
+                                <rect key="frame" x="24" y="129" width="366" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XJH-iT-S2b">
+                                    <size key="itemSize" width="120" height="33"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lLV-EN-WXM">
+                                        <rect key="frame" x="0.0" y="1" width="120" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZMV-cM-fCk">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="33"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQR-uh-710">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAT-7x-t7f">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="filled" title="Favorites"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TQR-uh-710" firstAttribute="leading" secondItem="ZMV-cM-fCk" secondAttribute="leading" id="33M-td-3RM"/>
+                                                <constraint firstAttribute="trailing" secondItem="TQR-uh-710" secondAttribute="trailing" id="aMP-z4-gO0"/>
+                                                <constraint firstItem="TQR-uh-710" firstAttribute="top" secondItem="ZMV-cM-fCk" secondAttribute="top" id="gyI-ls-sUF"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zdM-lr-cnU">
+                                        <rect key="frame" x="130" y="1" width="120" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZYs-uA-BS0">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojp-M7-XI3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPy-PA-2Yf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="filled" title="Favorites"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ojp-M7-XI3" firstAttribute="leading" secondItem="ZYs-uA-BS0" secondAttribute="leading" id="Y9v-Sd-ptH"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ojp-M7-XI3" secondAttribute="trailing" id="cim-oo-vB4"/>
+                                                <constraint firstItem="Ojp-M7-XI3" firstAttribute="top" secondItem="ZYs-uA-BS0" secondAttribute="top" id="xT5-Eu-TUT"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ImH-dl-erZ">
+                                        <rect key="frame" x="260" y="1" width="120" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZKf-sc-05W">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnD-Xm-8uC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q33-X4-MEe">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="filled" title="Favorites"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bnD-Xm-8uC" firstAttribute="leading" secondItem="ZKf-sc-05W" secondAttribute="leading" id="TBZ-4q-JNA"/>
+                                                <constraint firstItem="bnD-Xm-8uC" firstAttribute="top" secondItem="ZKf-sc-05W" secondAttribute="top" id="s21-1G-SMT"/>
+                                                <constraint firstAttribute="trailing" secondItem="bnD-Xm-8uC" secondAttribute="trailing" id="vD3-0h-AKT"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JM6-aC-vL2">
+                                        <rect key="frame" x="390" y="1" width="120" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="eVN-dV-mar">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YYd-bd-E8Q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwo-Vl-cbK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="filled" title="Favorites"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YYd-bd-E8Q" firstAttribute="leading" secondItem="eVN-dV-mar" secondAttribute="leading" id="LFs-J9-KXT"/>
+                                                <constraint firstItem="YYd-bd-E8Q" firstAttribute="top" secondItem="eVN-dV-mar" secondAttribute="top" id="jNV-L7-wtY"/>
+                                                <constraint firstAttribute="trailing" secondItem="YYd-bd-E8Q" secondAttribute="trailing" id="r97-Ct-tQN"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WzZ-eS-k6C">
+                                        <rect key="frame" x="520" y="1" width="120" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Zr4-0m-l6E">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jTg-Xl-T1V">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdN-LK-5bj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="filled" title="Favorites"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jTg-Xl-T1V" firstAttribute="top" secondItem="Zr4-0m-l6E" secondAttribute="top" id="m2i-gc-ad2"/>
+                                                <constraint firstItem="jTg-Xl-T1V" firstAttribute="leading" secondItem="Zr4-0m-l6E" secondAttribute="leading" id="pMP-0f-hUx"/>
+                                                <constraint firstAttribute="trailing" secondItem="jTg-Xl-T1V" secondAttribute="trailing" id="tS3-ZF-z2H"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tpt-Bs-FTB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VGr-QU-H56" firstAttribute="leading" secondItem="tpt-Bs-FTB" secondAttribute="leading" constant="24" id="5EQ-AP-jLa"/>
+                            <constraint firstItem="VGr-QU-H56" firstAttribute="top" secondItem="pLm-Qb-bEe" secondAttribute="bottom" constant="15" id="Wau-9O-Mi1"/>
                             <constraint firstItem="pLm-Qb-bEe" firstAttribute="leading" secondItem="tpt-Bs-FTB" secondAttribute="leading" constant="24" id="nyo-Zd-Q4H"/>
+                            <constraint firstItem="tpt-Bs-FTB" firstAttribute="trailing" secondItem="VGr-QU-H56" secondAttribute="trailing" constant="24" id="r6g-Cu-UrX"/>
                             <constraint firstItem="tpt-Bs-FTB" firstAttribute="trailing" secondItem="pLm-Qb-bEe" secondAttribute="trailing" constant="24" id="tM7-i0-ZCi"/>
                             <constraint firstItem="pLm-Qb-bEe" firstAttribute="top" secondItem="tpt-Bs-FTB" secondAttribute="top" constant="24" id="wAt-yk-jeG"/>
                         </constraints>
@@ -549,7 +689,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ty2-es-GFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="854"/>
+            <point key="canvasLocation" x="1131.8840579710145" y="853.79464285714278"/>
         </scene>
         <!--Item-->
         <scene sceneID="K6n-rm-xzF">
