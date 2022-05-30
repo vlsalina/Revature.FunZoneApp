@@ -718,7 +718,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q77-J1-M6a" userLabel="Current Song Details View">
                                 <rect key="frame" x="24" y="176" width="366" height="341"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="EVa-qN-3DD" userLabel="Current Song Image Preview">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="EVa-qN-3DD" userLabel="Current Song Image Preview">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="341"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="366" id="9gd-ge-Yct"/>
@@ -953,6 +953,7 @@
     </scenes>
     <resources>
         <image name="1" width="1280" height="618"/>
+        <image name="3" width="2000" height="2000"/>
         <image name="arrowtriangle.forward.fill" catalog="system" width="128" height="113"/>
         <image name="backward" catalog="system" width="128" height="79"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
