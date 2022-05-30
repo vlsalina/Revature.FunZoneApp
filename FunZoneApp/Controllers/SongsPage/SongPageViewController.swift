@@ -11,13 +11,21 @@ class SongPageViewController: UIViewController {
 
     @IBOutlet weak var songCollectionView: UICollectionView!
     
+    @IBOutlet weak var SongsPageActionCollectionView: UICollectionView!
+    
+    @IBOutlet weak var CurrentSongImagePreview: UIImageView!
     var songs = Songs.FetchSongs()
+    var actions = SongsActions.FetchActions()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        CurrentSongImagePreview.layer.cornerRadius = 15
+        
         songCollectionView.dataSource = self
+        SongsPageActionCollectionView.dataSource = self
     }
     
 
@@ -35,16 +43,37 @@ class SongPageViewController: UIViewController {
 
 extension SongPageViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return songs.count
+        
+        if (collectionView == songCollectionView) {
+            return songs.count
+        } else {
+            return actions.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
+        if (collectionView == songCollectionView) {
         let cell = songCollectionView.dequeueReusableCell(withReuseIdentifier: "songCell", for: indexPath) as! SongCollectionViewCell
         
         let song = songs[indexPath.row]
+            cell.layer.cornerRadius = 5
+            
         cell.song = song
         
         return cell
+        } else {
+         let cell = SongsPageActionCollectionView.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! SongPageActionButtonCollectionViewCell
+        
+            let action = actions[indexPath.row]
+            cell.action = action
+            
+            
+        
+        return cell
+           
+        }
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

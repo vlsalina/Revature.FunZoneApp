@@ -682,7 +682,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="actionCell" id="Q9U-Ej-eWL">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="actionCell" id="Q9U-Ej-eWL" customClass="SongPageActionButtonCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="67" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qyq-UZ-sq9">
@@ -710,7 +710,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="actionButton" destination="Z2Q-EL-L1R" id="A2t-uA-99a"/>
+                                            <outlet property="actionButton" destination="Z2Q-EL-L1R" id="jV1-TC-5SJ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -751,7 +751,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="EVa-qN-3DD" firstAttribute="top" secondItem="q77-J1-M6a" secondAttribute="top" id="7Lt-gk-jCr"/>
                                     <constraint firstItem="EVa-qN-3DD" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" id="8bc-2S-rKx"/>
@@ -905,6 +905,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="zXY-Ir-25I"/>
                     <connections>
+                        <outlet property="CurrentSongImagePreview" destination="EVa-qN-3DD" id="JcE-Mx-DPo"/>
+                        <outlet property="SongsPageActionCollectionView" destination="OYb-FQ-Y1g" id="ady-YX-kIC"/>
                         <outlet property="songCollectionView" destination="65B-Pj-rAC" id="bNS-Xa-dpw"/>
                     </connections>
                 </viewController>

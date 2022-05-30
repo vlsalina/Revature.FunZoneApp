@@ -26,6 +26,8 @@
 		61A38DBD284470D900CABC1C /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DBC284470D900CABC1C /* Songs.swift */; };
 		61A38DBF2844710300CABC1C /* SongPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DBE2844710300CABC1C /* SongPageViewController.swift */; };
 		61A38DC12844714800CABC1C /* SongCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DC02844714800CABC1C /* SongCollectionViewCell.swift */; };
+		61A38DC32844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DC22844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift */; };
+		61A38DC5284486E800CABC1C /* SongsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DC4284486E800CABC1C /* SongsActions.swift */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
@@ -53,6 +55,8 @@
 		61A38DBC284470D900CABC1C /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		61A38DBE2844710300CABC1C /* SongPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPageViewController.swift; sourceTree = "<group>"; };
 		61A38DC02844714800CABC1C /* SongCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollectionViewCell.swift; sourceTree = "<group>"; };
+		61A38DC22844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPageActionButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		61A38DC4284486E800CABC1C /* SongsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsActions.swift; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				61A38DB52843F83C00CABC1C /* BooksActions.swift */,
 				61A38DB72843FDAE00CABC1C /* Books.swift */,
 				61A38DBC284470D900CABC1C /* Songs.swift */,
+				61A38DC4284486E800CABC1C /* SongsActions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			children = (
 				61A38DBE2844710300CABC1C /* SongPageViewController.swift */,
 				61A38DC02844714800CABC1C /* SongCollectionViewCell.swift */,
+				61A38DC22844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift */,
 			);
 			path = SongsPage;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A38DC32844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift in Sources */,
 				61A38DBF2844710300CABC1C /* SongPageViewController.swift in Sources */,
+				61A38DC5284486E800CABC1C /* SongsActions.swift in Sources */,
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
 				61A38DC12844714800CABC1C /* SongCollectionViewCell.swift in Sources */,
 				61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */,
