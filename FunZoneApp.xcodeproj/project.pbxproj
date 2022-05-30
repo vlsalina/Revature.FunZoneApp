@@ -23,6 +23,9 @@
 		61A38DB62843F83C00CABC1C /* BooksActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DB52843F83C00CABC1C /* BooksActions.swift */; };
 		61A38DB82843FDAE00CABC1C /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DB72843FDAE00CABC1C /* Books.swift */; };
 		61A38DBA2843FDD900CABC1C /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DB92843FDD900CABC1C /* BookCollectionViewCell.swift */; };
+		61A38DBD284470D900CABC1C /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DBC284470D900CABC1C /* Songs.swift */; };
+		61A38DBF2844710300CABC1C /* SongPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DBE2844710300CABC1C /* SongPageViewController.swift */; };
+		61A38DC12844714800CABC1C /* SongCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DC02844714800CABC1C /* SongCollectionViewCell.swift */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
@@ -47,6 +50,9 @@
 		61A38DB52843F83C00CABC1C /* BooksActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksActions.swift; sourceTree = "<group>"; };
 		61A38DB72843FDAE00CABC1C /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		61A38DB92843FDD900CABC1C /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		61A38DBC284470D900CABC1C /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		61A38DBE2844710300CABC1C /* SongPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPageViewController.swift; sourceTree = "<group>"; };
+		61A38DC02844714800CABC1C /* SongCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollectionViewCell.swift; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61A38DBB284470C500CABC1C /* SongsPage */,
 				61A38DB02843EE1900CABC1C /* BooksPage */,
 				61DEC5E0284086C30033838F /* MoviesPage */,
 				61DEC5DA284079210033838F /* LoginPage */,
@@ -122,6 +129,7 @@
 				61A38D9A2842DB6C00CABC1C /* Movies.swift */,
 				61A38DB52843F83C00CABC1C /* BooksActions.swift */,
 				61A38DB72843FDAE00CABC1C /* Books.swift */,
+				61A38DBC284470D900CABC1C /* Songs.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -134,6 +142,15 @@
 				61A38DB92843FDD900CABC1C /* BookCollectionViewCell.swift */,
 			);
 			path = BooksPage;
+			sourceTree = "<group>";
+		};
+		61A38DBB284470C500CABC1C /* SongsPage */ = {
+			isa = PBXGroup;
+			children = (
+				61A38DBE2844710300CABC1C /* SongPageViewController.swift */,
+				61A38DC02844714800CABC1C /* SongCollectionViewCell.swift */,
+			);
+			path = SongsPage;
 			sourceTree = "<group>";
 		};
 		61DEC5D5284072FD0033838F /* SignUpPage */ = {
@@ -241,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A38DBF2844710300CABC1C /* SongPageViewController.swift in Sources */,
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
+				61A38DC12844714800CABC1C /* SongCollectionViewCell.swift in Sources */,
 				61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */,
 				61A38DB62843F83C00CABC1C /* BooksActions.swift in Sources */,
 				61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */,
@@ -257,6 +276,7 @@
 				61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */,
 				61544A5E283ED34C00FC70CE /* SceneDelegate.swift in Sources */,
 				61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */,
+				61A38DBD284470D900CABC1C /* Songs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

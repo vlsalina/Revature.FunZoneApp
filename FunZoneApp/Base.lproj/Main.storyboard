@@ -650,7 +650,7 @@
         <!--Item-->
         <scene sceneID="K6n-rm-xzF">
             <objects>
-                <viewController id="Kgf-M3-Nq4" sceneMemberID="viewController">
+                <viewController id="Kgf-M3-Nq4" customClass="SongPageViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jra-BF-4XM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -843,34 +843,33 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UZ3-cR-T5V" userLabel="Song Collection View Cell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="songCell" id="UZ3-cR-T5V" userLabel="Song Collection View Cell" customClass="SongCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="-3.5" width="178" height="178"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="koo-HF-3MJ">
                                             <rect key="frame" x="0.0" y="0.0" width="178" height="178"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="x8g-IV-QK8">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="x8g-IV-QK8" userLabel="Song Image Preview">
                                                     <rect key="frame" x="0.0" y="0.0" width="178" height="178"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="178" id="Gpt-iL-soF"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="178" id="WYW-Of-uw7"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="178" id="Wao-eh-WQL"/>
                                                         <constraint firstAttribute="width" constant="178" id="ygT-hL-nKm"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="x8g-IV-QK8" secondAttribute="bottom" id="Dz3-S9-nqZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="x8g-IV-QK8" secondAttribute="trailing" id="MNT-SQ-nuI"/>
                                                 <constraint firstItem="x8g-IV-QK8" firstAttribute="leading" secondItem="koo-HF-3MJ" secondAttribute="leading" id="pm9-hW-iFW"/>
                                                 <constraint firstItem="x8g-IV-QK8" firstAttribute="top" secondItem="koo-HF-3MJ" secondAttribute="top" id="yct-Za-Yao"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nsu-eA-EYS">
-                                        <rect key="frame" x="188" y="-3.5" width="178" height="178"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NbV-iS-Kqz">
-                                            <rect key="frame" x="0.0" y="0.0" width="178" height="178"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="ImageView" destination="x8g-IV-QK8" id="oWk-w6-0aa"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -905,6 +904,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="zXY-Ir-25I"/>
+                    <connections>
+                        <outlet property="songCollectionView" destination="65B-Pj-rAC" id="bNS-Xa-dpw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1P-dP-rj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
