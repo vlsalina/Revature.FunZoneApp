@@ -17,15 +17,13 @@ class SongsActions {
     
     static func FetchActions() -> [SongsActions] {
         return [
-            SongsActions(actionType: "Button"),
-            SongsActions(actionType: "Button"),
-            SongsActions(actionType: "Button"),
-            SongsActions(actionType: "Button"),
-            SongsActions(actionType: "Button"),
-            SongsActions(actionType: "Button"),
-            SongsActions(actionType: "Button"),
-            SongsActions(actionType: "Button"),
-            SongsActions(actionType: "Button"),
+            SongsActions(actionType: "Favorites"),
+            SongsActions(actionType: "Rock"),
+            SongsActions(actionType: "Jazz"),
+            SongsActions(actionType: "Pop"),
+            SongsActions(actionType: "Classical"),
+            SongsActions(actionType: "Indie"),
+            SongsActions(actionType: "Alternative"),
         ]
     }
     
