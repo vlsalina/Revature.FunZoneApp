@@ -658,10 +658,10 @@
             </objects>
             <point key="canvasLocation" x="1131.8840579710145" y="853.79464285714278"/>
         </scene>
-        <!--Item-->
+        <!--Songs View Controller Scene-->
         <scene sceneID="K6n-rm-xzF">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Kgf-M3-Nq4" customClass="SongPageViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Songs View Controller Scene" modalPresentationStyle="fullScreen" id="Kgf-M3-Nq4" customClass="SongPageViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jra-BF-4XM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -745,16 +745,16 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="c8N-F9-fAm" userLabel="Details">
-                                        <rect key="frame" x="143" y="227.5" width="80" height="63.5"/>
+                                        <rect key="frame" x="113.5" y="227.5" width="138.5" height="63.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2I-jh-hBI" userLabel="Artist Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2I-jh-hBI" userLabel="Artist Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVP-Zo-hY7" userLabel="Current Song Name Label">
-                                                <rect key="frame" x="0.0" y="22.5" width="80" height="41"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVP-Zo-hY7" userLabel="Current Song Name Label">
+                                                <rect key="frame" x="0.0" y="22.5" width="138.5" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -767,10 +767,9 @@
                                     <constraint firstItem="EVa-qN-3DD" firstAttribute="top" secondItem="q77-J1-M6a" secondAttribute="top" id="7Lt-gk-jCr"/>
                                     <constraint firstItem="EVa-qN-3DD" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" id="8bc-2S-rKx"/>
                                     <constraint firstAttribute="height" constant="341" id="E2J-j3-CJ9"/>
-                                    <constraint firstAttribute="trailing" secondItem="c8N-F9-fAm" secondAttribute="trailing" constant="143" id="KVO-f0-5CO"/>
-                                    <constraint firstItem="c8N-F9-fAm" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" constant="143" id="Km7-S7-eOC"/>
+                                    <constraint firstAttribute="bottom" secondItem="c8N-F9-fAm" secondAttribute="bottom" constant="50" id="LYs-62-V0U"/>
+                                    <constraint firstItem="c8N-F9-fAm" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" constant="113.33" id="PFA-UV-s3g"/>
                                     <constraint firstItem="wiU-1Y-9dp" firstAttribute="top" secondItem="q77-J1-M6a" secondAttribute="top" id="fwa-2l-b4i"/>
-                                    <constraint firstAttribute="bottom" secondItem="c8N-F9-fAm" secondAttribute="bottom" constant="50" id="kuF-I0-c2N"/>
                                     <constraint firstAttribute="width" constant="366" id="mMC-6c-kxA"/>
                                     <constraint firstItem="wiU-1Y-9dp" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" id="ncB-s3-Hdl"/>
                                 </constraints>
@@ -963,12 +962,9 @@
             <point key="canvasLocation" x="2984.057971014493" y="95.758928571428569"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="lk7-NA-zpX"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="1280" height="618"/>
-        <image name="3" width="2000" height="2000"/>
+        <image name="3" width="953" height="953"/>
         <image name="arrowtriangle.forward.fill" catalog="system" width="128" height="113"/>
         <image name="backward" catalog="system" width="128" height="79"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
