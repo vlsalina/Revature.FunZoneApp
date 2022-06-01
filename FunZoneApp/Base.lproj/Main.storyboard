@@ -1029,7 +1029,9 @@
                                                                 </label>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="266" id="9ng-lN-0Py"/>
+                                                                <constraint firstItem="TJb-Qt-6CG" firstAttribute="leading" secondItem="9uh-ow-ECq" secondAttribute="leading" constant="10" id="Ead-Co-GtW"/>
+                                                                <constraint firstItem="i66-hi-zUy" firstAttribute="leading" secondItem="9uh-ow-ECq" secondAttribute="leading" constant="10" id="GTy-0X-hAt"/>
+                                                                <constraint firstAttribute="width" constant="266" id="V6o-i5-bsu"/>
                                                                 <constraint firstAttribute="height" constant="100" id="jno-UU-Gtg"/>
                                                             </constraints>
                                                         </stackView>
@@ -1043,11 +1045,10 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="9uh-ow-ECq" firstAttribute="top" secondItem="itv-7b-JHC" secondAttribute="top" id="2BB-nr-dFf"/>
-                                                        <constraint firstItem="9uh-ow-ECq" firstAttribute="leading" secondItem="itv-7b-JHC" secondAttribute="leading" id="bY8-GT-kGh"/>
                                                         <constraint firstItem="9uh-ow-ECq" firstAttribute="top" secondItem="itv-7b-JHC" secondAttribute="top" constant="100" id="d8W-hn-XZE"/>
                                                         <constraint firstItem="YR7-K1-tHr" firstAttribute="top" secondItem="itv-7b-JHC" secondAttribute="top" id="dAV-qf-6NF"/>
-                                                        <constraint firstAttribute="trailing" secondItem="YR7-K1-tHr" secondAttribute="trailing" id="fyU-ru-xzZ"/>
-                                                        <constraint firstItem="9uh-ow-ECq" firstAttribute="leading" secondItem="itv-7b-JHC" secondAttribute="leading" id="qcj-IB-tft"/>
+                                                        <constraint firstAttribute="trailing" secondItem="YR7-K1-tHr" secondAttribute="trailing" id="oMo-XH-lw5"/>
+                                                        <constraint firstItem="9uh-ow-ECq" firstAttribute="leading" secondItem="itv-7b-JHC" secondAttribute="leading" id="zWo-Tj-wpF"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
