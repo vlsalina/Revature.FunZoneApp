@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var box1: UIView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var remember: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +24,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func login(_ sender: Any) {
-        
-        
-        
-        
+        RememberMeHelper.get(email: email.text!)
     }
     
     /*

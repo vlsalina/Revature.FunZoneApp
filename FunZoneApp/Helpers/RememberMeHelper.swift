@@ -9,18 +9,18 @@ import Foundation
 
 class RememberMeHelper {
     
-    static func save() {
+    static func save(email: String, password: String) {
         do {
-            try KeychainManager.save(service: "facebook.com", account: "vince", password: "password".data(using: .utf8) ?? Data())
+            try KeychainManager.save(service: App, email: email, password: password.data(using: .utf8) ?? Data())
         } catch {
             print(error)
         }
        
     }
     
-    static func get() {
+    static func get(email: String) {
         
-        guard let data = KeychainManager.get(service: "facebook.com", account: "vince") else {
+        guard let data = KeychainManager.get(service: App, email: email) else {
             print("Failed to read password")
             return
         }

@@ -14,13 +14,13 @@ class KeychainManager {
         case unknown(OSStatus)
     }
     
-    static func save(service : String, account : String, password : Data) throws {
+    static func save(service : String, email : String, password : Data) throws {
         
         // service, account, class, data
         let query : [String : AnyObject] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service as AnyObject,
-            kSecAttrAccount as String: account as AnyObject,
+            kSecAttrAccount as String: email as AnyObject,
             kSecValueData as String: password as AnyObject
             
         ]
@@ -46,13 +46,13 @@ class KeychainManager {
     }
     
     
-    static func get(service : String, account : String) -> Data? {
+    static func get(service : String, email : String) -> Data? {
         
         // service, account, class, data
         let query : [String : AnyObject] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service as AnyObject,
-            kSecAttrAccount as String: account as AnyObject,
+            kSecAttrAccount as String: email as AnyObject,
             kSecReturnData as String: kCFBooleanTrue,
             kSecMatchLimit as String: kSecMatchLimitOne
         ]

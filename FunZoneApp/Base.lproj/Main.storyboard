@@ -136,6 +136,7 @@
                         <outlet property="box1" destination="Cf3-9k-l5U" id="hXi-u1-h52"/>
                         <outlet property="email" destination="3DE-Vc-oR8" id="Mcn-ZJ-wRM"/>
                         <outlet property="password" destination="uZw-X0-Bi4" id="amR-2b-BDs"/>
+                        <outlet property="remember" destination="BNm-NF-GbK" id="qOC-KT-Xyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
