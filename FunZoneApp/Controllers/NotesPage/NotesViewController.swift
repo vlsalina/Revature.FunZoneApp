@@ -10,8 +10,10 @@ import UIKit
 class NotesViewController: UIViewController {
 
     @IBOutlet weak var NotesCollection: UICollectionView!
+    @IBOutlet weak var NotesPageActionsCollection: UICollectionView!
     
     var notes = Notes.FetchNotes()
+    var actions = NotesActions.FetchActions()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,7 @@ class NotesViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         NotesCollection.dataSource = self
+        NotesPageActionsCollection.dataSource = self
     }
     
 
@@ -36,17 +39,34 @@ class NotesViewController: UIViewController {
 
 extension NotesViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return notes.count
+        if (collectionView == NotesCollection) {
+            return notes.count
+        } else {
+            return actions.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = NotesCollection.dequeueReusableCell(withReuseIdentifier: "noteCell", for: indexPath) as! NotesCollectionViewCell
+        
+        if (collectionView == NotesCollection) {
+         let cell = NotesCollection.dequeueReusableCell(withReuseIdentifier: "noteCell", for: indexPath) as! NotesCollectionViewCell
         
         let note = notes[indexPath.row]
         cell.note = note
         cell.layer.cornerRadius = 5
         
         return cell
+           
+        } else {
+            
+          let cell = NotesPageActionsCollection.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! NotesPageActionCollectionViewCell
+        
+        let action = actions[indexPath.row]
+        cell.action = action
+        
+        return cell
+           
+        }
         
     }
     

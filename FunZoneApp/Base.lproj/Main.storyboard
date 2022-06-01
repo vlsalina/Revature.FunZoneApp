@@ -958,7 +958,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="actionCell" id="bVO-Kf-JcF" customClass="SongPageActionButtonCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="actionCell" id="bVO-Kf-JcF" customClass="NotesPageActionCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="67" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tm6-Ow-r8I">
@@ -974,6 +974,7 @@
                                                             <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                                             <connections>
                                                                 <action selector="actionButton:" destination="njD-Nq-YT3" eventType="touchUpInside" id="ORT-Xo-tzj"/>
+                                                                <action selector="actionButton:" destination="rOO-tL-efS" eventType="touchUpInside" id="p4r-iq-odl"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -986,7 +987,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="actionButton" destination="pr3-rg-h6O" id="ruv-7O-zqu"/>
+                                            <outlet property="actionButton" destination="pr3-rg-h6O" id="b4i-KR-wmf"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1085,9 +1086,11 @@
                     <tabBarItem key="tabBarItem" title="Item" id="9uu-o8-mxh"/>
                     <connections>
                         <outlet property="NotesCollection" destination="w1X-na-nl2" id="k6v-Ip-ahV"/>
+                        <outlet property="NotesPageActionsCollection" destination="ynX-jk-K8A" id="czA-Fq-EHi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWO-JN-1kQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="rOO-tL-efS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3044.9275362318845" y="853.79464285714278"/>
         </scene>
