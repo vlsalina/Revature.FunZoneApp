@@ -1001,7 +1001,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="noteCell" id="iY3-sc-gRK" userLabel="Notes Collection View Cell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="noteCell" id="iY3-sc-gRK" userLabel="Notes Collection View Cell" customClass="NotesCollectionViewCell" customModule="FunZoneApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LCH-hG-dfc">
@@ -1058,6 +1058,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="itv-7b-JHC" secondAttribute="trailing" id="vJM-lo-IEi"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="NoteDescription" destination="TJb-Qt-6CG" id="Co6-gN-XN4"/>
+                                            <outlet property="NoteImageView" destination="YR7-K1-tHr" id="aqn-w8-1nj"/>
+                                            <outlet property="NoteTitle" destination="i66-hi-zUy" id="xKJ-pA-m2Q"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
