@@ -28,6 +28,11 @@
 		61A38DC12844714800CABC1C /* SongCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DC02844714800CABC1C /* SongCollectionViewCell.swift */; };
 		61A38DC32844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DC22844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift */; };
 		61A38DC5284486E800CABC1C /* SongsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38DC4284486E800CABC1C /* SongsActions.swift */; };
+		61AEBE592846E84000DDF871 /* NotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE582846E84000DDF871 /* NotesCollectionViewCell.swift */; };
+		61AEBE5B2846E8B200DDF871 /* NotesPageActionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE5A2846E8B200DDF871 /* NotesPageActionCollectionViewCell.swift */; };
+		61AEBE5D2846E8D000DDF871 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE5C2846E8D000DDF871 /* Notes.swift */; };
+		61AEBE5F2846E8E300DDF871 /* NotesActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE5E2846E8E300DDF871 /* NotesActions.swift */; };
+		61AEBE612846EC2600DDF871 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE602846EC2600DDF871 /* NotesViewController.swift */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
@@ -57,6 +62,11 @@
 		61A38DC02844714800CABC1C /* SongCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38DC22844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPageActionButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38DC4284486E800CABC1C /* SongsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsActions.swift; sourceTree = "<group>"; };
+		61AEBE582846E84000DDF871 /* NotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		61AEBE5A2846E8B200DDF871 /* NotesPageActionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesPageActionCollectionViewCell.swift; sourceTree = "<group>"; };
+		61AEBE5C2846E8D000DDF871 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		61AEBE5E2846E8E300DDF871 /* NotesActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesActions.swift; sourceTree = "<group>"; };
+		61AEBE602846EC2600DDF871 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
@@ -111,6 +121,7 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61AEBE552846E7F800DDF871 /* NotesPage */,
 				61A38DBB284470C500CABC1C /* SongsPage */,
 				61A38DB02843EE1900CABC1C /* BooksPage */,
 				61DEC5E0284086C30033838F /* MoviesPage */,
@@ -135,6 +146,8 @@
 				61A38DB72843FDAE00CABC1C /* Books.swift */,
 				61A38DBC284470D900CABC1C /* Songs.swift */,
 				61A38DC4284486E800CABC1C /* SongsActions.swift */,
+				61AEBE5C2846E8D000DDF871 /* Notes.swift */,
+				61AEBE5E2846E8E300DDF871 /* NotesActions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -157,6 +170,16 @@
 				61A38DC22844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift */,
 			);
 			path = SongsPage;
+			sourceTree = "<group>";
+		};
+		61AEBE552846E7F800DDF871 /* NotesPage */ = {
+			isa = PBXGroup;
+			children = (
+				61AEBE582846E84000DDF871 /* NotesCollectionViewCell.swift */,
+				61AEBE5A2846E8B200DDF871 /* NotesPageActionCollectionViewCell.swift */,
+				61AEBE602846EC2600DDF871 /* NotesViewController.swift */,
+			);
+			path = NotesPage;
 			sourceTree = "<group>";
 		};
 		61DEC5D5284072FD0033838F /* SignUpPage */ = {
@@ -265,9 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A38DC32844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift in Sources */,
+				61AEBE5D2846E8D000DDF871 /* Notes.swift in Sources */,
 				61A38DBF2844710300CABC1C /* SongPageViewController.swift in Sources */,
 				61A38DC5284486E800CABC1C /* SongsActions.swift in Sources */,
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
+				61AEBE5F2846E8E300DDF871 /* NotesActions.swift in Sources */,
 				61A38DC12844714800CABC1C /* SongCollectionViewCell.swift in Sources */,
 				61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */,
 				61A38DB62843F83C00CABC1C /* BooksActions.swift in Sources */,
@@ -277,11 +302,14 @@
 				61A38DB22843EE2F00CABC1C /* BooksViewController.swift in Sources */,
 				61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */,
 				61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */,
+				61AEBE5B2846E8B200DDF871 /* NotesPageActionCollectionViewCell.swift in Sources */,
 				61A38DBA2843FDD900CABC1C /* BookCollectionViewCell.swift in Sources */,
 				61A38DB82843FDAE00CABC1C /* Books.swift in Sources */,
 				61A38DB42843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift in Sources */,
 				61544A5C283ED34C00FC70CE /* AppDelegate.swift in Sources */,
+				61AEBE612846EC2600DDF871 /* NotesViewController.swift in Sources */,
 				61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */,
+				61AEBE592846E84000DDF871 /* NotesCollectionViewCell.swift in Sources */,
 				61544A5E283ED34C00FC70CE /* SceneDelegate.swift in Sources */,
 				61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */,
 				61A38DBD284470D900CABC1C /* Songs.swift in Sources */,
