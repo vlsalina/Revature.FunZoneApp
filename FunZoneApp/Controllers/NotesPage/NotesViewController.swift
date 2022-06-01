@@ -9,10 +9,16 @@ import UIKit
 
 class NotesViewController: UIViewController {
 
+    @IBOutlet weak var NotesCollection: UICollectionView!
+    
+    var notes = Notes.FetchNotes()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        NotesCollection.dataSource = self
     }
     
 
@@ -26,4 +32,27 @@ class NotesViewController: UIViewController {
     }
     */
 
+}
+
+extension NotesViewController : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return notes.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = NotesCollection.dequeueReusableCell(withReuseIdentifier: "noteCell", for: indexPath) as! NotesCollectionViewCell
+        
+        let note = notes[indexPath.row]
+        cell.note = note
+        cell.layer.cornerRadius = 5
+        
+        return cell
+        
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    
 }

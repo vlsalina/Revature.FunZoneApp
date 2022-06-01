@@ -926,7 +926,7 @@
         <!--Notes View Controller-->
         <scene sceneID="x6h-Zh-iQ0">
             <objects>
-                <viewController title="Notes View Controller" modalPresentationStyle="fullScreen" id="WGY-KZ-TtU" customClass="BooksViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Notes View Controller" modalPresentationStyle="fullScreen" id="WGY-KZ-TtU" customClass="NotesViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qvb-nR-dxB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1083,6 +1083,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="9uu-o8-mxh"/>
+                    <connections>
+                        <outlet property="NotesCollection" destination="w1X-na-nl2" id="k6v-Ip-ahV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWO-JN-1kQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
