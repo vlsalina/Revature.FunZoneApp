@@ -10,15 +10,25 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var box1: UIView!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addBorderRadius(view: &box1)
-
+        
         // Do any additional setup after loading the view.
+        
     }
     
-
+    
+    @IBAction func login(_ sender: Any) {
+        
+        
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -30,3 +40,4 @@ class LoginViewController: UIViewController {
     */
 
 }
+

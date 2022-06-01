@@ -14,6 +14,9 @@
 		61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61544A64283ED34C00FC70CE /* FunZoneApp.xcdatamodeld */; };
 		61544A68283ED34E00FC70CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61544A67283ED34E00FC70CE /* Assets.xcassets */; };
 		61544A6B283ED34E00FC70CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61544A69283ED34E00FC70CE /* LaunchScreen.storyboard */; };
+		615DE82D2847CC050010692A /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE82C2847CC050010692A /* KeychainManager.swift */; };
+		615DE82F2847CCA70010692A /* RememberMeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE82E2847CCA70010692A /* RememberMeHelper.swift */; };
+		615DE8312847CFF40010692A /* LoginErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8302847CFF40010692A /* LoginErrors.swift */; };
 		61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9A2842DB6C00CABC1C /* Movies.swift */; };
 		61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */; };
 		61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9E2842E12000CABC1C /* MoviesViewController.swift */; };
@@ -48,6 +51,9 @@
 		61544A67283ED34E00FC70CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61544A6A283ED34E00FC70CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61544A6C283ED34E00FC70CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		615DE82C2847CC050010692A /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		615DE82E2847CCA70010692A /* RememberMeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberMeHelper.swift; sourceTree = "<group>"; };
+		615DE8302847CFF40010692A /* LoginErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginErrors.swift; sourceTree = "<group>"; };
 		61A38D9A2842DB6C00CABC1C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38D9E2842E12000CABC1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		61544A5A283ED34C00FC70CE /* FunZoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				615DE82B2847CBE30010692A /* Services */,
 				61A38D992842DA9800CABC1C /* Classes */,
 				61DEC5DD28407A240033838F /* Helpers */,
 				61544A73283ED41100FC70CE /* Constants */,
@@ -134,8 +141,17 @@
 		61544A73283ED41100FC70CE /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				615DE8302847CFF40010692A /* LoginErrors.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		615DE82B2847CBE30010692A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				615DE82C2847CC050010692A /* KeychainManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		61A38D992842DA9800CABC1C /* Classes */ = {
@@ -202,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				61DEC5DE28407B820033838F /* addBorderRadius.swift */,
+				615DE82E2847CCA70010692A /* RememberMeHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -294,12 +311,15 @@
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
 				61AEBE5F2846E8E300DDF871 /* NotesActions.swift in Sources */,
 				61A38DC12844714800CABC1C /* SongCollectionViewCell.swift in Sources */,
+				615DE8312847CFF40010692A /* LoginErrors.swift in Sources */,
 				61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */,
 				61A38DB62843F83C00CABC1C /* BooksActions.swift in Sources */,
 				61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */,
 				61544A60283ED34C00FC70CE /* ViewController.swift in Sources */,
 				61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */,
 				61A38DB22843EE2F00CABC1C /* BooksViewController.swift in Sources */,
+				615DE82D2847CC050010692A /* KeychainManager.swift in Sources */,
+				615DE82F2847CCA70010692A /* RememberMeHelper.swift in Sources */,
 				61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */,
 				61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */,
 				61AEBE5B2846E8B200DDF871 /* NotesPageActionCollectionViewCell.swift in Sources */,
