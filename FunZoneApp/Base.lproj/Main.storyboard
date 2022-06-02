@@ -860,6 +860,9 @@
                                                 <rect key="frame" x="50.5" y="0.0" width="43" height="41"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="arrowtriangle.forward.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="start:" destination="Kgf-M3-Nq4" eventType="touchUpInside" id="2nQ-X4-HVd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V86-ul-iOH">
                                                 <rect key="frame" x="93.5" y="0.0" width="50.5" height="41"/>
@@ -966,6 +969,7 @@
                     <connections>
                         <outlet property="CurrentSongImagePreview" destination="EVa-qN-3DD" id="JcE-Mx-DPo"/>
                         <outlet property="SongsPageActionCollectionView" destination="OYb-FQ-Y1g" id="ady-YX-kIC"/>
+                        <outlet property="playbackBTN" destination="mZE-JG-sm4" id="nho-tY-dPj"/>
                         <outlet property="songCollectionView" destination="65B-Pj-rAC" id="bNS-Xa-dpw"/>
                     </connections>
                 </viewController>

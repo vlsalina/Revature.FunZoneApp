@@ -6,16 +6,20 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SongPageViewController: UIViewController {
-
+    
     @IBOutlet weak var songCollectionView: UICollectionView!
     @IBOutlet weak var SongsPageActionCollectionView: UICollectionView!
     @IBOutlet weak var CurrentSongImagePreview: UIImageView!
+    @IBOutlet weak var playbackBTN: UIButton!
     
     var songs = Songs.FetchSongs()
     var actions = SongsActions.FetchActions()
     var current : Songs?
+    var audioPlayer : AVAudioPlayer?
+    var status : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,36 @@ class SongPageViewController: UIViewController {
         
         songCollectionView.dataSource = self
         SongsPageActionCollectionView.dataSource = self
+        
+        initialize()
+        initialize2()
+    }
+    
+    func initialize() {
+        current = songs[0]
+    }
+    
+    func initialize2() {
+        let filePath = Bundle.main.path(forResource: current?.musicData, ofType: "mp3")
+        let url = URL(fileURLWithPath: filePath!)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+        } catch {
+            print(error)
+        }
+    }
+    
+    @IBAction func start(_ sender: Any) {
+        if (!status) {
+            audioPlayer?.play()
+            playbackBTN.setImage(UIImage(systemName: "stop.fill"), for: .normal)
+            status = true
+        } else {
+            audioPlayer?.stop()
+            playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            status = false
+        }
     }
     
     /*
