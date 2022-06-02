@@ -19,12 +19,25 @@ class LoginViewController: UIViewController {
         addBorderRadius(view: &box1)
         
         // Do any additional setup after loading the view.
-        
+        initialize()
     }
     
+    func initialize() {
+        let emailDefault = defaults.string(forKey: "userdefault-email")
+        let passDefault = RememberMeHelper.get(email: emailDefault!)
+        
+        if (emailDefault != nil) {
+            email.text = emailDefault
+            password.text = passDefault
+        }
+    }
     
     @IBAction func login(_ sender: Any) {
-        RememberMeHelper.get(email: email.text!)
+        if (remember.isOn) {
+            RememberMeHelper.save(email: email.text!, password: password.text!)
+        }
+        
+        
     }
     
     /*

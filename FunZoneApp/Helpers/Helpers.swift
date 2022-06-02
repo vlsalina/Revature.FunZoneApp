@@ -7,6 +7,12 @@
 
 import Foundation
 
+
+// for login credentials data persistence
+let defaults = UserDefaults.standard
+
+
+// for music playback functionality
 enum PlaybackActions {
     case backward
     case forward
