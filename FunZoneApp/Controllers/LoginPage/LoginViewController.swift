@@ -53,6 +53,7 @@ class LoginViewController: UIViewController {
         
         // MARK: - implement code to check user against users database
         print("login successful")
+        self.performSegue(withIdentifier: "TabSegue1", sender: self)
         
         
             
