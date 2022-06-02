@@ -10,39 +10,50 @@ import UIKit
 class Songs {
     
     var imageSong : UIImage
+    var musicData : String
     
-    init(imageSong : UIImage) {
+    init(imageSong : UIImage, musicData: String) {
         self.imageSong = imageSong
+        self.musicData = musicData
     }
     
     static func FetchSongs() -> [Songs] {
         return [
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
-            Songs(imageSong: UIImage(named: "3")!),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)"),
+            Songs(imageSong: UIImage(named: "3")!, musicData: "Taylor_Swift_-_Our_Song_(getmp3.pro)")
         ]
     }
 }

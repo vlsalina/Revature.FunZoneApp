@@ -20,6 +20,10 @@
 		615DE8332847D8B20010692A /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8322847D8B20010692A /* MetaData.swift */; };
 		615DE8B2284834500010692A /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8B1284834500010692A /* BookViewController.swift */; };
 		615DE8B52848417F0010692A /* swiftui-apprentice.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 615DE8B42848417F0010692A /* swiftui-apprentice.pdf */; };
+		615DE8B82848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 615DE8B72848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */; };
+		615DE8BB28484E1D0010692A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BA28484E1D0010692A /* SearchViewController.swift */; };
+		615DE8BD2848509D0010692A /* SearchBrowsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BC2848509D0010692A /* SearchBrowsers.swift */; };
+		615DE8BF284852380010692A /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BE284852380010692A /* SearchCollectionViewCell.swift */; };
 		61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9A2842DB6C00CABC1C /* Movies.swift */; };
 		61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */; };
 		61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9E2842E12000CABC1C /* MoviesViewController.swift */; };
@@ -60,6 +64,10 @@
 		615DE8322847D8B20010692A /* MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
 		615DE8B1284834500010692A /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		615DE8B42848417F0010692A /* swiftui-apprentice.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "swiftui-apprentice.pdf"; path = "../../../../../../Downloads/swiftui-apprentice.pdf"; sourceTree = "<group>"; };
+		615DE8B72848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; path = "../../../../../../Downloads/Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; sourceTree = "<group>"; };
+		615DE8BA28484E1D0010692A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		615DE8BC2848509D0010692A /* SearchBrowsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBrowsers.swift; sourceTree = "<group>"; };
+		615DE8BE284852380010692A /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38D9A2842DB6C00CABC1C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38D9E2842E12000CABC1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +122,7 @@
 		61544A5A283ED34C00FC70CE /* FunZoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				615DE8B6284846650010692A /* music */,
 				615DE8B3284840FC0010692A /* books */,
 				615DE82B2847CBE30010692A /* Services */,
 				61A38D992842DA9800CABC1C /* Classes */,
@@ -135,6 +144,7 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				615DE8B928484E0A0010692A /* SearchPage */,
 				615DE8B0284834320010692A /* BookPage */,
 				61AEBE552846E7F800DDF871 /* NotesPage */,
 				61A38DBB284470C500CABC1C /* SongsPage */,
@@ -179,6 +189,23 @@
 			path = books;
 			sourceTree = "<group>";
 		};
+		615DE8B6284846650010692A /* music */ = {
+			isa = PBXGroup;
+			children = (
+				615DE8B72848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		615DE8B928484E0A0010692A /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				615DE8BA28484E1D0010692A /* SearchViewController.swift */,
+				615DE8BE284852380010692A /* SearchCollectionViewCell.swift */,
+			);
+			path = SearchPage;
+			sourceTree = "<group>";
+		};
 		61A38D992842DA9800CABC1C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +216,7 @@
 				61A38DC4284486E800CABC1C /* SongsActions.swift */,
 				61AEBE5C2846E8D000DDF871 /* Notes.swift */,
 				61AEBE5E2846E8E300DDF871 /* NotesActions.swift */,
+				615DE8BC2848509D0010692A /* SearchBrowsers.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -317,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61544A6B283ED34E00FC70CE /* LaunchScreen.storyboard in Resources */,
+				615DE8B82848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */,
 				615DE8B52848417F0010692A /* swiftui-apprentice.pdf in Resources */,
 				61544A68283ED34E00FC70CE /* Assets.xcassets in Resources */,
 				61544A63283ED34C00FC70CE /* Main.storyboard in Resources */,
@@ -332,6 +361,7 @@
 			files = (
 				61A38DC32844860B00CABC1C /* SongPageActionButtonCollectionViewCell.swift in Sources */,
 				61AEBE5D2846E8D000DDF871 /* Notes.swift in Sources */,
+				615DE8BD2848509D0010692A /* SearchBrowsers.swift in Sources */,
 				61A38DBF2844710300CABC1C /* SongPageViewController.swift in Sources */,
 				61A38DC5284486E800CABC1C /* SongsActions.swift in Sources */,
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
@@ -340,6 +370,7 @@
 				615DE8312847CFF40010692A /* LoginErrors.swift in Sources */,
 				61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */,
 				61A38DB62843F83C00CABC1C /* BooksActions.swift in Sources */,
+				615DE8BB28484E1D0010692A /* SearchViewController.swift in Sources */,
 				61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */,
 				61544A60283ED34C00FC70CE /* ViewController.swift in Sources */,
 				61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */,
@@ -356,6 +387,7 @@
 				61A38DB42843F3DE00CABC1C /* ActionButtonCollectionViewCell.swift in Sources */,
 				61544A5C283ED34C00FC70CE /* AppDelegate.swift in Sources */,
 				61AEBE612846EC2600DDF871 /* NotesViewController.swift in Sources */,
+				615DE8BF284852380010692A /* SearchCollectionViewCell.swift in Sources */,
 				61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */,
 				61AEBE592846E84000DDF871 /* NotesCollectionViewCell.swift in Sources */,
 				61544A5E283ED34C00FC70CE /* SceneDelegate.swift in Sources */,

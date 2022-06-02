@@ -10,12 +10,12 @@ import UIKit
 class SongPageViewController: UIViewController {
 
     @IBOutlet weak var songCollectionView: UICollectionView!
-    
     @IBOutlet weak var SongsPageActionCollectionView: UICollectionView!
-    
     @IBOutlet weak var CurrentSongImagePreview: UIImageView!
+    
     var songs = Songs.FetchSongs()
     var actions = SongsActions.FetchActions()
+    var current : Songs?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,6 @@ class SongPageViewController: UIViewController {
         SongsPageActionCollectionView.dataSource = self
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -41,7 +40,7 @@ class SongPageViewController: UIViewController {
 
 }
 
-extension SongPageViewController : UICollectionViewDataSource {
+extension SongPageViewController : UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if (collectionView == songCollectionView) {
@@ -69,16 +68,16 @@ extension SongPageViewController : UICollectionViewDataSource {
             let action = actions[indexPath.row]
             cell.action = action
             
-            
-        
         return cell
            
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("hello world")
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-    
-    
 }
