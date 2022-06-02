@@ -74,7 +74,11 @@ class SongPageViewController: UIViewController {
         audioPlayer?.stop()
         audioPlayer?.currentTime = 0
         status = false
+        playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         validateIndex(action: PlaybackActions.backward, i: &index, len: songs.count)
+        audioPlayer?.play()
+        playbackBTN.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+        status = true
         print(index)
     }
     
@@ -84,6 +88,9 @@ class SongPageViewController: UIViewController {
         status = false
         playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         validateIndex(action: PlaybackActions.forward, i: &index, len: songs.count)
+        audioPlayer?.play()
+        playbackBTN.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+        status = true
         print(index)
     }
     
