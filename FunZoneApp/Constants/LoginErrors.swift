@@ -9,6 +9,7 @@ import Foundation
 
 enum LoginErrors : Error {
     case invalidLoginCredentials
+    case passwordsDoNotMatch
     case unknown(OSStatus)
 }
 
@@ -16,4 +17,6 @@ enum LoginErrors : Error {
 let userDefaultEmailKey = "userdefault-email"
 let invalidLoginCredentails = "Invalid email or password"
 let unknownLoginError = "Unknown login error"
+let unknownSignUpError = "Unknown sign up error"
+let passwordsDoNotMatch = "Passwords do not match"
 

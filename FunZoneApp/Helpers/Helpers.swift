@@ -35,7 +35,7 @@ func validateIndex(action: PlaybackActions, i: inout Int, len: Int) {
     }
 }
 
-func validateLoginCredentials(email: String, password: String) throws {
+internal func validateLoginCredentials(email: String, password: String) throws {
     
     guard (!email.isEmpty) else {
         throw LoginErrors.invalidLoginCredentials
@@ -45,4 +45,24 @@ func validateLoginCredentials(email: String, password: String) throws {
         throw LoginErrors.invalidLoginCredentials
     }
     
+}
+
+func validateSignUpCredentials(email: String, password: String, confirmPassword: String) throws {
+    
+    guard (!email.isEmpty) else {
+        throw LoginErrors.invalidLoginCredentials
+    }
+    
+    guard (!password.isEmpty) else {
+        throw LoginErrors.invalidLoginCredentials
+    }
+    
+    guard (!confirmPassword.isEmpty) else {
+        throw LoginErrors.invalidLoginCredentials
+    }
+    
+    guard (password == confirmPassword) else {
+        throw LoginErrors.passwordsDoNotMatch
+    }
+   
 }

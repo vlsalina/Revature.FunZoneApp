@@ -191,6 +191,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Create an account">
                                                     <color key="baseBackgroundColor" red="1" green="0.32092945760000002" blue="0.40859062779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signup:" destination="6VS-Qi-B2H" eventType="touchUpInside" id="IzO-LF-xec"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-Hv-B3Q">
                                                 <rect key="frame" x="0.0" y="346" width="255" height="31"/>
@@ -235,6 +238,12 @@
                                     <constraint firstAttribute="height" constant="74.5" id="ZzR-Az-YGR"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fE0-z3-5gI">
+                                <rect key="frame" x="24" y="703" width="366" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.32092945760000002" blue="0.40859062779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="27R-zg-fcj"/>
                         <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -243,17 +252,24 @@
                             <constraint firstItem="jhj-wu-rNz" firstAttribute="top" secondItem="27R-zg-fcj" secondAttribute="top" constant="22" id="4fV-tD-lHE"/>
                             <constraint firstItem="tcE-8c-LRu" firstAttribute="top" secondItem="jhj-wu-rNz" secondAttribute="bottom" constant="95.5" id="RvE-xN-nWp"/>
                             <constraint firstItem="tcE-8c-LRu" firstAttribute="leading" secondItem="27R-zg-fcj" secondAttribute="leading" constant="50" id="T1T-Zb-dak"/>
+                            <constraint firstItem="27R-zg-fcj" firstAttribute="trailing" secondItem="fE0-z3-5gI" secondAttribute="trailing" constant="24" id="adw-Xn-Flx"/>
                             <constraint firstItem="jhj-wu-rNz" firstAttribute="leading" secondItem="27R-zg-fcj" secondAttribute="leading" constant="176" id="bgE-hf-lLp"/>
                             <constraint firstItem="jhj-wu-rNz" firstAttribute="leading" secondItem="27R-zg-fcj" secondAttribute="leading" constant="176" id="iqn-Oc-m1R"/>
                             <constraint firstItem="jhj-wu-rNz" firstAttribute="top" secondItem="27R-zg-fcj" secondAttribute="top" constant="22" id="j6b-0T-a8c"/>
                             <constraint firstItem="jhj-wu-rNz" firstAttribute="top" secondItem="27R-zg-fcj" secondAttribute="top" constant="18" id="jxA-ZG-Bts"/>
                             <constraint firstItem="tcE-8c-LRu" firstAttribute="top" secondItem="jhj-wu-rNz" secondAttribute="bottom" constant="95.5" id="nHi-a1-b7E"/>
                             <constraint firstItem="jhj-wu-rNz" firstAttribute="leading" secondItem="27R-zg-fcj" secondAttribute="leading" constant="176" id="sRp-8a-Tho"/>
+                            <constraint firstItem="fE0-z3-5gI" firstAttribute="top" secondItem="tcE-8c-LRu" secondAttribute="bottom" constant="30" id="tLJ-rx-rC5"/>
+                            <constraint firstItem="fE0-z3-5gI" firstAttribute="leading" secondItem="27R-zg-fcj" secondAttribute="leading" constant="24" id="wgr-WR-Jxn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2mM-jk-ha2"/>
                     <connections>
                         <outlet property="box1" destination="tcE-8c-LRu" id="NTF-E0-Jqq"/>
+                        <outlet property="confirmPassword" destination="vcr-5e-RLn" id="aMZ-Ya-fbJ"/>
+                        <outlet property="email" destination="X4w-sV-jLX" id="8W2-NW-JNq"/>
+                        <outlet property="errorLabel" destination="fE0-z3-5gI" id="Tap-t5-ID4"/>
+                        <outlet property="password" destination="Bbu-Mi-05s" id="Q7o-VL-wbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYw-HR-lgX" sceneMemberID="firstResponder"/>
