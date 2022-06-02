@@ -1213,6 +1213,10 @@
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="R3n-0I-kKd" id="YW6-2e-J4P"/>
+                                            <outlet property="delegate" destination="R3n-0I-kKd" id="uar-28-cpn"/>
+                                        </connections>
                                     </collectionView>
                                 </subviews>
                             </stackView>

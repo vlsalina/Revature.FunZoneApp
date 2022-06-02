@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebKit
 
 class SearchViewController: UIViewController {
 
@@ -34,7 +35,7 @@ class SearchViewController: UIViewController {
 
 }
 
-extension SearchViewController : UICollectionViewDataSource {
+extension SearchViewController : UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return browsers.count
     }
@@ -46,6 +47,14 @@ extension SearchViewController : UICollectionViewDataSource {
         cell.browser = browser
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let webKitView = WKWebView()
+        let newUrl = URL(string: browsers[indexPath.row].link)!
+        webKitView.load(URLRequest(url: newUrl))
+        view = webKitView
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
