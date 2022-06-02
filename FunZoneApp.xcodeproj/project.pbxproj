@@ -24,6 +24,7 @@
 		615DE8BB28484E1D0010692A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BA28484E1D0010692A /* SearchViewController.swift */; };
 		615DE8BD2848509D0010692A /* SearchBrowsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BC2848509D0010692A /* SearchBrowsers.swift */; };
 		615DE8BF284852380010692A /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BE284852380010692A /* SearchCollectionViewCell.swift */; };
+		6189A921284917E2003BFA7C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189A920284917E2003BFA7C /* Helpers.swift */; };
 		61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9A2842DB6C00CABC1C /* Movies.swift */; };
 		61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */; };
 		61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9E2842E12000CABC1C /* MoviesViewController.swift */; };
@@ -68,6 +69,7 @@
 		615DE8BA28484E1D0010692A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		615DE8BC2848509D0010692A /* SearchBrowsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBrowsers.swift; sourceTree = "<group>"; };
 		615DE8BE284852380010692A /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		6189A920284917E2003BFA7C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		61A38D9A2842DB6C00CABC1C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38D9E2842E12000CABC1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			children = (
 				61DEC5DE28407B820033838F /* addBorderRadius.swift */,
 				615DE82E2847CCA70010692A /* RememberMeHelper.swift */,
+				6189A920284917E2003BFA7C /* Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
 				61AEBE5F2846E8E300DDF871 /* NotesActions.swift in Sources */,
 				61A38DC12844714800CABC1C /* SongCollectionViewCell.swift in Sources */,
+				6189A921284917E2003BFA7C /* Helpers.swift in Sources */,
 				615DE8312847CFF40010692A /* LoginErrors.swift in Sources */,
 				61A38DA22842FC1E00CABC1C /* RecommendedCollectionViewCell.swift in Sources */,
 				61A38DB62843F83C00CABC1C /* BooksActions.swift in Sources */,

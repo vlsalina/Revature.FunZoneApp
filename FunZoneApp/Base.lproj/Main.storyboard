@@ -855,6 +855,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="backward" catalog="system">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="previous:" destination="Kgf-M3-Nq4" eventType="touchUpInside" id="dZy-yl-GZ4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZE-JG-sm4">
                                                 <rect key="frame" x="50.5" y="0.0" width="43" height="41"/>
@@ -878,6 +881,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="forward" catalog="system">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="next:" destination="Kgf-M3-Nq4" eventType="touchUpInside" id="Nc0-aw-4j1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

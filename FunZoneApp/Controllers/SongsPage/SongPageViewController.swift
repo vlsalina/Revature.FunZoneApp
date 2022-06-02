@@ -18,6 +18,7 @@ class SongPageViewController: UIViewController {
     var songs = Songs.FetchSongs()
     var actions = SongsActions.FetchActions()
     var current : Songs?
+    var index : Int = 0
     var audioPlayer : AVAudioPlayer?
     var status : Bool = false
     
@@ -36,7 +37,7 @@ class SongPageViewController: UIViewController {
     }
     
     func initialize() {
-        current = songs[0]
+        current = songs[index]
     }
     
     func initialize2() {
@@ -68,6 +69,41 @@ class SongPageViewController: UIViewController {
         playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         status = false
     }
+    
+    @IBAction func previous(_ sender: Any) {
+        audioPlayer?.stop()
+        audioPlayer?.currentTime = 0
+        status = false
+        validateIndex(action: PlaybackActions.backward, i: &index, len: songs.count)
+        print(index)
+    }
+    
+    @IBAction func next(_ sender: Any) {
+        audioPlayer?.stop()
+        audioPlayer?.currentTime = 0
+        status = false
+        playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        validateIndex(action: PlaybackActions.forward, i: &index, len: songs.count)
+        print(index)
+    }
+    
+//    func validateIndex(action: String, i: inout Int, len: Int) {
+//
+//        if (action == "backward") {
+//            if (i == 0) {
+//                i = 0
+//            } else {
+//                i = i-1
+//            }
+//        } else {
+//            if (i == len-1) {
+//                i = len-1
+//            } else {
+//                i = i+1
+//            }
+//        }
+//    }
+    
     /*
     // MARK: - Navigation
 
@@ -115,6 +151,7 @@ extension SongPageViewController : UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         current = songs[indexPath.row]
+        index = indexPath.row
         print("song changed")
     }
     
