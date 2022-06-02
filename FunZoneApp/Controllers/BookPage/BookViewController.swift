@@ -10,7 +10,7 @@ import PDFKit
 
 class BookViewController: UIViewController {
     
-    var bookData : String?
+    var book : Books?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class BookViewController: UIViewController {
         let pdfView = PDFView(frame: view.bounds)
 
         pdfView.autoScales = true
-        let filePath = Bundle.main.url(forResource: bookData, withExtension: "pdf")
+        let filePath = Bundle.main.url(forResource: book?.bookData, withExtension: "pdf")
         pdfView.document = PDFDocument(url: filePath!)
 
         view.addSubview(pdfView)

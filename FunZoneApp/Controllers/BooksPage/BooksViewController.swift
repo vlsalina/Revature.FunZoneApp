@@ -74,7 +74,7 @@ extension BooksViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyObject = UIStoryboard(name: "Main", bundle: nil)
         let bookVC = storyObject.instantiateViewController(withIdentifier: "BookViewController") as! BookViewController
-        bookVC.bookData = books[indexPath.row].bookData
+        bookVC.book = books[indexPath.row]
         //bookDelegate?.cellWasClicked(book: books[indexPath.row])
         self.present(bookVC, animated: true, completion: nil)
         
