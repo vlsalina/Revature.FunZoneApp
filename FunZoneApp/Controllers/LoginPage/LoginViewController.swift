@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var remember: UISwitch!
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class LoginViewController: UIViewController {
     }
     
     func initialize() {
-        let emailDefault = defaults.string(forKey: "userdefault-email")
+        let emailDefault = defaults.string(forKey: userDefaultEmailKey)
         let passDefault = RememberMeHelper.get(email: emailDefault!)
         
         if (emailDefault != nil) {
@@ -33,15 +34,27 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(_ sender: Any) {
+        
+        // remember user
         if (remember.isOn) {
+            
+            
+        // error handling for login credentials
             do {
                 try validateLoginCredentials(email: email.text!, password: password.text!)
             } catch LoginErrors.invalidLoginCredentials {
-                print("invalid login credentails")
+                errorLabel.text = invalidLoginCredentails
             } catch {
-                print(error)
+                errorLabel.text = unknownLoginError
             }
+            
+            RememberMeHelper.save(email: email.text!, password: password.text!)
         }
+        
+        // MARK: - implement code to check user against users database
+        print("login successful")
+        
+        
             
         
         

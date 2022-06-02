@@ -135,6 +135,7 @@
                     <connections>
                         <outlet property="box1" destination="Cf3-9k-l5U" id="hXi-u1-h52"/>
                         <outlet property="email" destination="3DE-Vc-oR8" id="Mcn-ZJ-wRM"/>
+                        <outlet property="errorLabel" destination="HkZ-IE-GPz" id="9Tc-3l-Fm8"/>
                         <outlet property="password" destination="uZw-X0-Bi4" id="amR-2b-BDs"/>
                         <outlet property="remember" destination="BNm-NF-GbK" id="qOC-KT-Xyg"/>
                     </connections>
@@ -1255,7 +1256,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="sqD-Bh-DHX">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="1Fp-bp-eiu" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabController" modalPresentationStyle="fullScreen" id="1Fp-bp-eiu" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Tfb-W6-5ie"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7dU-0f-Kug">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
