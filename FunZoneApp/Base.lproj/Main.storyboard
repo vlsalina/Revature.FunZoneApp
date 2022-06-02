@@ -556,7 +556,7 @@
         <!--Books View Controller-->
         <scene sceneID="0qx-IO-g0A">
             <objects>
-                <viewController storyboardIdentifier="BooksViewController" title="Books View Controller" modalPresentationStyle="fullScreen" id="iYf-Rz-nA3" customClass="BooksViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BooksViewController" title="Books View Controller" id="iYf-Rz-nA3" customClass="BooksViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wci-UJ-n2n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1167,7 +1167,7 @@
         <!--Search Page View Controller-->
         <scene sceneID="uE7-eA-blj">
             <objects>
-                <viewController title="Search Page View Controller" modalPresentationStyle="fullScreen" id="R3n-0I-kKd" customClass="SearchViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Search Page View Controller" id="R3n-0I-kKd" customClass="SearchViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jm5-Of-gMb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
