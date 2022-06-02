@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BooksViewController: UIViewController {
+class BooksViewController: UIViewController, UICollectionViewDelegate {
     
     
     @IBOutlet weak var BooksPageActionCollectionView: UICollectionView!
@@ -15,6 +15,8 @@ class BooksViewController: UIViewController {
     
     var actions = BooksActions.FetchActions()
     var books = Books.FetchBooks()
+    
+    //var bookDelegate : BookDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,9 +71,22 @@ extension BooksViewController : UICollectionViewDataSource {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyObject = UIStoryboard(name: "Main", bundle: nil)
+        let bookVC = storyObject.instantiateViewController(withIdentifier: "BookViewController") as! BookViewController
+        bookVC.bookData = books[indexPath.row].bookData
+        //bookDelegate?.cellWasClicked(book: books[indexPath.row])
+        self.present(bookVC, animated: true, completion: nil)
+        
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     
 }
+
+//protocol BookDelegate {
+//    func cellWasClicked(book: Books)
+//}

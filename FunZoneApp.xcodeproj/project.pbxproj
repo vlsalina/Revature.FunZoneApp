@@ -18,6 +18,8 @@
 		615DE82F2847CCA70010692A /* RememberMeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE82E2847CCA70010692A /* RememberMeHelper.swift */; };
 		615DE8312847CFF40010692A /* LoginErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8302847CFF40010692A /* LoginErrors.swift */; };
 		615DE8332847D8B20010692A /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8322847D8B20010692A /* MetaData.swift */; };
+		615DE8B2284834500010692A /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8B1284834500010692A /* BookViewController.swift */; };
+		615DE8B52848417F0010692A /* swiftui-apprentice.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 615DE8B42848417F0010692A /* swiftui-apprentice.pdf */; };
 		61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9A2842DB6C00CABC1C /* Movies.swift */; };
 		61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */; };
 		61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9E2842E12000CABC1C /* MoviesViewController.swift */; };
@@ -56,6 +58,8 @@
 		615DE82E2847CCA70010692A /* RememberMeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberMeHelper.swift; sourceTree = "<group>"; };
 		615DE8302847CFF40010692A /* LoginErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginErrors.swift; sourceTree = "<group>"; };
 		615DE8322847D8B20010692A /* MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
+		615DE8B1284834500010692A /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		615DE8B42848417F0010692A /* swiftui-apprentice.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "swiftui-apprentice.pdf"; path = "../../../../../../Downloads/swiftui-apprentice.pdf"; sourceTree = "<group>"; };
 		61A38D9A2842DB6C00CABC1C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38D9E2842E12000CABC1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		61544A5A283ED34C00FC70CE /* FunZoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				615DE8B3284840FC0010692A /* books */,
 				615DE82B2847CBE30010692A /* Services */,
 				61A38D992842DA9800CABC1C /* Classes */,
 				61DEC5DD28407A240033838F /* Helpers */,
@@ -130,6 +135,7 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				615DE8B0284834320010692A /* BookPage */,
 				61AEBE552846E7F800DDF871 /* NotesPage */,
 				61A38DBB284470C500CABC1C /* SongsPage */,
 				61A38DB02843EE1900CABC1C /* BooksPage */,
@@ -155,6 +161,22 @@
 				615DE82C2847CC050010692A /* KeychainManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		615DE8B0284834320010692A /* BookPage */ = {
+			isa = PBXGroup;
+			children = (
+				615DE8B1284834500010692A /* BookViewController.swift */,
+			);
+			path = BookPage;
+			sourceTree = "<group>";
+		};
+		615DE8B3284840FC0010692A /* books */ = {
+			isa = PBXGroup;
+			children = (
+				615DE8B42848417F0010692A /* swiftui-apprentice.pdf */,
+			);
+			path = books;
 			sourceTree = "<group>";
 		};
 		61A38D992842DA9800CABC1C /* Classes */ = {
@@ -295,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61544A6B283ED34E00FC70CE /* LaunchScreen.storyboard in Resources */,
+				615DE8B52848417F0010692A /* swiftui-apprentice.pdf in Resources */,
 				61544A68283ED34E00FC70CE /* Assets.xcassets in Resources */,
 				61544A63283ED34C00FC70CE /* Main.storyboard in Resources */,
 			);
@@ -321,6 +344,7 @@
 				61544A60283ED34C00FC70CE /* ViewController.swift in Sources */,
 				61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */,
 				61A38DB22843EE2F00CABC1C /* BooksViewController.swift in Sources */,
+				615DE8B2284834500010692A /* BookViewController.swift in Sources */,
 				615DE8332847D8B20010692A /* MetaData.swift in Sources */,
 				615DE82D2847CC050010692A /* KeychainManager.swift in Sources */,
 				615DE82F2847CCA70010692A /* RememberMeHelper.swift in Sources */,
