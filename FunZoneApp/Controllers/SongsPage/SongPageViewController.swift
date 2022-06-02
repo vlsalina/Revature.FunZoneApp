@@ -53,15 +53,21 @@ class SongPageViewController: UIViewController {
     @IBAction func start(_ sender: Any) {
         if (!status) {
             audioPlayer?.play()
-            playbackBTN.setImage(UIImage(systemName: "stop.fill"), for: .normal)
+            playbackBTN.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             status = true
         } else {
-            audioPlayer?.stop()
+            audioPlayer?.pause()
             playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
             status = false
         }
     }
     
+    @IBAction func stop(_ sender: Any) {
+        audioPlayer?.stop()
+        audioPlayer?.currentTime = 0
+        playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        status = false
+    }
     /*
     // MARK: - Navigation
 

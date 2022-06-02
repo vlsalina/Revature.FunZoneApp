@@ -691,7 +691,7 @@
         <!--Book View Controller-->
         <scene sceneID="ptZ-0H-DGB">
             <objects>
-                <viewController storyboardIdentifier="BookViewController" title="Book View Controller" id="USD-P6-RPV" customClass="BookViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookViewController" title="Book View Controller" modalPresentationStyle="fullScreen" id="USD-P6-RPV" customClass="BookViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UZz-di-8aE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -830,16 +830,16 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h5P-pZ-jGK">
-                                        <rect key="frame" x="51" y="0.0" width="161" height="41"/>
+                                        <rect key="frame" x="51" y="0.0" width="117.5" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vl-ga-v1j">
-                                                <rect key="frame" x="0.0" y="0.0" width="161" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="117.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Song Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6Z-m7-Gbw">
-                                                <rect key="frame" x="0.0" y="20.5" width="161" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="117.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -847,7 +847,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIS-o5-f8h">
-                                        <rect key="frame" x="222" y="0.0" width="144" height="41"/>
+                                        <rect key="frame" x="178.5" y="0.0" width="187.5" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhy-8O-8Zi">
                                                 <rect key="frame" x="0.0" y="0.0" width="50.5" height="41"/>
@@ -864,8 +864,16 @@
                                                     <action selector="start:" destination="Kgf-M3-Nq4" eventType="touchUpInside" id="2nQ-X4-HVd"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-DY-VMW">
+                                                <rect key="frame" x="93.5" y="0.0" width="43.5" height="41"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="stop.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="stop:" destination="Kgf-M3-Nq4" eventType="touchUpInside" id="ZtW-mr-cpm"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V86-ul-iOH">
-                                                <rect key="frame" x="93.5" y="0.0" width="50.5" height="41"/>
+                                                <rect key="frame" x="137" y="0.0" width="50.5" height="41"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="forward" catalog="system">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1272,6 +1280,7 @@
         <image name="google-logo" width="225" height="225"/>
         <image name="list.and.film" catalog="system" width="128" height="86"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
