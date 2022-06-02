@@ -111,8 +111,8 @@
                                     <constraint firstAttribute="trailing" secondItem="OJK-pi-HSF" secondAttribute="trailing" constant="30" id="w8e-wP-2dr"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid email or password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkZ-IE-GPz">
-                                <rect key="frame" x="24" y="716" width="366" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkZ-IE-GPz">
+                                <rect key="frame" x="24" y="716" width="366" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -690,7 +690,7 @@
         <!--Book View Controller-->
         <scene sceneID="ptZ-0H-DGB">
             <objects>
-                <viewController storyboardIdentifier="BookViewController" title="Book View Controller" modalPresentationStyle="fullScreen" id="USD-P6-RPV" customClass="BookViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookViewController" title="Book View Controller" id="USD-P6-RPV" customClass="BookViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UZz-di-8aE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

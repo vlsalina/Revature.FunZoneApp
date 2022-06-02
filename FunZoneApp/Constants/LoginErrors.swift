@@ -8,6 +8,6 @@
 import Foundation
 
 enum LoginErrors : Error {
-    case invalidEmail
-    case invalidPassword
+    case invalidLoginCredentials
+    case unknown(OSStatus)
 }

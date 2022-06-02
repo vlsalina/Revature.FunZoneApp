@@ -34,8 +34,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func login(_ sender: Any) {
         if (remember.isOn) {
-            RememberMeHelper.save(email: email.text!, password: password.text!)
+            do {
+                try validateLoginCredentials(email: email.text!, password: password.text!)
+            } catch LoginErrors.invalidLoginCredentials {
+                print("invalid login credentails")
+            } catch {
+                print(error)
+            }
         }
+            
         
         
     }

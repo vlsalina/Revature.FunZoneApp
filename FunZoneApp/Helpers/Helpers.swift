@@ -34,3 +34,15 @@ func validateIndex(action: PlaybackActions, i: inout Int, len: Int) {
         }
     }
 }
+
+func validateLoginCredentials(email: String, password: String) throws {
+    
+    guard (!email.isEmpty) else {
+        throw LoginErrors.invalidLoginCredentials
+    }
+    
+    guard (!password.isEmpty) else {
+        throw LoginErrors.invalidLoginCredentials
+    }
+    
+}
