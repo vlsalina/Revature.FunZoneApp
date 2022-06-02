@@ -927,6 +927,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kgf-M3-Nq4" id="mqD-35-xeU"/>
+                                    <outlet property="delegate" destination="Kgf-M3-Nq4" id="15Y-iE-UF8"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8yo-VO-1CY"/>

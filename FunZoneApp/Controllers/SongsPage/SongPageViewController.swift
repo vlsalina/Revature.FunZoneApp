@@ -74,7 +74,8 @@ extension SongPageViewController : UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("hello world")
+        current = songs[indexPath.row]
+        print("song changed")
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
