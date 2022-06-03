@@ -42,7 +42,6 @@ class SignUpViewController: UIViewController {
         if (status) {
             print("user successfully signed up")
             errorLabel.text = ""
-            let user = User(email: email.text!, password: password.text!)
             
         }
         
