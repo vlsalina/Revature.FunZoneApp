@@ -18,10 +18,6 @@ class WebPageViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        //        let webKitView = WKWebView()
-        //        let newUrl = URL(string: browsers[indexPath.row].link)!
-        //        webKitView.load(URLRequest(url: newUrl))
-        //        view = webKitView
         
         let webKitView = WKWebView()
         let link = page?.link
