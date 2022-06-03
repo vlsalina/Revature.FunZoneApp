@@ -9,30 +9,30 @@ import UIKit
 import WebKit
 
 class SearchViewController: UIViewController {
-
+    
     @IBOutlet weak var browserCollection: UICollectionView!
     
     var browsers = SearchBrowsers.FetchBrowsers()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         browserCollection.dataSource = self
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension SearchViewController : UICollectionViewDataSource, UICollectionViewDelegate {
@@ -50,13 +50,23 @@ extension SearchViewController : UICollectionViewDataSource, UICollectionViewDel
         return cell
     }
     
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//        let webKitView = WKWebView()
+//        let newUrl = URL(string: browsers[indexPath.row].link)!
+//        webKitView.load(URLRequest(url: newUrl))
+//        view = webKitView
+//    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let webKitView = WKWebView()
-        let newUrl = URL(string: browsers[indexPath.row].link)!
-        webKitView.load(URLRequest(url: newUrl))
-        view = webKitView
+        let storyObject = UIStoryboard(name: "Main", bundle: nil)
+        let webpageVC = storyObject.instantiateViewController(withIdentifier: "WebPageViewController") as! WebPageViewController
+        webpageVC.page = browsers[indexPath.row]
+        //bookDelegate?.cellWasClicked(book: books[indexPath.row])
+        self.present(webpageVC, animated: true, completion: nil)
     }
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
