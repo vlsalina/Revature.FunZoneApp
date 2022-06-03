@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addBorderRadius(view: &box1)
+        errorLabel.text = ""
 
         // Do any additional setup after loading the view.
     }
@@ -40,9 +41,11 @@ class SignUpViewController: UIViewController {
         
         // MARK: - add user to database code here
         if (status) {
-            print("user successfully signed up")
-            errorLabel.text = ""
+            errorLabel.text = SignupConstants.registered.rawValue
             
+            // IMPORTANT: - NEED TO HANDLE DUPLICATE ENTRY ERROR
+            DBHelperClass.dbHelper.addUser(email: email.text!, password: password.text!)
+            print("user successfully signed up")
         }
         
     }

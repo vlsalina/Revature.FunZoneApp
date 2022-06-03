@@ -19,4 +19,7 @@ let invalidLoginCredentails = "Invalid email or password"
 let unknownLoginError = "Unknown login error"
 let unknownSignUpError = "Unknown sign up error"
 let passwordsDoNotMatch = "Passwords do not match"
+let noUserFound = "No user found"
+
+
 
