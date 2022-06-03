@@ -30,6 +30,7 @@
 		6189A9702849B408003BFA7C /* DBHelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189A96F2849B408003BFA7C /* DBHelperClass.swift */; };
 		6189A9722849C156003BFA7C /* SignupErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189A9712849C156003BFA7C /* SignupErrors.swift */; };
 		6189A99C284A7F44003BFA7C /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189A99B284A7F44003BFA7C /* WebPageViewController.swift */; };
+		6189A9DF284AA712003BFA7C /* NotePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189A9DE284AA712003BFA7C /* NotePageViewController.swift */; };
 		61A38D9B2842DB6C00CABC1C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9A2842DB6C00CABC1C /* Movies.swift */; };
 		61A38D9D2842DD1A00CABC1C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */; };
 		61A38D9F2842E12000CABC1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A38D9E2842E12000CABC1C /* MoviesViewController.swift */; };
@@ -80,6 +81,7 @@
 		6189A96F2849B408003BFA7C /* DBHelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelperClass.swift; sourceTree = "<group>"; };
 		6189A9712849C156003BFA7C /* SignupErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupErrors.swift; sourceTree = "<group>"; };
 		6189A99B284A7F44003BFA7C /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		6189A9DE284AA712003BFA7C /* NotePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePageViewController.swift; sourceTree = "<group>"; };
 		61A38D9A2842DB6C00CABC1C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		61A38D9C2842DD1A00CABC1C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A38D9E2842E12000CABC1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6189A9DD284AA6FE003BFA7C /* NotePage */,
 				6189A99A284A7F2E003BFA7C /* WebPage */,
 				615DE8B928484E0A0010692A /* SearchPage */,
 				615DE8B0284834320010692A /* BookPage */,
@@ -253,6 +256,14 @@
 				6189A99B284A7F44003BFA7C /* WebPageViewController.swift */,
 			);
 			path = WebPage;
+			sourceTree = "<group>";
+		};
+		6189A9DD284AA6FE003BFA7C /* NotePage */ = {
+			isa = PBXGroup;
+			children = (
+				6189A9DE284AA712003BFA7C /* NotePageViewController.swift */,
+			);
+			path = NotePage;
 			sourceTree = "<group>";
 		};
 		61A38D992842DA9800CABC1C /* Classes */ = {
@@ -432,6 +443,7 @@
 				61A38DB22843EE2F00CABC1C /* BooksViewController.swift in Sources */,
 				615DE8B2284834500010692A /* BookViewController.swift in Sources */,
 				615DE8332847D8B20010692A /* MetaData.swift in Sources */,
+				6189A9DF284AA712003BFA7C /* NotePageViewController.swift in Sources */,
 				615DE82D2847CC050010692A /* KeychainManager.swift in Sources */,
 				615DE82F2847CCA70010692A /* RememberMeHelper.swift in Sources */,
 				61544A66283ED34C00FC70CE /* FunZoneApp.xcdatamodeld in Sources */,
