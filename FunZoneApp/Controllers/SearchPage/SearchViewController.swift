@@ -45,6 +45,7 @@ extension SearchViewController : UICollectionViewDataSource, UICollectionViewDel
         
         let browser = browsers[indexPath.row]
         cell.browser = browser
+        cell.layer.cornerRadius = 42
         
         return cell
     }
