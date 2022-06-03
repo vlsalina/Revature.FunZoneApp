@@ -40,8 +40,10 @@ class LoginViewController: UIViewController {
             try validateLoginCredentials(email: email.text!, password: password.text!)
         } catch LoginErrors.invalidLoginCredentials {
             errorLabel.text = invalidLoginCredentails
+            return
         } catch {
             errorLabel.text = unknownLoginError
+            return
         }
         
         // MARK: - implement code to check user against users database

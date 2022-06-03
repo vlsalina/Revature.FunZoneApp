@@ -8,7 +8,7 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
     @IBOutlet weak var box1: UIView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -19,7 +19,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         addBorderRadius(view: &box1)
         errorLabel.text = ""
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -27,6 +27,7 @@ class SignUpViewController: UIViewController {
         
         var status = false
         
+        // error handling
         do {
             try validateSignUpCredentials(email: email.text!, password: password.text!, confirmPassword: confirmPassword.text!)
             status = true
@@ -41,25 +42,33 @@ class SignUpViewController: UIViewController {
         
         // MARK: - add user to database code here
         if (status) {
-            errorLabel.text = SignupConstants.registered.rawValue
+            let existingUser = DBHelperClass.dbHelper.userExists(email: email.text!)
+            if (existingUser) {
+                errorLabel.text = SignupConstants.duplicateEntry.rawValue
+                return
+            } else {
+                errorLabel.text = SignupConstants.registered.rawValue
+                
+                // IMPORTANT: - NEED TO HANDLE DUPLICATE ENTRY ERROR
+                DBHelperClass.dbHelper.addUser(email: email.text!, password: password.text!)
+                print("user successfully signed up")
+            }
             
-            // IMPORTANT: - NEED TO HANDLE DUPLICATE ENTRY ERROR
-            DBHelperClass.dbHelper.addUser(email: email.text!, password: password.text!)
-            print("user successfully signed up")
+            
         }
         
     }
     
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
