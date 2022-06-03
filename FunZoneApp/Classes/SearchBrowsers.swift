@@ -21,7 +21,7 @@ class SearchBrowsers {
     static func FetchBrowsers() -> [SearchBrowsers]{
        return [
         SearchBrowsers(browser: "Google", imageBrowser: "google-logo", link: "https://www.google.com"),
-        SearchBrowsers(browser: "Google", imageBrowser: "google-logo", link: "https://www.google.com"),
+        SearchBrowsers(browser: "Firefox", imageBrowser: "firefox-logo", link: "https://www.google.com"),
         SearchBrowsers(browser: "Google", imageBrowser: "google-logo", link: "https://www.google.com"),
        ]
     }
