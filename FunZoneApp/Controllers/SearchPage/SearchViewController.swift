@@ -50,15 +50,6 @@ extension SearchViewController : UICollectionViewDataSource, UICollectionViewDel
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
-//        let webKitView = WKWebView()
-//        let newUrl = URL(string: browsers[indexPath.row].link)!
-//        webKitView.load(URLRequest(url: newUrl))
-//        view = webKitView
-//    }
-    
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyObject = UIStoryboard(name: "Main", bundle: nil)
         let webpageVC = storyObject.instantiateViewController(withIdentifier: "WebPageViewController") as! WebPageViewController
