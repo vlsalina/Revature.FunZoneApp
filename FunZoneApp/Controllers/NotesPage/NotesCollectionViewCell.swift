@@ -22,19 +22,19 @@ class NotesCollectionViewCell: UICollectionViewCell {
     func updateUI() {
         if let note = note {
             NoteTitle.text = note.title
-            NoteDescription.text = note.description
+            NoteDescription.text = note.desc
         }
     }
     
     @IBAction func deleteNote(_ sender: Any) {
         
-//        let status = DBHelperClass.dbHelper.deleteNote(title: note.title!)
-//        if (status) {
-//            print("successfully deleted note")
-//        } else {
-//            print("failed to delete note")
-//        }
-//        print("deleted note successfully")
+        let status = DBHelperClass.dbHelper.deleteNote(title: note.title!)
+        if (status) {
+            print("successfully deleted note")
+        } else {
+            print("failed to delete note")
+        }
+        print("deleted note successfully")
         
     }
 }

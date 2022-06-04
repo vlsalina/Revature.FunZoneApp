@@ -45,7 +45,6 @@ class CreateNotePageViewController: UIViewController {
         // MARK: - Submit new note
         let status = DBHelperClass.dbHelper.addNote(title: titleField.text!, description: descriptionField.text!, body: bodyField.text!)
         if (status) {
-            
             segueToVC(target: "NotesPageViewController", sender: self)
             print("Successfully added new note")
         } else {

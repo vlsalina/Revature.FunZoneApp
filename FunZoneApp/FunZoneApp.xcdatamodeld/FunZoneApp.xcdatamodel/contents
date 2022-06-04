@@ -15,7 +15,7 @@
         <attribute name="password" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="User" positionX="-2789.704040527344" positionY="-1213.143798828125" width="128" height="73"/>
         <element name="Note" positionX="-2790" positionY="-1188" width="128" height="74"/>
+        <element name="User" positionX="-2789.704040527344" positionY="-1213.143798828125" width="128" height="73"/>
     </elements>
 </model>

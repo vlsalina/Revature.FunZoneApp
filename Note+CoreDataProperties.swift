@@ -2,7 +2,7 @@
 //  Note+CoreDataProperties.swift
 //  FunZoneApp
 //
-//  Created by Vincent Salinas on 6/3/22.
+//  Created by Vincent Salinas on 6/4/22.
 //
 //
 
@@ -16,9 +16,9 @@ extension Note {
         return NSFetchRequest<Note>(entityName: "Note")
     }
 
-    @NSManaged public var title: String?
     @NSManaged public var body: String?
     @NSManaged public var desc: String?
+    @NSManaged public var title: String?
 
 }
 
