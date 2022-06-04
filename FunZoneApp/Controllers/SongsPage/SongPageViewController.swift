@@ -95,10 +95,19 @@ class SongPageViewController: UIViewController {
     }
     
     @objc func updateTime() {
+        let t = Float(audioPlayer!.currentTime) / Float(audioPlayer!.duration)
+        
         songCounter.text = audioPlayer?.currentTime.description
-        progress.progress = Float(audioPlayer!.currentTime) / Float(audioPlayer!.duration)
+        progress.progress = t
         
         songCounter.text = formatTimeFor(seconds: Double((audioPlayer?.currentTime.description)!)!)
+        
+        if (t == Float(1)) {
+            songCounter.text = "00:00"
+            playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            status = false
+        }
+        
     }
     
     /*
