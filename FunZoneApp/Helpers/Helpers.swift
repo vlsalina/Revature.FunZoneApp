@@ -18,6 +18,7 @@ enum PlaybackActions {
     case forward
 }
 
+// validate song index
 func validateIndex(action: PlaybackActions, i: inout Int, len: Int) {
     
     if (action == PlaybackActions.backward) {
@@ -35,6 +36,7 @@ func validateIndex(action: PlaybackActions, i: inout Int, len: Int) {
     }
 }
 
+// validate login credentials
 internal func validateLoginCredentials(email: String, password: String) throws {
     
     guard (!email.isEmpty) else {
@@ -47,6 +49,7 @@ internal func validateLoginCredentials(email: String, password: String) throws {
     
 }
 
+// validate signup credentials
 func validateSignUpCredentials(email: String, password: String, confirmPassword: String) throws {
     
     guard (!email.isEmpty) else {
@@ -64,5 +67,20 @@ func validateSignUpCredentials(email: String, password: String, confirmPassword:
     guard (password == confirmPassword) else {
         throw LoginErrors.passwordsDoNotMatch
     }
-   
+    
+}
+
+// validate note data
+func validateNewNoteData(title: String, description: String, body: String) throws {
+    
+    
+    guard (!title.isEmpty) else {
+        throw CreateNewNoteErrors.invalidTitle    }
+    
+    guard (!description.isEmpty) else {
+        throw CreateNewNoteErrors.invalidDescription   }
+    
+    guard (!body.isEmpty) else {
+        throw CreateNewNoteErrors.invalidBody    }
+    
 }

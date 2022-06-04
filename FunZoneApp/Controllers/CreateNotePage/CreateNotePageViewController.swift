@@ -19,7 +19,12 @@ class CreateNotePageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func viewData(_ sender: Any) {
+    }
+    
+    @IBAction func submit(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
