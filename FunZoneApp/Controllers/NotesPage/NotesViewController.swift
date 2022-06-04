@@ -11,8 +11,10 @@ class NotesViewController: UIViewController {
     
     @IBOutlet weak var NotesCollection: UICollectionView!
     
-    var notes = Notes.FetchNotes()
+    //var notes = Notes.FetchNotes()
+    var notes = DBHelperClass.dbHelper.getNotes()
     var actions = NotesActions.FetchActions()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +61,6 @@ extension NotesViewController : UICollectionViewDataSource, UICollectionViewDele
         noteVC.note = notes[indexPath.row]
         //bookDelegate?.cellWasClicked(book: books[indexPath.row])
         self.present(noteVC, animated: true, completion: nil)
-        print("hello")
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

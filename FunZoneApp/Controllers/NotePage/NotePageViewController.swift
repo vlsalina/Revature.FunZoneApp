@@ -9,7 +9,7 @@ import UIKit
 
 class NotePageViewController: UIViewController {
     
-    var note : Notes?
+    var note : Note?
 
     @IBOutlet weak var noteTableView: UITableView!
     

@@ -1194,23 +1194,23 @@
                                                             <constraints>
                                                                 <constraint firstItem="TJb-Qt-6CG" firstAttribute="leading" secondItem="9uh-ow-ECq" secondAttribute="leading" constant="10" id="Ead-Co-GtW"/>
                                                                 <constraint firstItem="i66-hi-zUy" firstAttribute="leading" secondItem="9uh-ow-ECq" secondAttribute="leading" constant="10" id="GTy-0X-hAt"/>
-                                                                <constraint firstAttribute="width" constant="266" id="V6o-i5-bsu"/>
                                                                 <constraint firstAttribute="height" constant="100" id="jno-UU-Gtg"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="YR7-K1-tHr">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIj-O4-ZOk">
                                                             <rect key="frame" x="266" y="0.0" width="100" height="100"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="100" id="Z3s-QX-i0H"/>
-                                                                <constraint firstAttribute="width" constant="100" id="boe-9I-BVx"/>
+                                                                <constraint firstAttribute="width" constant="100" id="CVP-vV-AGc"/>
+                                                                <constraint firstAttribute="height" constant="100" id="P6d-GV-6KP"/>
                                                             </constraints>
-                                                        </imageView>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="filled" image="minus" catalog="system"/>
+                                                        </button>
                                                     </subviews>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="366" id="1V9-B5-dBK"/>
                                                         <constraint firstItem="9uh-ow-ECq" firstAttribute="top" secondItem="itv-7b-JHC" secondAttribute="top" id="2BB-nr-dFf"/>
                                                         <constraint firstItem="9uh-ow-ECq" firstAttribute="top" secondItem="itv-7b-JHC" secondAttribute="top" constant="100" id="d8W-hn-XZE"/>
-                                                        <constraint firstItem="YR7-K1-tHr" firstAttribute="top" secondItem="itv-7b-JHC" secondAttribute="top" id="dAV-qf-6NF"/>
-                                                        <constraint firstAttribute="trailing" secondItem="YR7-K1-tHr" secondAttribute="trailing" id="oMo-XH-lw5"/>
                                                         <constraint firstItem="9uh-ow-ECq" firstAttribute="leading" secondItem="itv-7b-JHC" secondAttribute="leading" id="zWo-Tj-wpF"/>
                                                     </constraints>
                                                 </stackView>
@@ -1225,7 +1225,6 @@
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="NoteDescription" destination="TJb-Qt-6CG" id="Co6-gN-XN4"/>
-                                            <outlet property="NoteImageView" destination="YR7-K1-tHr" id="aqn-w8-1nj"/>
                                             <outlet property="NoteTitle" destination="i66-hi-zUy" id="xKJ-pA-m2Q"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1499,6 +1498,7 @@
         <image name="google-logo" width="225" height="225"/>
         <image name="list.and.film" catalog="system" width="128" height="86"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="minus" catalog="system" width="128" height="24"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="stop.fill" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
