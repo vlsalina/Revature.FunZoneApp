@@ -281,7 +281,7 @@
             <objects>
                 <viewController storyboardIdentifier="movies" title="Movies View Controller" modalPresentationStyle="fullScreen" id="4tb-4Y-EKa" customClass="MoviesViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BHj-Tw-vKZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SAA-ns-p5X" userLabel="Search Stack View">
@@ -557,7 +557,7 @@
                             <constraint firstItem="vQ5-Zz-c1t" firstAttribute="leading" secondItem="3NK-k1-7nd" secondAttribute="leading" constant="24" id="zME-kO-yGh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="xsn-IO-HMg">
+                    <tabBarItem key="tabBarItem" title="Movies" image="film.fill" catalog="system" id="xsn-IO-HMg">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
@@ -574,7 +574,7 @@
             <objects>
                 <viewController storyboardIdentifier="BooksViewController" title="Books View Controller" id="iYf-Rz-nA3" customClass="BooksViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wci-UJ-n2n">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pLm-Qb-bEe" userLabel="Search Stack View">
@@ -637,7 +637,7 @@
                                 </cells>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VvD-QX-mF5" userLabel="Books Collection View">
-                                <rect key="frame" x="24" y="132" width="366" height="661"/>
+                                <rect key="frame" x="24" y="132" width="366" height="627"/>
                                 <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="blf-FT-6Zo">
                                     <size key="itemSize" width="115" height="150"/>
@@ -694,7 +694,9 @@
                             <constraint firstItem="pLm-Qb-bEe" firstAttribute="top" secondItem="tpt-Bs-FTB" secondAttribute="top" constant="24" id="wAt-yk-jeG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Amb-XK-fsD"/>
+                    <tabBarItem key="tabBarItem" title="Books" image="book.fill" catalog="system" id="Amb-XK-fsD">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="BooksCollectionView" destination="VvD-QX-mF5" id="9OE-EY-X6i"/>
                         <outlet property="BooksPageActionCollectionView" destination="VGr-QU-H56" id="7Nk-Xu-Zn4"/>
@@ -854,7 +856,7 @@
             <objects>
                 <viewController title="Songs View Controller" modalPresentationStyle="fullScreen" id="Kgf-M3-Nq4" customClass="SongPageViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jra-BF-4XM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lxk-Yz-Kl1" userLabel="Search Stack View">
@@ -1020,7 +1022,7 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u5H-6u-Rz1" userLabel="Playback Bar">
-                                <rect key="frame" x="24" y="748" width="366" height="45"/>
+                                <rect key="frame" x="24" y="714" width="366" height="45"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LaU-3L-SH3">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="4"/>
@@ -1125,7 +1127,9 @@
                             <constraint firstItem="q77-J1-M6a" firstAttribute="leading" secondItem="8yo-VO-1CY" secondAttribute="leading" constant="24" id="zp4-KO-BHx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zXY-Ir-25I"/>
+                    <tabBarItem key="tabBarItem" title="Music" image="music.note" catalog="system" id="zXY-Ir-25I">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="CurrentSongImagePreview" destination="EVa-qN-3DD" id="JcE-Mx-DPo"/>
                         <outlet property="SongsPageActionCollectionView" destination="OYb-FQ-Y1g" id="ady-YX-kIC"/>
@@ -1144,7 +1148,7 @@
             <objects>
                 <viewController storyboardIdentifier="NotesPageViewController" title="Notes View Controller" modalPresentationStyle="fullScreen" id="WGY-KZ-TtU" customClass="NotesViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qvb-nR-dxB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3kK-J2-ixM" userLabel="Search Stack View">
@@ -1161,7 +1165,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w1X-na-nl2" userLabel="Notes Collection View">
-                                <rect key="frame" x="24" y="128" width="366" height="665"/>
+                                <rect key="frame" x="24" y="128" width="366" height="631"/>
                                 <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="itX-Oy-3IT">
                                     <size key="itemSize" width="366" height="100"/>
@@ -1280,7 +1284,9 @@
                             <constraint firstItem="naZ-PA-rnj" firstAttribute="trailing" secondItem="w1X-na-nl2" secondAttribute="trailing" constant="24" id="zTg-Mb-x2z"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ieV-zd-mew"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="list.bullet.circle.fill" catalog="system" id="ieV-zd-mew">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="NwO-v0-sbw"/>
                     <connections>
                         <outlet property="NotesCollection" destination="w1X-na-nl2" id="k6v-Ip-ahV"/>
@@ -1333,11 +1339,11 @@
             <objects>
                 <viewController title="Search Page View Controller" id="R3n-0I-kKd" customClass="SearchViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jm5-Of-gMb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="s7t-aW-WfW">
-                                <rect key="frame" x="24" y="24" width="366" height="769"/>
+                                <rect key="frame" x="24" y="24" width="366" height="735"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpw-Yj-vps">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="41"/>
@@ -1352,7 +1358,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ie8-9T-kVe">
-                                        <rect key="frame" x="0.0" y="112" width="366" height="657"/>
+                                        <rect key="frame" x="0.0" y="112" width="366" height="623"/>
                                         <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W6b-8Q-EWE">
                                             <size key="itemSize" width="84" height="84"/>
@@ -1431,7 +1437,9 @@
                             <constraint firstItem="s7t-aW-WfW" firstAttribute="top" secondItem="XiM-hH-hCM" secondAttribute="top" constant="24" id="nfY-Ok-3Q8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="5nH-ta-4IR"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="5nH-ta-4IR">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="browserCollection" destination="ie8-9T-kVe" id="BLw-Ej-TZa"/>
                     </connections>
@@ -1445,10 +1453,11 @@
             <objects>
                 <tabBarController modalPresentationStyle="fullScreen" id="1Fp-bp-eiu" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Tfb-W6-5ie"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7dU-0f-Kug">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="7dU-0f-Kug">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="4tb-4Y-EKa" kind="relationship" relationship="viewControllers" id="4br-hY-iAM"/>
@@ -1483,12 +1492,15 @@
         <image name="3" width="953" height="953"/>
         <image name="arrowtriangle.forward.fill" catalog="system" width="128" height="113"/>
         <image name="backward" catalog="system" width="128" height="79"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
         <image name="forward" catalog="system" width="128" height="79"/>
         <image name="google-logo" width="225" height="225"/>
         <image name="list.and.film" catalog="system" width="128" height="86"/>
+        <image name="list.bullet.circle.fill" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="minus" catalog="system" width="128" height="24"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="stop.fill" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
