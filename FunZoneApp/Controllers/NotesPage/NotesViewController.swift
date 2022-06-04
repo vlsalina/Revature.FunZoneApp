@@ -10,7 +10,6 @@ import UIKit
 class NotesViewController: UIViewController {
     
     @IBOutlet weak var NotesCollection: UICollectionView!
-    @IBOutlet weak var NotesPageActionsCollection: UICollectionView!
     
     var notes = Notes.FetchNotes()
     var actions = NotesActions.FetchActions()
@@ -21,7 +20,6 @@ class NotesViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         NotesCollection.dataSource = self
-        NotesPageActionsCollection.dataSource = self
     }
     
     
@@ -39,34 +37,19 @@ class NotesViewController: UIViewController {
 
 extension NotesViewController : UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if (collectionView == NotesCollection) {
-            return notes.count
-        } else {
-            return actions.count
-        }
+        return notes.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if (collectionView == NotesCollection) {
-            let cell = NotesCollection.dequeueReusableCell(withReuseIdentifier: "noteCell", for: indexPath) as! NotesCollectionViewCell
-            
-            let note = notes[indexPath.row]
-            cell.note = note
-            cell.layer.cornerRadius = 5
-            
-            return cell
-            
-        } else {
-            
-            let cell = NotesPageActionsCollection.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! NotesPageActionCollectionViewCell
-            
-            let action = actions[indexPath.row]
-            cell.action = action
-            
-            return cell
-            
-        }
+        let cell = NotesCollection.dequeueReusableCell(withReuseIdentifier: "noteCell", for: indexPath) as! NotesCollectionViewCell
+        
+        let note = notes[indexPath.row]
+        cell.note = note
+        cell.layer.cornerRadius = 5
+        
+        return cell
+        
         
     }
     
