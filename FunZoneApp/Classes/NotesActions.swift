@@ -10,6 +10,7 @@ import UIKit
 class NotesActions {
     
    var actionType = ""
+   
     
    init(actionType: String) {
        self.actionType = actionType
