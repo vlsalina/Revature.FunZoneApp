@@ -31,8 +31,16 @@ class DBHelperClass {
         }
     }
     
-    func addNote(title: String, description: String, body: String) {
+    func addNote(title: String, description: String, body: String) -> Bool {
         
+        var status = false
+        
+        // check if note with same title already exists
+        if (DBHelperClass.dbHelper.getNote(title: title)) {
+            return status
+        }
+        
+        // create new note
         let note = NSEntityDescription.insertNewObject(forEntityName: "Note", into: context!) as! Note
         
         note.title = title
@@ -41,11 +49,15 @@ class DBHelperClass {
         
         do {
             try context?.save()
+            status = true
             print("data saved successfully")
+            
         } catch {
             print("data save unsuccessful")
             print(error.localizedDescription)
         }
+        
+        return status
     }
     
     //    func viewData() -> [Student] {
@@ -81,6 +93,27 @@ class DBHelperClass {
         
         return user
     }
+    
+    func getNote(title: String) -> Bool {
+        var status = false
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        fetchRequest.predicate = NSPredicate(format: "title == %@", title)
+        
+        fetchRequest.fetchLimit = 1
+        do {
+            let request = try context?.fetch(fetchRequest) as! [Note]
+            if (request.count != 0) {
+                status = true
+            }
+        } catch {
+            print("Error detected trying to get note")
+        }
+        
+        return status
+    }
+    
+    
     
     func getNotes() -> [Note] {
         var notes = [Note]()

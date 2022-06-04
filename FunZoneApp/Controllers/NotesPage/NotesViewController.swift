@@ -22,10 +22,9 @@ class NotesViewController: UIViewController {
         NotesCollection.dataSource = self
     }
     
-    public func reloadNotes() {
-        print("checking 1 2 3")
+    func reloadNotes() {
+        NotesCollection.reloadData()
     }
-    
     
     /*
      // MARK: - Navigation

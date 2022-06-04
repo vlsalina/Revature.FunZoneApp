@@ -27,7 +27,7 @@ class NotePageViewController: UIViewController {
     func initialize() {
         noteContents = [note?.title, note?.description, note?.body]
     }
-
+    
     /*
     // MARK: - Navigation
 
