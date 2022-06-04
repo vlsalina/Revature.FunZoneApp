@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 // for login credentials data persistence
@@ -83,4 +84,11 @@ func validateNewNoteData(title: String, description: String, body: String) throw
     guard (!body.isEmpty) else {
         throw CreateNewNoteErrors.invalidBody    }
     
+}
+
+// segue helper
+func segueToVC(target: String, sender: AnyObject) {
+    let storyObject = UIStoryboard(name: "Main", bundle: nil)
+    let targetVC = storyObject.instantiateViewController(withIdentifier: target)
+    sender.present(targetVC, animated: true, completion: nil)
 }
