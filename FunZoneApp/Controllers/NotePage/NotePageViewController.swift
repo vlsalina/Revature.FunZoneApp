@@ -11,24 +11,22 @@ class NotePageViewController: UIViewController {
     
     var note : Notes?
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var bodyLabel: UILabel!
+    @IBOutlet weak var noteTableView: UITableView!
+    
+    var noteContents = [String?]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        noteTableView.dataSource = self
         initialize()
+        
     }
     
     func initialize() {
-        titleLabel.text = note?.title
-        dateLabel.text = "6-3-2022"
-        bodyLabel.text = note?.body
-        bodyLabel.sizeToFit()
+        noteContents = [note?.title, note?.description, note?.body]
     }
-    
 
     /*
     // MARK: - Navigation
@@ -40,4 +38,23 @@ class NotePageViewController: UIViewController {
     }
     */
 
+}
+
+extension NotePageViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return noteContents.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = noteTableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath)
+        
+        cell.textLabel?.text = noteContents[indexPath.row]
+        cell.textLabel?.numberOfLines  = 0
+        cell.textLabel?.textColor = UIColor.white
+        
+        return cell
+        
+    }
+    
+    
 }
