@@ -8,7 +8,11 @@
 import UIKit
 
 class CreateNotePageViewController: UIViewController {
-
+    
+    @IBOutlet weak var titleField: UITextView!
+    @IBOutlet weak var descriptionField: UITextView!
+    @IBOutlet weak var bodyField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
