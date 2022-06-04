@@ -29,7 +29,6 @@ class NotesCollectionViewCell: UICollectionViewCell {
     @IBAction func deleteNote(_ sender: Any) {
         
         let status = DBHelperClass.dbHelper.deleteNote(title: note.title!)
-        
         if (status) {
             print("successfully deleted note")
         } else {
