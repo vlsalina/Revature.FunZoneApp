@@ -738,7 +738,7 @@
                                             <constraint firstAttribute="width" constant="366" id="Yag-MZ-1TL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter title here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qCH-Mg-boE">
@@ -762,7 +762,7 @@
                                             <constraint firstAttribute="width" constant="366" id="wSc-3v-HG6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter description here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gX7-gU-PYA">
@@ -786,7 +786,7 @@
                                             <constraint firstAttribute="width" constant="366" id="ubR-ql-yZ9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter note here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Bk-dw-AUu">
@@ -803,7 +803,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1m7-q8-zhc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="aap-ye-fc9" firstAttribute="leading" secondItem="1m7-q8-zhc" secondAttribute="leading" constant="24" id="7tb-ya-K7k"/>
                             <constraint firstItem="aap-ye-fc9" firstAttribute="top" secondItem="vw9-hR-J9J" secondAttribute="bottom" constant="24" id="MQS-q0-uLZ"/>
