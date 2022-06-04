@@ -92,3 +92,10 @@ func segueToVC(target: String, sender: AnyObject) {
     let targetVC = storyObject.instantiateViewController(withIdentifier: target)
     sender.present(targetVC, animated: true, completion: nil)
 }
+
+// get target VC
+func getTarget(target: String) -> AnyObject {
+     let storyObject = UIStoryboard(name: "Main", bundle: nil)
+    let targetVC = storyObject.instantiateViewController(withIdentifier: target)
+    return targetVC
+}

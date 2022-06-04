@@ -11,10 +11,8 @@ class NotesViewController: UIViewController {
     
     @IBOutlet weak var NotesCollection: UICollectionView!
     
-    //var notes = Notes.FetchNotes()
     var notes = DBHelperClass.dbHelper.getNotes()
     var actions = NotesActions.FetchActions()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +20,10 @@ class NotesViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         NotesCollection.dataSource = self
+    }
+    
+    public func reloadNotes() {
+        print("checking 1 2 3")
     }
     
     

@@ -725,11 +725,11 @@
             <objects>
                 <viewController title="Create Note Page View Controller" modalPresentationStyle="fullScreen" id="tiW-dp-gqr" customClass="CreateNotePageViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lWE-j0-kXV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="PtK-Eu-lzU" userLabel="Title View">
-                                <rect key="frame" x="24" y="80" width="366" height="67.5"/>
+                                <rect key="frame" x="24" y="68" width="366" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-W0-pVN">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
@@ -754,7 +754,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="vw9-hR-J9J" userLabel="Description View">
-                                <rect key="frame" x="24" y="171.5" width="366" height="93.5"/>
+                                <rect key="frame" x="24" y="159.5" width="366" height="93.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVq-M1-JKn">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
@@ -778,7 +778,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="aap-ye-fc9" userLabel="Body View">
-                                <rect key="frame" x="24" y="289" width="366" height="469"/>
+                                <rect key="frame" x="24" y="277" width="366" height="530"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA4-at-mHr" userLabel="Body">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
@@ -790,7 +790,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter note here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Bk-dw-AUu">
-                                        <rect key="frame" x="0.0" y="27.5" width="366" height="441.5"/>
+                                        <rect key="frame" x="0.0" y="27.5" width="366" height="502.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -799,7 +799,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8h-7G-dsa" userLabel="Action Bar">
-                                <rect key="frame" x="250" y="782" width="140" height="31"/>
+                                <rect key="frame" x="250" y="831" width="140" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egp-aA-ymx">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
@@ -1143,7 +1143,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3kK-J2-ixM" userLabel="Search Stack View">
-                                <rect key="frame" x="24" y="80" width="366" height="34"/>
+                                <rect key="frame" x="24" y="24" width="366" height="34"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7je-QS-Kze">
                                         <rect key="frame" x="0.0" y="0.5" width="20.5" height="32.5"/>
@@ -1156,7 +1156,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w1X-na-nl2" userLabel="Notes Collection View">
-                                <rect key="frame" x="24" y="184" width="366" height="629"/>
+                                <rect key="frame" x="24" y="128" width="366" height="665"/>
                                 <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="itX-Oy-3IT">
                                     <size key="itemSize" width="366" height="100"/>
@@ -1238,7 +1238,7 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OB9-fP-hhl" userLabel="Action Bar">
-                                <rect key="frame" x="24" y="129" width="166" height="31"/>
+                                <rect key="frame" x="24" y="73" width="166" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k12-5r-yeK">
                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="31"/>
@@ -1275,6 +1275,7 @@
                             <constraint firstItem="naZ-PA-rnj" firstAttribute="trailing" secondItem="w1X-na-nl2" secondAttribute="trailing" constant="24" id="zTg-Mb-x2z"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ieV-zd-mew"/>
                     <navigationItem key="navigationItem" id="NwO-v0-sbw"/>
                     <connections>
                         <outlet property="NotesCollection" destination="w1X-na-nl2" id="k6v-Ip-ahV"/>
@@ -1448,8 +1449,8 @@
                         <segue destination="4tb-4Y-EKa" kind="relationship" relationship="viewControllers" id="4br-hY-iAM"/>
                         <segue destination="iYf-Rz-nA3" kind="relationship" relationship="viewControllers" id="292-8J-CK5"/>
                         <segue destination="Kgf-M3-Nq4" kind="relationship" relationship="viewControllers" id="D3l-rj-wy7"/>
-                        <segue destination="8jP-BQ-XUK" kind="relationship" relationship="viewControllers" id="i7Y-mE-NeW"/>
                         <segue destination="R3n-0I-kKd" kind="relationship" relationship="viewControllers" id="sPx-GY-iDg"/>
+                        <segue destination="WGY-KZ-TtU" kind="relationship" relationship="viewControllers" id="xKj-rn-v7s"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGo-7j-Avq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1470,25 +1471,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uya-Eh-nX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4089.8550724637685" y="1621.875"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="2ja-BL-b4c">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8jP-BQ-XUK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9uu-o8-mxh"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z5a-io-uqn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="WGY-KZ-TtU" kind="relationship" relationship="rootViewController" id="45P-Py-uXC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N7e-2J-lhc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3044.9275362318845" y="853.79464285714278"/>
         </scene>
     </scenes>
     <resources>

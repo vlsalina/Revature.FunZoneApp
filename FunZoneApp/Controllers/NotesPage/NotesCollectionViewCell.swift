@@ -34,7 +34,7 @@ class NotesCollectionViewCell: UICollectionViewCell {
         } else {
             print("failed to delete note")
         }
-        
         print("deleted note successfully")
+        
     }
 }
