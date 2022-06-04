@@ -723,13 +723,13 @@
         <!--Create Note Page View Controller-->
         <scene sceneID="C75-BY-lw9">
             <objects>
-                <viewController title="Create Note Page View Controller" id="tiW-dp-gqr" customClass="CreateNotePageViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Create Note Page View Controller" modalPresentationStyle="fullScreen" id="tiW-dp-gqr" customClass="CreateNotePageViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lWE-j0-kXV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="PtK-Eu-lzU" userLabel="Title View">
-                                <rect key="frame" x="24" y="68" width="366" height="55.5"/>
+                                <rect key="frame" x="24" y="80" width="366" height="55.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-W0-pVN">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
@@ -754,7 +754,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="vw9-hR-J9J" userLabel="Description View">
-                                <rect key="frame" x="24" y="147.5" width="366" height="93.5"/>
+                                <rect key="frame" x="24" y="159.5" width="366" height="93.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVq-M1-JKn">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
@@ -778,7 +778,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="aap-ye-fc9" userLabel="Body View">
-                                <rect key="frame" x="24" y="265" width="366" height="553.5"/>
+                                <rect key="frame" x="24" y="277" width="366" height="553.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA4-at-mHr" userLabel="Body">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
@@ -815,6 +815,7 @@
                             <constraint firstItem="vw9-hR-J9J" firstAttribute="top" secondItem="PtK-Eu-lzU" secondAttribute="bottom" constant="24" id="vZj-r8-gJO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nmS-wY-ZEc"/>
                     <connections>
                         <outlet property="bodyField" destination="4Bk-dw-AUu" id="xHP-xD-82L"/>
                         <outlet property="descriptionField" destination="gX7-gU-PYA" id="X7S-NJ-3G1"/>
@@ -1221,6 +1222,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system"/>
+                                        <connections>
+                                            <segue destination="tiW-dp-gqr" kind="show" id="vit-vS-ihN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn7-16-G1z">
                                         <rect key="frame" x="48.5" y="0.0" width="40.5" height="31"/>
@@ -1465,9 +1469,6 @@
             <point key="canvasLocation" x="3044.9275362318845" y="853.79464285714278"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="lk7-NA-zpX"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="1280" height="618"/>
         <image name="3" width="953" height="953"/>
