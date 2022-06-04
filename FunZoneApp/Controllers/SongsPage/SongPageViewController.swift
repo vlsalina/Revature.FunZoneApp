@@ -14,6 +14,8 @@ class SongPageViewController: UIViewController {
     @IBOutlet weak var SongsPageActionCollectionView: UICollectionView!
     @IBOutlet weak var CurrentSongImagePreview: UIImageView!
     @IBOutlet weak var playbackBTN: UIButton!
+    @IBOutlet weak var progress: UIProgressView!
+    @IBOutlet weak var songCounter: UILabel!
     
     var songs = Songs.FetchSongs()
     var actions = SongsActions.FetchActions()
@@ -21,10 +23,11 @@ class SongPageViewController: UIViewController {
     var index : Int = 0
     var audioPlayer : AVAudioPlayer?
     var status : Bool = false
+    var timer : Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         CurrentSongImagePreview.layer.cornerRadius = 15
@@ -56,6 +59,9 @@ class SongPageViewController: UIViewController {
             audioPlayer?.play()
             playbackBTN.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             status = true
+            
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+            
         } else {
             audioPlayer?.pause()
             playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
@@ -88,33 +94,23 @@ class SongPageViewController: UIViewController {
         print(index)
     }
     
-//    func validateIndex(action: String, i: inout Int, len: Int) {
-//
-//        if (action == "backward") {
-//            if (i == 0) {
-//                i = 0
-//            } else {
-//                i = i-1
-//            }
-//        } else {
-//            if (i == len-1) {
-//                i = len-1
-//            } else {
-//                i = i+1
-//            }
-//        }
-//    }
+    @objc func updateTime() {
+        songCounter.text = audioPlayer?.currentTime.description
+        progress.progress = Float(audioPlayer!.currentTime) / Float(audioPlayer!.duration)
+        
+        songCounter.text = formatTimeFor(seconds: Double((audioPlayer?.currentTime.description)!)!)
+    }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension SongPageViewController : UICollectionViewDataSource, UICollectionViewDelegate {
@@ -131,22 +127,22 @@ extension SongPageViewController : UICollectionViewDataSource, UICollectionViewD
         
         
         if (collectionView == songCollectionView) {
-        let cell = songCollectionView.dequeueReusableCell(withReuseIdentifier: "songCell", for: indexPath) as! SongCollectionViewCell
-        
-        let song = songs[indexPath.row]
+            let cell = songCollectionView.dequeueReusableCell(withReuseIdentifier: "songCell", for: indexPath) as! SongCollectionViewCell
+            
+            let song = songs[indexPath.row]
             cell.layer.cornerRadius = 5
             
-        cell.song = song
-        
-        return cell
+            cell.song = song
+            
+            return cell
         } else {
-         let cell = SongsPageActionCollectionView.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! SongPageActionButtonCollectionViewCell
-        
+            let cell = SongsPageActionCollectionView.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! SongPageActionButtonCollectionViewCell
+            
             let action = actions[indexPath.row]
             cell.action = action
             
-        return cell
-           
+            return cell
+            
         }
     }
     
