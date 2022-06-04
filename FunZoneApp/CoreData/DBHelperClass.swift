@@ -31,6 +31,23 @@ class DBHelperClass {
         }
     }
     
+    func addNote(title: String, description: String, body: String) {
+        
+        let note = NSEntityDescription.insertNewObject(forEntityName: "Note", into: context!) as! Note
+        
+        note.title = title
+        note.desc = description
+        note.body = body
+        
+        do {
+            try context?.save()
+            print("data saved successfully")
+        } catch {
+            print("data save unsuccessful")
+            print(error.localizedDescription)
+        }
+    }
+    
     //    func viewData() -> [Student] {
     //        var student = [Student]()
     //
@@ -65,6 +82,22 @@ class DBHelperClass {
         return user
     }
     
+    func getNotes() -> [Note] {
+        var notes = [Note]()
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        
+        do {
+            notes = try context?.fetch(fetchRequest) as! [Note]
+        } catch {
+            print("can not fetch data")
+        }
+        
+        return notes
+        
+    }
+    
+    
     
     func userExists(email: String) -> Bool {
         
@@ -77,7 +110,7 @@ class DBHelperClass {
         do {
             let request = try context?.fetch(fetchRequest) as! [User]
             if (request.count != 0) {
-//                user = request.first!
+                //                user = request.first!
                 status = true
             } else {
                 print("No student found")
@@ -109,7 +142,7 @@ class DBHelperClass {
     //        }
     //    }
     
-    func deletData(email: String) {
+    func deleteUser(email: String) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         fetchRequest.predicate = NSPredicate(format: "email == %@", email)
         do {
@@ -121,6 +154,20 @@ class DBHelperClass {
             print("Error detected")
         }
     }
+    
+    func deleteNote(title: String) {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        fetchRequest.predicate = NSPredicate(format: "title == %@", title)
+        do {
+            let note = try context?.fetch(fetchRequest)
+            context?.delete(note?.first as! Note)
+            try context?.save()
+            print("Delete successful")
+        } catch {
+            print("Error detected")
+        }
+    }
+
     
     //    func addCollegeData(title: String) {
     //        let college = NSEntityDescription.insertNewObject(forEntityName: "College", into: context!) as! College
