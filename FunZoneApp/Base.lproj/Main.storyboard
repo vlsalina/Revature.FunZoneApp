@@ -1205,6 +1205,9 @@
                                                             </constraints>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="filled" image="minus" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="deleteNote:" destination="iY3-sc-gRK" eventType="touchUpInside" id="hEb-ME-c0K"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>

@@ -19,10 +19,10 @@ class CreateNotePageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    @IBAction func viewData(_ sender: Any) {
-//        let notes = DBHelperClass.dbHelper.getNotes()
-//        print(notes.count)
-//    }
+    @IBAction func viewData(_ sender: Any) {
+        let notes = DBHelperClass.dbHelper.getNotes()
+        print(notes.count)
+    }
     
     
     @IBAction func submit(_ sender: Any) {

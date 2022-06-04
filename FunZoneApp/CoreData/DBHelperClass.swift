@@ -155,19 +155,27 @@ class DBHelperClass {
         }
     }
     
-    func deleteNote(title: String) {
+    func deleteNote(title: String) -> Bool {
+        var status = false
+        
+        
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
         fetchRequest.predicate = NSPredicate(format: "title == %@", title)
+        
         do {
-            let note = try context?.fetch(fetchRequest)
-            context?.delete(note?.first as! Note)
-            try context?.save()
-            print("Delete successful")
+            let notes = try context?.fetch(fetchRequest) as! [Note]
+            if (notes.count != 0 ) {
+                context?.delete(notes.first!)
+                try context?.save()
+                status = true
+            }
         } catch {
-            print("Error detected")
+            print(error)
         }
+        
+        return status
     }
-
+    
     
     //    func addCollegeData(title: String) {
     //        let college = NSEntityDescription.insertNewObject(forEntityName: "College", into: context!) as! College
