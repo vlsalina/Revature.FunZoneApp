@@ -17,4 +17,5 @@ enum CreateNewNoteConstants : String {
     case invalidTitle = "Invalid title"
     case invalidDescription = "Invalid description"
     case invalidBody = "Invalid body"
+    case unknownError = "Unknown error occurred"
 }

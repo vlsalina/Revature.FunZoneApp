@@ -814,7 +814,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit"/>
                                         <connections>
-                                            <action selector="submit:" destination="tiW-dp-gqr" eventType="touchUpInside" id="OhO-OP-vjX"/>
+                                            <action selector="submit:" destination="tiW-dp-gqr" eventType="touchUpInside" id="a0M-82-YX6"/>
                                         </connections>
                                     </button>
                                 </subviews>

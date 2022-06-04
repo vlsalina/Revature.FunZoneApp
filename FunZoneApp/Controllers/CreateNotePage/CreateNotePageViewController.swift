@@ -15,24 +15,42 @@ class CreateNotePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func viewData(_ sender: Any) {
     }
     
+    
     @IBAction func submit(_ sender: Any) {
+        do {
+            try validateNewNoteData(title: titleField.text!, description: descriptionField.text!, body: bodyField.text!)
+        } catch CreateNewNoteErrors.invalidTitle {
+            print(CreateNewNoteConstants.invalidTitle.rawValue)
+            return
+        } catch CreateNewNoteErrors.invalidDescription {
+            print(CreateNewNoteConstants.invalidDescription.rawValue)
+            return
+        } catch CreateNewNoteErrors.invalidBody {
+            print(CreateNewNoteConstants.invalidBody.rawValue)
+            return
+        } catch {
+            print(CreateNewNoteConstants.unknownError.rawValue)
+            return
+        }
+        
+        print("Successfully added new note")
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
