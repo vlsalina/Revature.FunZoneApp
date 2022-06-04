@@ -22,10 +22,6 @@ class NotesViewController: UIViewController {
         NotesCollection.dataSource = self
     }
     
-    func reloadNotes() {
-        NotesCollection.reloadData()
-    }
-    
     /*
      // MARK: - Navigation
      
