@@ -14,7 +14,8 @@ class NotePageViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var bodyField: UITextView!
     @IBOutlet weak var titleLabel: UILabel!
-    
+    @IBOutlet weak var imageView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +27,7 @@ class NotePageViewController: UIViewController {
         titleLabel.text = note?.title
         descriptionLabel.text = note?.desc
         bodyField.text = note?.body
+        imageView.image = UIImage(named: "1")
     }
     
     @IBAction func deleteNote(_ sender: Any) {
