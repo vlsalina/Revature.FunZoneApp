@@ -1360,6 +1360,118 @@
             </objects>
             <point key="canvasLocation" x="3044.9275362318845" y="1621.875"/>
         </scene>
+        <!--Edit Note Page View Controller-->
+        <scene sceneID="V9t-2k-bSx">
+            <objects>
+                <viewController title="Edit Note Page View Controller" id="RYe-in-0xS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wbz-gk-L89">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="KJi-sc-Dcq" userLabel="Title View">
+                                <rect key="frame" x="24" y="68" width="366" height="67.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ua-CJ-c2f">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="366" id="feL-SE-RrN"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="366" id="sFt-vn-ydN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter title here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nLG-cu-ApS">
+                                        <rect key="frame" x="0.0" y="27.5" width="366" height="40"/>
+                                        <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Hmh-rs-xmx"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="zb6-EF-QcP"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bfs-vo-yQn" userLabel="Description View">
+                                <rect key="frame" x="24" y="159.5" width="366" height="93.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfJ-MI-JCH">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="366" id="NSK-9x-m69"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter description here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E4b-7J-thR">
+                                        <rect key="frame" x="0.0" y="27.5" width="366" height="66"/>
+                                        <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93.5" id="RBk-wm-M7r"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ygM-4z-xfv" userLabel="Body View">
+                                <rect key="frame" x="24" y="277" width="366" height="427.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7K-Kp-PGV" userLabel="Body">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="366" id="cHP-fE-3Lh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter note here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G4g-62-spt">
+                                        <rect key="frame" x="0.0" y="27.5" width="366" height="400"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="qye-jQ-Zgn"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-jn-dI0" userLabel="Action Bar">
+                                <rect key="frame" x="320" y="743" width="70" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfY-gB-xdd">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                        <connections>
+                                            <action selector="submit:" destination="tiW-dp-gqr" eventType="touchUpInside" id="Uet-RO-9XW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LqD-Oc-e4T"/>
+                        <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="KJi-sc-Dcq" firstAttribute="top" secondItem="LqD-Oc-e4T" secondAttribute="top" constant="24" id="fv4-x2-Lp8"/>
+                            <constraint firstItem="Sss-jn-dI0" firstAttribute="top" secondItem="ygM-4z-xfv" secondAttribute="bottom" constant="38.5" id="iHA-3G-FX1"/>
+                            <constraint firstItem="ygM-4z-xfv" firstAttribute="top" secondItem="bfs-vo-yQn" secondAttribute="bottom" constant="24" id="kaa-ES-SrE"/>
+                            <constraint firstItem="bfs-vo-yQn" firstAttribute="top" secondItem="KJi-sc-Dcq" secondAttribute="bottom" constant="24" id="rKZ-K9-3a1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXH-Ro-9bB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3045" y="2363"/>
+        </scene>
         <!--Search Page View Controller-->
         <scene sceneID="uE7-eA-blj">
             <objects>
