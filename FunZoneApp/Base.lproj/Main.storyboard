@@ -1335,7 +1335,7 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RXP-Zk-geO">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RXP-Zk-geO">
                                         <rect key="frame" x="0.0" y="97" width="366" height="605"/>
                                         <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -1353,10 +1353,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="glN-e6-Tj2">
-                                <rect key="frame" x="245" y="807" width="145" height="31"/>
+                                <rect key="frame" x="188" y="807" width="202" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTZ-ts-PX3">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Delete"/>
                                         <connections>
@@ -1364,9 +1364,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qms-aV-hko">
-                                        <rect key="frame" x="75" y="0.0" width="70" height="31"/>
+                                        <rect key="frame" x="103.5" y="0.0" width="98.5" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Submit Edit"/>
                                         <connections>
                                             <action selector="submitNote:" destination="szq-yx-xGh" eventType="touchUpInside" id="dWj-tm-4Lu"/>
                                         </connections>

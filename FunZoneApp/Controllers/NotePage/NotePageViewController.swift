@@ -40,6 +40,24 @@ class NotePageViewController: UIViewController {
     }
     
     @IBAction func submitNote(_ sender: Any) {
+        do {
+            try validateNewNoteData(title: (note?.title)!, description: (note?.desc)!, body: bodyField.text!)
+        } catch CreateNewNoteErrors.invalidTitle {
+            print(CreateNewNoteConstants.invalidTitle.rawValue)
+            return
+        } catch CreateNewNoteErrors.invalidDescription {
+            print(CreateNewNoteConstants.invalidDescription.rawValue)
+            return
+        } catch CreateNewNoteErrors.invalidBody {
+            print(CreateNewNoteConstants.invalidBody.rawValue)
+            return
+        } catch {
+            print(CreateNewNoteConstants.unknownError.rawValue)
+            return
+        }
+        
+        // MARK: - Submit new note
+        print("Edit submitted!")
     }
     
     //    @IBAction func deleteNote(_ sender: Any) {
