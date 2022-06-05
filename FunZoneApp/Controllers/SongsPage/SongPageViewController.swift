@@ -79,6 +79,7 @@ class SongPageViewController: UIViewController {
     @IBAction func previous(_ sender: Any) {
         audioPlayer?.stop()
         audioPlayer?.currentTime = 0
+        songCounter.text = "00:00"
         status = false
         playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         validateIndex(action: PlaybackActions.backward, i: &index, len: songs.count)
@@ -88,6 +89,7 @@ class SongPageViewController: UIViewController {
     @IBAction func next(_ sender: Any) {
         audioPlayer?.stop()
         audioPlayer?.currentTime = 0
+        songCounter.text = "00:00"
         status = false
         playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         validateIndex(action: PlaybackActions.forward, i: &index, len: songs.count)
