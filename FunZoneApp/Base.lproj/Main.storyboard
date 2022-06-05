@@ -1309,7 +1309,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="kHE-4H-Tsg">
-                                <rect key="frame" x="24" y="68" width="366" height="739"/>
+                                <rect key="frame" x="24" y="68" width="366" height="702"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxf-2A-k3G">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="30"/>
@@ -1335,9 +1335,12 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RXP-Zk-geO">
-                                        <rect key="frame" x="0.0" y="97" width="366" height="642"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RXP-Zk-geO">
+                                        <rect key="frame" x="0.0" y="97" width="366" height="605"/>
                                         <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="605" id="L7m-Dn-E7H"/>
+                                        </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1349,14 +1352,36 @@
                                     <constraint firstItem="RXP-Zk-geO" firstAttribute="top" secondItem="lVB-m8-bMj" secondAttribute="bottom" constant="24" id="VvN-JT-gfE"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="glN-e6-Tj2">
+                                <rect key="frame" x="245" y="807" width="145" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTZ-ts-PX3">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qms-aV-hko">
+                                        <rect key="frame" x="75" y="0.0" width="70" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RJ5-q4-1Df"/>
                         <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="RJ5-q4-1Df" firstAttribute="trailing" secondItem="glN-e6-Tj2" secondAttribute="trailing" constant="24" id="42l-p1-mNL"/>
                             <constraint firstItem="kHE-4H-Tsg" firstAttribute="leading" secondItem="RJ5-q4-1Df" secondAttribute="leading" constant="24" id="Wxl-BN-cX0"/>
+                            <constraint firstItem="RJ5-q4-1Df" firstAttribute="bottom" secondItem="glN-e6-Tj2" secondAttribute="bottom" constant="24" id="fJg-Cd-8zB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DxR-Oz-Zbi"/>
+                    <connections>
+                        <outlet property="bodyField" destination="RXP-Zk-geO" id="QiE-eZ-wDC"/>
+                        <outlet property="descriptionLabel" destination="lVB-m8-bMj" id="Yag-SH-5HQ"/>
+                        <outlet property="titleLabel" destination="Hxf-2A-k3G" id="duk-Lq-Q9c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5z-Mx-rDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,10 +11,9 @@ class NotePageViewController: UIViewController {
     
     var note : Note?
     
-    @IBOutlet weak var noteTableView: UITableView!
-    
-    var noteContents = [String?]()
-    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var bodyField: UITextView!
+    @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
