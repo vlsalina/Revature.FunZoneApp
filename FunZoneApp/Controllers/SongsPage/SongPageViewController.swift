@@ -111,7 +111,6 @@ class SongPageViewController: UIViewController {
         songLabel.text = current?.songTitle
         
         playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
-        print(index)
     }
     
     @IBAction func next(_ sender: Any) {
@@ -209,7 +208,6 @@ extension SongPageViewController : UICollectionViewDataSource, UICollectionViewD
         playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         index = indexPath.row
         setMusic()
-        print("song changed")
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
