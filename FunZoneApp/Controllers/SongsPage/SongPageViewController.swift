@@ -16,6 +16,8 @@ class SongPageViewController: UIViewController {
     @IBOutlet weak var playbackBTN: UIButton!
     @IBOutlet weak var progress: UIProgressView!
     @IBOutlet weak var songCounter: UILabel!
+    @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var songLabel: UILabel!
     
     var songs = Songs.FetchSongs()
     var actions = SongsActions.FetchActions()
@@ -158,7 +160,12 @@ extension SongPageViewController : UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        current = songs[indexPath.row]
+        let song = songs[indexPath.row]
+        
+        current = song
+        CurrentSongImagePreview.image = song.imageSong
+        artistLabel.text = song.artist
+        songLabel.text = song.songTitle
         index = indexPath.row
         print("song changed")
     }
