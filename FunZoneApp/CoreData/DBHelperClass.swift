@@ -175,7 +175,7 @@ class DBHelperClass {
     //        }
     //    }
     
-    func updateData(title: String, body: String) -> Bool {
+    func updateNote(title: String, body: String) -> Bool {
         var status = false
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")

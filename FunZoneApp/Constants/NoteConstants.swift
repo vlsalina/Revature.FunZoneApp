@@ -19,3 +19,13 @@ enum CreateNewNoteConstants : String {
     case invalidBody = "Invalid body"
     case unknownError = "Unknown error occurred"
 }
+
+enum EditNoteErrors : Error {
+    case unknownErr
+}
+
+enum EditNoteConstants : String {
+    case successEdit = "Successfully edited note"
+    case unknownErr = "Failed to edit note"
+}
+

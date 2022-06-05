@@ -57,7 +57,13 @@ class NotePageViewController: UIViewController {
         }
         
         // MARK: - Submit new note
-        print("Edit submitted!")
+        let status = DBHelperClass.dbHelper.updateNote(title: (note?.title)!, body: bodyField.text!)
+        if (status) {
+            print(EditNoteConstants.successEdit.rawValue)
+            segueToVC(target: "NotesPageViewController", sender: self)
+        } else {
+            print(EditNoteConstants.unknownErr.rawValue)
+        }
     }
     
     //    @IBAction func deleteNote(_ sender: Any) {
