@@ -28,17 +28,25 @@ class NotePageViewController: UIViewController {
         noteContents = [note?.title, note?.desc, note?.body]
     }
     
-    @IBAction func deleteNote(_ sender: Any) {
-        let status = DBHelperClass.dbHelper.deleteNote(title: note!.title!)
-        if (status) {
-            segueToVC(target: "NotesPageViewController", sender: self)
-            print("successfully deleted note")
-        } else {
-            print("failed to delete note")
-        }
-        print("deleted note successfully")
-        
+    @IBAction func editNote(_ sender: Any) {
+        let editNoteVC = getTarget(target: "EditNotePageViewController") as! EditNotePageViewController
+        editNoteVC.note = note
+        segueToVC(target: "EditNotePageViewController", sender: self)
     }
+    
+    //    @IBAction func deleteNote(_ sender: Any) {
+//        let status = DBHelperClass.dbHelper.deleteNote(title: note!.title!)
+//        if (status) {
+//            segueToVC(target: "NotesPageViewController", sender: self)
+//            print("successfully deleted note")
+//        } else {
+//            print("failed to delete note")
+//        }
+//        print("deleted note successfully")
+//
+//    }
+    
+    
     /*
      // MARK: - Navigation
      

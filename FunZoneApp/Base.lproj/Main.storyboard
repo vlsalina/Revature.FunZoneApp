@@ -1329,14 +1329,14 @@
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lqy-Qw-nXu">
-                                <rect key="frame" x="324" y="44" width="66" height="31"/>
+                                <rect key="frame" x="341" y="44" width="49" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHQ-lR-bLH">
-                                        <rect key="frame" x="0.0" y="0.0" width="66" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Edit"/>
                                         <connections>
-                                            <action selector="deleteNote:" destination="szq-yx-xGh" eventType="touchUpInside" id="1YG-BR-0CZ"/>
+                                            <action selector="editNote:" destination="szq-yx-xGh" eventType="touchUpInside" id="Xui-ib-F7A"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1363,7 +1363,7 @@
         <!--Edit Note Page View Controller-->
         <scene sceneID="V9t-2k-bSx">
             <objects>
-                <viewController title="Edit Note Page View Controller" id="RYe-in-0xS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditNotePageViewController" title="Edit Note Page View Controller" id="RYe-in-0xS" customClass="EditNotePageViewController" customModule="FunZoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wbz-gk-L89">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1444,11 +1444,16 @@
                                     </textView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-jn-dI0" userLabel="Action Bar">
-                                <rect key="frame" x="320" y="743" width="70" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-jn-dI0" userLabel="Action Bar">
+                                <rect key="frame" x="245" y="743" width="145" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfY-gB-xdd">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gob-Xp-IjD">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfY-gB-xdd">
+                                        <rect key="frame" x="75" y="0.0" width="70" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit"/>
                                         <connections>
@@ -1461,12 +1466,18 @@
                         <viewLayoutGuide key="safeArea" id="LqD-Oc-e4T"/>
                         <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="LqD-Oc-e4T" firstAttribute="trailing" secondItem="Sss-jn-dI0" secondAttribute="trailing" constant="24" id="0Rd-kP-ZdF"/>
                             <constraint firstItem="KJi-sc-Dcq" firstAttribute="top" secondItem="LqD-Oc-e4T" secondAttribute="top" constant="24" id="fv4-x2-Lp8"/>
                             <constraint firstItem="Sss-jn-dI0" firstAttribute="top" secondItem="ygM-4z-xfv" secondAttribute="bottom" constant="38.5" id="iHA-3G-FX1"/>
                             <constraint firstItem="ygM-4z-xfv" firstAttribute="top" secondItem="bfs-vo-yQn" secondAttribute="bottom" constant="24" id="kaa-ES-SrE"/>
                             <constraint firstItem="bfs-vo-yQn" firstAttribute="top" secondItem="KJi-sc-Dcq" secondAttribute="bottom" constant="24" id="rKZ-K9-3a1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bodyField" destination="G4g-62-spt" id="1eg-hw-7c7"/>
+                        <outlet property="descriptionField" destination="E4b-7J-thR" id="r3P-7r-Fol"/>
+                        <outlet property="titleField" destination="nLG-cu-ApS" id="CRC-pd-oSb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXH-Ro-9bB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
