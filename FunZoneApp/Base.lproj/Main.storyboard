@@ -567,7 +567,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNc-i8-MFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173.91304347826087" y="853.79464285714278"/>
+            <point key="canvasLocation" x="222" y="854"/>
         </scene>
         <!--Books View Controller-->
         <scene sceneID="0qx-IO-g0A">
@@ -694,7 +694,7 @@
                             <constraint firstItem="pLm-Qb-bEe" firstAttribute="top" secondItem="tpt-Bs-FTB" secondAttribute="top" constant="24" id="wAt-yk-jeG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Books" image="book.fill" catalog="system" id="Amb-XK-fsD">
+                    <tabBarItem key="tabBarItem" tag="1" title="Books" image="book.fill" catalog="system" id="Amb-XK-fsD">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
@@ -1129,7 +1129,7 @@
                             <constraint firstItem="q77-J1-M6a" firstAttribute="leading" secondItem="8yo-VO-1CY" secondAttribute="leading" constant="24" id="zp4-KO-BHx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Music" image="music.note" catalog="system" id="zXY-Ir-25I">
+                    <tabBarItem key="tabBarItem" tag="2" title="Music" image="music.note" catalog="system" id="zXY-Ir-25I">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
@@ -1288,7 +1288,7 @@
                             <constraint firstItem="naZ-PA-rnj" firstAttribute="trailing" secondItem="w1X-na-nl2" secondAttribute="trailing" constant="24" id="zTg-Mb-x2z"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notes" image="list.bullet.circle.fill" catalog="system" id="ieV-zd-mew">
+                    <tabBarItem key="tabBarItem" tag="4" title="Notes" image="list.bullet.circle.fill" catalog="system" id="ieV-zd-mew">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="NwO-v0-sbw"/>
@@ -1496,7 +1496,7 @@
                             <constraint firstItem="s7t-aW-WfW" firstAttribute="top" secondItem="XiM-hH-hCM" secondAttribute="top" constant="24" id="nfY-Ok-3Q8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="5nH-ta-4IR">
+                    <tabBarItem key="tabBarItem" tag="5" title="Search" image="magnifyingglass" catalog="system" id="5nH-ta-4IR">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
@@ -1510,7 +1510,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="sqD-Bh-DHX">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="1Fp-bp-eiu" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" modalPresentationStyle="fullScreen" id="1Fp-bp-eiu" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Tfb-W6-5ie"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="7dU-0f-Kug">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -1519,11 +1519,11 @@
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4tb-4Y-EKa" kind="relationship" relationship="viewControllers" id="4br-hY-iAM"/>
-                        <segue destination="iYf-Rz-nA3" kind="relationship" relationship="viewControllers" id="292-8J-CK5"/>
-                        <segue destination="Kgf-M3-Nq4" kind="relationship" relationship="viewControllers" id="D3l-rj-wy7"/>
-                        <segue destination="WGY-KZ-TtU" kind="relationship" relationship="viewControllers" id="icZ-t9-Aqz"/>
-                        <segue destination="R3n-0I-kKd" kind="relationship" relationship="viewControllers" id="OEL-Dh-j3S"/>
+                        <segue destination="WGY-KZ-TtU" kind="relationship" relationship="viewControllers" id="Z9W-OJ-LYr"/>
+                        <segue destination="4tb-4Y-EKa" kind="relationship" relationship="viewControllers" id="uha-9L-pMD"/>
+                        <segue destination="Kgf-M3-Nq4" kind="relationship" relationship="viewControllers" id="AAR-Wc-Qs7"/>
+                        <segue destination="iYf-Rz-nA3" kind="relationship" relationship="viewControllers" id="i9V-jz-YwN"/>
+                        <segue destination="R3n-0I-kKd" kind="relationship" relationship="viewControllers" id="VOc-gv-bC6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGo-7j-Avq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

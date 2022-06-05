@@ -31,7 +31,7 @@ class NotePageViewController: UIViewController {
     @IBAction func deleteNote(_ sender: Any) {
         let status = DBHelperClass.dbHelper.deleteNote(title: (note?.title)!)
         if (status) {
-            segueToVC(target: "NotesPageViewController", sender: self)
+            segueToVC(target: "TabBarController", sender: self)
             print("successfully deleted note")
         } else {
             print("failed to delete note")
@@ -60,7 +60,7 @@ class NotePageViewController: UIViewController {
         let status = DBHelperClass.dbHelper.updateNote(title: (note?.title)!, body: bodyField.text!)
         if (status) {
             print(EditNoteConstants.successEdit.rawValue)
-            segueToVC(target: "NotesPageViewController", sender: self)
+            segueToVC(target: "TabBarController", sender: self)
         } else {
             print(EditNoteConstants.unknownErr.rawValue)
         }
