@@ -175,6 +175,28 @@ class DBHelperClass {
     //        }
     //    }
     
+    func updateData(title: String, body: String) -> Bool {
+        var status = false
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        fetchRequest.predicate = NSPredicate(format: "title == %@", title)
+        
+        do {
+            let notes = try context?.fetch(fetchRequest) as! [Note]
+            if (notes.count != 0) {
+                let note = notes.first!
+                note.body = body
+                try context?.save()
+                status = true
+                print("data update successfully")
+            }
+        } catch {
+            print("Error detected")
+        }
+        
+        return status
+    }
+    
     func deleteUser(email: String) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         fetchRequest.predicate = NSPredicate(format: "email == %@", email)
