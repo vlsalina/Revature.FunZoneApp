@@ -1359,11 +1359,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                        <connections>
+                                            <action selector="deleteNote:" destination="szq-yx-xGh" eventType="touchUpInside" id="Hxr-js-PBV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qms-aV-hko">
                                         <rect key="frame" x="75" y="0.0" width="70" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitNote:" destination="szq-yx-xGh" eventType="touchUpInside" id="dWj-tm-4Lu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

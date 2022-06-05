@@ -14,13 +14,25 @@ class NotePageViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var bodyField: UITextView!
     @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
+        initialize()
     }
     
+    func initialize() {
+        titleLabel.text = note?.title
+        descriptionLabel.text = note?.desc
+        bodyField.text = note?.body
+    }
+    
+    @IBAction func deleteNote(_ sender: Any) {
+    }
+    
+    @IBAction func submitNote(_ sender: Any) {
+    }
     
     //    @IBAction func deleteNote(_ sender: Any) {
 //        let status = DBHelperClass.dbHelper.deleteNote(title: note!.title!)
