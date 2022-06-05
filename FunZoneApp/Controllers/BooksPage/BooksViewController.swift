@@ -76,7 +76,8 @@ extension BooksViewController : UICollectionViewDataSource {
         let bookVC = storyObject.instantiateViewController(withIdentifier: "BookViewController") as! BookViewController
         bookVC.book = books[indexPath.row]
         //bookDelegate?.cellWasClicked(book: books[indexPath.row])
-        self.present(bookVC, animated: true, completion: nil)
+//        self.present(bookVC, animated: true, completion: nil)
+        segueToVC(target: "BookViewController", sender: self)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

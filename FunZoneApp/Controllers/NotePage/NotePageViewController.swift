@@ -9,52 +9,62 @@ import UIKit
 
 class NotePageViewController: UIViewController {
     
-    var note : Notes?
-
-    @IBOutlet weak var noteTableView: UITableView!
+    var note : Note?
     
-    var noteContents = [String?]()
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var bodyField: UITextView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        noteTableView.dataSource = self
-        initialize()
         
+        // Do any additional setup after loading the view.
+        initialize()
     }
     
     func initialize() {
-        noteContents = [note?.title, note?.description, note?.body]
+        titleLabel.text = note?.title
+        descriptionLabel.text = note?.desc
+        bodyField.text = note?.body
     }
-
+    
+    @IBAction func deleteNote(_ sender: Any) {
+        let status = DBHelperClass.dbHelper.deleteNote(title: (note?.title)!)
+        if (status) {
+            segueToVC(target: "NotesPageViewController", sender: self)
+            print("successfully deleted note")
+        } else {
+            print("failed to delete note")
+        }
+        print("deleted note successfully")
+    }
+    
+    @IBAction func submitNote(_ sender: Any) {
+    }
+    
+    //    @IBAction func deleteNote(_ sender: Any) {
+    //        let status = DBHelperClass.dbHelper.deleteNote(title: note!.title!)
+    //        if (status) {
+    //            segueToVC(target: "NotesPageViewController", sender: self)
+    //            print("successfully deleted note")
+    //        } else {
+    //            print("failed to delete note")
+    //        }
+    //        print("deleted note successfully")
+    //
+    //    }
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-
-extension NotePageViewController : UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return noteContents.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = noteTableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath)
-        
-        cell.textLabel?.text = noteContents[indexPath.row]
-        cell.textLabel?.numberOfLines  = 0
-        cell.textLabel?.textColor = UIColor.white
-        
-        return cell
-        
-    }
-    
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
     
 }
+
+

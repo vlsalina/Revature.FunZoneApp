@@ -13,7 +13,7 @@ class NotesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var NoteDescription: UILabel!
     @IBOutlet weak var NoteImageView: UIImageView!
     
-    var note : Notes! {
+    var note : Note! {
         didSet {
             self.updateUI()
         }
@@ -22,8 +22,9 @@ class NotesCollectionViewCell: UICollectionViewCell {
     func updateUI() {
         if let note = note {
             NoteTitle.text = note.title
-            NoteDescription.text = note.description
-            NoteImageView.image = note.imageNotes
+            NoteDescription.text = note.desc
         }
     }
+    
 }
+

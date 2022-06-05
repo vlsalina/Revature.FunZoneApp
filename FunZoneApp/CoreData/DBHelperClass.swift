@@ -31,6 +31,35 @@ class DBHelperClass {
         }
     }
     
+    func addNote(title: String, description: String, body: String) -> Bool {
+        
+        var status = false
+        
+        // check if note with same title already exists
+        if (DBHelperClass.dbHelper.getNote(title: title)) {
+            return status
+        }
+        
+        // create new note
+        let note = NSEntityDescription.insertNewObject(forEntityName: "Note", into: context!) as! Note
+        
+        note.title = title
+        note.desc = description
+        note.body = body
+        
+        do {
+            try context?.save()
+            status = true
+            print("data saved successfully")
+            
+        } catch {
+            print("data save unsuccessful")
+            print(error.localizedDescription)
+        }
+        
+        return status
+    }
+    
     //    func viewData() -> [Student] {
     //        var student = [Student]()
     //
@@ -65,6 +94,43 @@ class DBHelperClass {
         return user
     }
     
+    func getNote(title: String) -> Bool {
+        var status = false
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        fetchRequest.predicate = NSPredicate(format: "title == %@", title)
+        
+        fetchRequest.fetchLimit = 1
+        do {
+            let request = try context?.fetch(fetchRequest) as! [Note]
+            if (request.count != 0) {
+                status = true
+            }
+        } catch {
+            print("Error detected trying to get note")
+        }
+        
+        return status
+    }
+    
+    
+    
+    func getNotes() -> [Note] {
+        var notes = [Note]()
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        
+        do {
+            notes = try context?.fetch(fetchRequest) as! [Note]
+        } catch {
+            print("can not fetch data")
+        }
+        
+        return notes
+        
+    }
+    
+    
     
     func userExists(email: String) -> Bool {
         
@@ -77,7 +143,7 @@ class DBHelperClass {
         do {
             let request = try context?.fetch(fetchRequest) as! [User]
             if (request.count != 0) {
-//                user = request.first!
+                //                user = request.first!
                 status = true
             } else {
                 print("No student found")
@@ -109,7 +175,7 @@ class DBHelperClass {
     //        }
     //    }
     
-    func deletData(email: String) {
+    func deleteUser(email: String) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         fetchRequest.predicate = NSPredicate(format: "email == %@", email)
         do {
@@ -121,6 +187,28 @@ class DBHelperClass {
             print("Error detected")
         }
     }
+    
+    func deleteNote(title: String) -> Bool {
+        var status = false
+        
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        fetchRequest.predicate = NSPredicate(format: "title == %@", title)
+        
+        do {
+            let notes = try context?.fetch(fetchRequest) as! [Note]
+            if (notes.count != 0 ) {
+                context?.delete(notes.first!)
+                try context?.save()
+                status = true
+            }
+        } catch {
+            print(error)
+        }
+        
+        return status
+    }
+    
     
     //    func addCollegeData(title: String) {
     //        let college = NSEntityDescription.insertNewObject(forEntityName: "College", into: context!) as! College
@@ -143,8 +231,8 @@ class DBHelperClass {
     //
     //
     //    }
-    //
-    //
+    
+    
     //    func getCollegeData() -> [College] {
     //        var college = [College]()
     //

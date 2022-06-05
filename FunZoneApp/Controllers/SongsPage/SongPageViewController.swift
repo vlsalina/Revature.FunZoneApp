@@ -14,6 +14,10 @@ class SongPageViewController: UIViewController {
     @IBOutlet weak var SongsPageActionCollectionView: UICollectionView!
     @IBOutlet weak var CurrentSongImagePreview: UIImageView!
     @IBOutlet weak var playbackBTN: UIButton!
+    @IBOutlet weak var progress: UIProgressView!
+    @IBOutlet weak var songCounter: UILabel!
+    @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var songLabel: UILabel!
     
     var songs = Songs.FetchSongs()
     var actions = SongsActions.FetchActions()
@@ -21,10 +25,11 @@ class SongPageViewController: UIViewController {
     var index : Int = 0
     var audioPlayer : AVAudioPlayer?
     var status : Bool = false
+    var timer : Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         CurrentSongImagePreview.layer.cornerRadius = 15
@@ -56,6 +61,9 @@ class SongPageViewController: UIViewController {
             audioPlayer?.play()
             playbackBTN.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             status = true
+            
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+            
         } else {
             audioPlayer?.pause()
             playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
@@ -73,6 +81,7 @@ class SongPageViewController: UIViewController {
     @IBAction func previous(_ sender: Any) {
         audioPlayer?.stop()
         audioPlayer?.currentTime = 0
+        songCounter.text = "00:00"
         status = false
         playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         validateIndex(action: PlaybackActions.backward, i: &index, len: songs.count)
@@ -82,39 +91,39 @@ class SongPageViewController: UIViewController {
     @IBAction func next(_ sender: Any) {
         audioPlayer?.stop()
         audioPlayer?.currentTime = 0
+        songCounter.text = "00:00"
         status = false
         playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         validateIndex(action: PlaybackActions.forward, i: &index, len: songs.count)
         print(index)
     }
     
-//    func validateIndex(action: String, i: inout Int, len: Int) {
-//
-//        if (action == "backward") {
-//            if (i == 0) {
-//                i = 0
-//            } else {
-//                i = i-1
-//            }
-//        } else {
-//            if (i == len-1) {
-//                i = len-1
-//            } else {
-//                i = i+1
-//            }
-//        }
-//    }
+    @objc func updateTime() {
+        let t = Float(audioPlayer!.currentTime) / Float(audioPlayer!.duration)
+        
+        songCounter.text = audioPlayer?.currentTime.description
+        progress.progress = t
+        
+        songCounter.text = formatTimeFor(seconds: Double((audioPlayer?.currentTime.description)!)!)
+        
+        if (t == Float(1)) {
+            songCounter.text = "00:00"
+            playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            status = false
+        }
+        
+    }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension SongPageViewController : UICollectionViewDataSource, UICollectionViewDelegate {
@@ -131,27 +140,32 @@ extension SongPageViewController : UICollectionViewDataSource, UICollectionViewD
         
         
         if (collectionView == songCollectionView) {
-        let cell = songCollectionView.dequeueReusableCell(withReuseIdentifier: "songCell", for: indexPath) as! SongCollectionViewCell
-        
-        let song = songs[indexPath.row]
+            let cell = songCollectionView.dequeueReusableCell(withReuseIdentifier: "songCell", for: indexPath) as! SongCollectionViewCell
+            
+            let song = songs[indexPath.row]
             cell.layer.cornerRadius = 5
             
-        cell.song = song
-        
-        return cell
+            cell.song = song
+            
+            return cell
         } else {
-         let cell = SongsPageActionCollectionView.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! SongPageActionButtonCollectionViewCell
-        
+            let cell = SongsPageActionCollectionView.dequeueReusableCell(withReuseIdentifier: "actionCell", for: indexPath) as! SongPageActionButtonCollectionViewCell
+            
             let action = actions[indexPath.row]
             cell.action = action
             
-        return cell
-           
+            return cell
+            
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        current = songs[indexPath.row]
+        let song = songs[indexPath.row]
+        
+        current = song
+        CurrentSongImagePreview.image = song.imageSong
+        artistLabel.text = song.artist
+        songLabel.text = song.songTitle
         index = indexPath.row
         print("song changed")
     }
