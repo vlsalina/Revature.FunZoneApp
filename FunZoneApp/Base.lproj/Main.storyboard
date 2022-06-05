@@ -1137,6 +1137,7 @@
                         <outlet property="SongsPageActionCollectionView" destination="OYb-FQ-Y1g" id="ady-YX-kIC"/>
                         <outlet property="artistLabel" destination="o2I-jh-hBI" id="58x-Yu-aMK"/>
                         <outlet property="playbackBTN" destination="mZE-JG-sm4" id="nho-tY-dPj"/>
+                        <outlet property="playbackIMG" destination="bmk-Ik-0xo" id="fjY-oD-eSY"/>
                         <outlet property="progress" destination="LaU-3L-SH3" id="bKO-EW-nDi"/>
                         <outlet property="songCollectionView" destination="65B-Pj-rAC" id="bNS-Xa-dpw"/>
                         <outlet property="songCounter" destination="h35-OY-PF3" id="lp1-yQ-3Zo"/>

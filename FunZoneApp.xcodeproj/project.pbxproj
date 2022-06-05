@@ -20,7 +20,6 @@
 		615DE8332847D8B20010692A /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8322847D8B20010692A /* MetaData.swift */; };
 		615DE8B2284834500010692A /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8B1284834500010692A /* BookViewController.swift */; };
 		615DE8B52848417F0010692A /* swiftui-apprentice.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 615DE8B42848417F0010692A /* swiftui-apprentice.pdf */; };
-		615DE8B82848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 615DE8B72848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */; };
 		615DE8BB28484E1D0010692A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BA28484E1D0010692A /* SearchViewController.swift */; };
 		615DE8BD2848509D0010692A /* SearchBrowsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BC2848509D0010692A /* SearchBrowsers.swift */; };
 		615DE8BF284852380010692A /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615DE8BE284852380010692A /* SearchCollectionViewCell.swift */; };
@@ -55,6 +54,9 @@
 		61AEBE5D2846E8D000DDF871 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE5C2846E8D000DDF871 /* Notes.swift */; };
 		61AEBE5F2846E8E300DDF871 /* NotesActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE5E2846E8E300DDF871 /* NotesActions.swift */; };
 		61AEBE612846EC2600DDF871 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE602846EC2600DDF871 /* NotesViewController.swift */; };
+		61CA44B4284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */; };
+		61CA44B5284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */; };
+		61CA44B6284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
@@ -76,7 +78,6 @@
 		615DE8322847D8B20010692A /* MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
 		615DE8B1284834500010692A /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		615DE8B42848417F0010692A /* swiftui-apprentice.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "swiftui-apprentice.pdf"; path = "../../../../../../Downloads/swiftui-apprentice.pdf"; sourceTree = "<group>"; };
-		615DE8B72848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; path = "../../../../../../Downloads/Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; sourceTree = "<group>"; };
 		615DE8BA28484E1D0010692A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		615DE8BC2848509D0010692A /* SearchBrowsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBrowsers.swift; sourceTree = "<group>"; };
 		615DE8BE284852380010692A /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -111,6 +112,9 @@
 		61AEBE5C2846E8D000DDF871 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		61AEBE5E2846E8E300DDF871 /* NotesActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesActions.swift; sourceTree = "<group>"; };
 		61AEBE602846EC2600DDF871 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3"; sourceTree = "<group>"; };
+		61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; sourceTree = "<group>"; };
+		61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3"; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
@@ -225,7 +229,9 @@
 		615DE8B6284846650010692A /* music */ = {
 			isa = PBXGroup;
 			children = (
-				615DE8B72848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */,
+				61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */,
+				61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */,
+				61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */,
 			);
 			path = music;
 			sourceTree = "<group>";
@@ -428,11 +434,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61CA44B4284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 in Resources */,
 				61544A6B283ED34E00FC70CE /* LaunchScreen.storyboard in Resources */,
-				615DE8B82848467B0010692A /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */,
 				615DE8B52848417F0010692A /* swiftui-apprentice.pdf in Resources */,
+				61CA44B5284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */,
 				61544A68283ED34E00FC70CE /* Assets.xcassets in Resources */,
 				61544A63283ED34C00FC70CE /* Main.storyboard in Resources */,
+				61CA44B6284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

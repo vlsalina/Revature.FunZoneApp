@@ -18,6 +18,7 @@ class SongPageViewController: UIViewController {
     @IBOutlet weak var songCounter: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var songLabel: UILabel!
+    @IBOutlet weak var playbackIMG: UIImageView!
     
     var songs = Songs.FetchSongs()
     var actions = SongsActions.FetchActions()
@@ -43,9 +44,24 @@ class SongPageViewController: UIViewController {
     
     func initialize() {
         current = songs[index]
+        CurrentSongImagePreview.image = current?.imageSong
+        artistLabel.text = current?.artist
+        songLabel.text = current?.songTitle
+        playbackIMG.image = current?.imageSong
     }
     
     func initialize2() {
+        let filePath = Bundle.main.path(forResource: current?.musicData, ofType: "mp3")
+        let url = URL(fileURLWithPath: filePath!)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+        } catch {
+            print(error)
+        }
+    }
+    
+    func setMusic() {
         let filePath = Bundle.main.path(forResource: current?.musicData, ofType: "mp3")
         let url = URL(fileURLWithPath: filePath!)
         
@@ -83,8 +99,18 @@ class SongPageViewController: UIViewController {
         audioPlayer?.currentTime = 0
         songCounter.text = "00:00"
         status = false
-        playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        
+        
         validateIndex(action: PlaybackActions.backward, i: &index, len: songs.count)
+        current = songs[index]
+        setMusic()
+        
+        playbackIMG.image = current?.imageSong
+        CurrentSongImagePreview.image = current?.imageSong
+        artistLabel.text = current?.artist
+        songLabel.text = current?.songTitle
+        
+        playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         print(index)
     }
     
@@ -93,9 +119,17 @@ class SongPageViewController: UIViewController {
         audioPlayer?.currentTime = 0
         songCounter.text = "00:00"
         status = false
-        playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        
         validateIndex(action: PlaybackActions.forward, i: &index, len: songs.count)
-        print(index)
+        current = songs[index]
+        setMusic()
+        
+        playbackIMG.image = current?.imageSong
+        CurrentSongImagePreview.image = current?.imageSong
+        artistLabel.text = current?.artist
+        songLabel.text = current?.songTitle
+        
+        playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
     }
     
     @objc func updateTime() {
@@ -160,13 +194,21 @@ extension SongPageViewController : UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        audioPlayer?.stop()
+        audioPlayer?.currentTime = 0
+        songCounter.text = "00:00"
+        status = false
+        
         let song = songs[indexPath.row]
         
         current = song
         CurrentSongImagePreview.image = song.imageSong
         artistLabel.text = song.artist
         songLabel.text = song.songTitle
+        playbackIMG.image = song.imageSong
+        playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
         index = indexPath.row
+        setMusic()
         print("song changed")
     }
     
