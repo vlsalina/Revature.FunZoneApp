@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.and.film" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qav-dB-y6E">
-                                <rect key="frame" x="176" y="75.5" width="62" height="71"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apps.iphone.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qav-dB-y6E">
+                                <rect key="frame" x="175.5" y="74" width="62.5" height="75.5"/>
                                 <color key="tintColor" red="1" green="0.32092945760000002" blue="0.40859062779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="KZe-We-1LV"/>
@@ -230,8 +230,8 @@
                                     <constraint firstItem="bk2-mM-fuC" firstAttribute="top" secondItem="tcE-8c-LRu" secondAttribute="top" constant="30" id="qNI-um-5Lu"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.and.film" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jhj-wu-rNz">
-                                <rect key="frame" x="176" y="67.5" width="62" height="71"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apps.iphone.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jhj-wu-rNz">
+                                <rect key="frame" x="175.5" y="66" width="62.5" height="75.5"/>
                                 <color key="tintColor" red="1" green="0.32092945760000002" blue="0.40859062779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="IWP-r5-xca"/>
@@ -567,7 +567,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNc-i8-MFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="854"/>
+            <point key="canvasLocation" x="-14" y="854"/>
         </scene>
         <!--Books View Controller-->
         <scene sceneID="0qx-IO-g0A">
@@ -705,7 +705,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ty2-es-GFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="njD-Nq-YT3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1131.8840579710145" y="853.79464285714278"/>
+            <point key="canvasLocation" x="1042" y="854"/>
         </scene>
         <!--Book View Controller-->
         <scene sceneID="ptZ-0H-DGB">
@@ -1146,7 +1146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1P-dP-rj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073.913043478261" y="853.79464285714278"/>
+            <point key="canvasLocation" x="2025" y="854"/>
         </scene>
         <!--Notes View Controller-->
         <scene sceneID="x6h-Zh-iQ0">
@@ -1294,7 +1294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWO-JN-1kQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3955.0724637681164" y="853.79464285714278"/>
+            <point key="canvasLocation" x="2984" y="854"/>
         </scene>
         <!--Note Page View Controller-->
         <scene sceneID="VaP-Yr-aEy">
@@ -1509,7 +1509,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfM-0X-xOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5000" y="853.79464285714278"/>
+            <point key="canvasLocation" x="4028" y="854"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="BAO-ln-6Oy">
+            <objects>
+                <viewController id="5xJ-z5-eJW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zxq-TN-Yl2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rh-YS-wJF">
+                                <rect key="frame" x="24" y="24" width="129.5" height="39.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AZ3-yr-I7C">
+                                <rect key="frame" x="48" y="87.5" width="75.5" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-1F-5Cp" userLabel="Logout">
+                                        <rect key="frame" x="0.0" y="0.0" width="75.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Log Out"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="sbC-E7-pdl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xhu-GH-M7a"/>
+                        <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AZ3-yr-I7C" firstAttribute="leading" secondItem="Xhu-GH-M7a" secondAttribute="leading" constant="48" id="WjR-eH-0D8"/>
+                            <constraint firstItem="9Rh-YS-wJF" firstAttribute="leading" secondItem="Xhu-GH-M7a" secondAttribute="leading" constant="24" id="cgK-qV-mKL"/>
+                            <constraint firstItem="AZ3-yr-I7C" firstAttribute="top" secondItem="9Rh-YS-wJF" secondAttribute="bottom" constant="24" id="d7T-aS-VGT"/>
+                            <constraint firstItem="9Rh-YS-wJF" firstAttribute="top" secondItem="Xhu-GH-M7a" secondAttribute="top" constant="24" id="hBB-tW-cLj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="2kf-jd-jKc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIU-gh-xXA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5123" y="854"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sqD-Bh-DHX">
@@ -1528,6 +1571,7 @@
                         <segue destination="Kgf-M3-Nq4" kind="relationship" relationship="viewControllers" id="AAR-Wc-Qs7"/>
                         <segue destination="iYf-Rz-nA3" kind="relationship" relationship="viewControllers" id="i9V-jz-YwN"/>
                         <segue destination="R3n-0I-kKd" kind="relationship" relationship="viewControllers" id="VOc-gv-bC6"/>
+                        <segue destination="5xJ-z5-eJW" kind="relationship" relationship="viewControllers" id="NP8-F8-rWr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGo-7j-Avq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1550,16 +1594,20 @@
             <point key="canvasLocation" x="5000" y="1621.875"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sbC-E7-pdl"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="1280" height="618"/>
         <image name="3" width="953" height="953"/>
+        <image name="apps.iphone.badge.plus" catalog="system" width="106" height="128"/>
         <image name="arrowtriangle.forward.fill" catalog="system" width="128" height="113"/>
         <image name="backward" catalog="system" width="128" height="79"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
         <image name="forward" catalog="system" width="128" height="79"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="google-logo" width="225" height="225"/>
-        <image name="list.and.film" catalog="system" width="128" height="86"/>
         <image name="list.bullet.circle.fill" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="music.note" catalog="system" width="97" height="128"/>

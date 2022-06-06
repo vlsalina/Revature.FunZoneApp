@@ -72,6 +72,13 @@ class SongPageViewController: UIViewController {
         }
     }
     
+    func resetMusic() {
+        audioPlayer?.stop()
+        audioPlayer?.currentTime = 0
+        songCounter.text = "00:00"
+        status = false
+    }
+    
     @IBAction func start(_ sender: Any) {
         if (!status) {
             audioPlayer?.play()
@@ -95,11 +102,7 @@ class SongPageViewController: UIViewController {
     }
     
     @IBAction func previous(_ sender: Any) {
-        audioPlayer?.stop()
-        audioPlayer?.currentTime = 0
-        songCounter.text = "00:00"
-        status = false
-        
+        resetMusic()
         
         validateIndex(action: PlaybackActions.backward, i: &index, len: songs.count)
         current = songs[index]
@@ -114,10 +117,7 @@ class SongPageViewController: UIViewController {
     }
     
     @IBAction func next(_ sender: Any) {
-        audioPlayer?.stop()
-        audioPlayer?.currentTime = 0
-        songCounter.text = "00:00"
-        status = false
+        resetMusic()
         
         validateIndex(action: PlaybackActions.forward, i: &index, len: songs.count)
         current = songs[index]
@@ -193,10 +193,7 @@ extension SongPageViewController : UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        audioPlayer?.stop()
-        audioPlayer?.currentTime = 0
-        songCounter.text = "00:00"
-        status = false
+        resetMusic()
         
         let song = songs[indexPath.row]
         
