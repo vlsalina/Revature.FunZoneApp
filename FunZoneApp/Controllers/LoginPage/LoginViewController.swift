@@ -55,8 +55,8 @@ class LoginViewController: UIViewController {
         }
         
         // MARK: - implement code to check user against users database
-        let existingUser = DBHelperClass.dbHelper.userExists(email: email.text!)
-        if (existingUser) {
+        let existingUser = DBHelperClass.dbHelper.getUser(email: email.text!)
+        if (email.text == existingUser.email && password.text == existingUser.password) {
             // remember user
             if (remember.isOn) {
                 defaults.set(true, forKey: "remember")
