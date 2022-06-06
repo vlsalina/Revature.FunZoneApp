@@ -54,6 +54,7 @@
 		61AEBE5D2846E8D000DDF871 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE5C2846E8D000DDF871 /* Notes.swift */; };
 		61AEBE5F2846E8E300DDF871 /* NotesActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE5E2846E8E300DDF871 /* NotesActions.swift */; };
 		61AEBE612846EC2600DDF871 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE602846EC2600DDF871 /* NotesViewController.swift */; };
+		61BA91B7284DC87C0082A991 /* KeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BA91B6284DC87C0082A991 /* KeychainConstants.swift */; };
 		61CA44B4284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */; };
 		61CA44B5284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */; };
 		61CA44B6284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */; };
@@ -113,6 +114,7 @@
 		61AEBE5C2846E8D000DDF871 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		61AEBE5E2846E8E300DDF871 /* NotesActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesActions.swift; sourceTree = "<group>"; };
 		61AEBE602846EC2600DDF871 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		61BA91B6284DC87C0082A991 /* KeychainConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainConstants.swift; sourceTree = "<group>"; };
 		61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3"; sourceTree = "<group>"; };
 		61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; sourceTree = "<group>"; };
 		61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				615DE8322847D8B20010692A /* MetaData.swift */,
 				6189A9712849C156003BFA7C /* SignupErrors.swift */,
 				6189A9E9284B3E0D003BFA7C /* NoteConstants.swift */,
+				61BA91B6284DC87C0082A991 /* KeychainConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				61A38DBF2844710300CABC1C /* SongPageViewController.swift in Sources */,
 				61CA44B9284D860700323176 /* SettingsPageViewController.swift in Sources */,
 				6189A9E1284AB7B0003BFA7C /* NoteTableViewCell.swift in Sources */,
+				61BA91B7284DC87C0082A991 /* KeychainConstants.swift in Sources */,
 				61A38DC5284486E800CABC1C /* SongsActions.swift in Sources */,
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
 				61AEBE5F2846E8E300DDF871 /* NotesActions.swift in Sources */,

@@ -8,11 +8,6 @@
 import Foundation
 
 class KeychainManager {
-    enum KeychainError : Error {
-        case duplicateEntry
-        case invalidPassword
-        case unknown(OSStatus)
-    }
     
     static func save(service : String, email : String, password : Data) throws {
         
@@ -31,9 +26,9 @@ class KeychainManager {
             throw KeychainError.duplicateEntry
         }
         
-        guard status == errSecSuccess else {
-            throw KeychainError.unknown(status)
-        }
+//        guard status == errSecSuccess else {
+//            throw KeychainError.unknown(status)
+//        }
         
         print("Saved")
         

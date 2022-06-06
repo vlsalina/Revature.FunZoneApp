@@ -19,8 +19,19 @@ class DBHelperClass {
         
         let user = NSEntityDescription.insertNewObject(forEntityName: "User", into: context!) as! User
         
+        
+        do {
+            try KeychainManager.save(service: App, email: email, password: Data(password.utf8))
+        } catch KeychainError.duplicateEntry {
+            print("Duplicate entry")
+        } catch {
+            print("Unknown error")
+        }
+        
+        let pw = String(decoding: KeychainManager.get(service: App, email: email)!, as: UTF8.self)
+        
         user.email = email
-        user.password = password
+        user.password = pw
         
         do {
             try context?.save()
