@@ -809,18 +809,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8h-7G-dsa" userLabel="Action Bar">
-                                <rect key="frame" x="250" y="743" width="140" height="31"/>
+                                <rect key="frame" x="320" y="743" width="70" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egp-aA-ymx">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="View"/>
-                                        <connections>
-                                            <action selector="viewData:" destination="tiW-dp-gqr" eventType="touchUpInside" id="mFY-oq-U1C"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arM-D4-hmk">
-                                        <rect key="frame" x="70" y="0.0" width="70" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit"/>
                                         <connections>
@@ -942,21 +934,24 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="c8N-F9-fAm" userLabel="Details">
-                                        <rect key="frame" x="113.5" y="227.5" width="138.5" height="63.5"/>
+                                        <rect key="frame" x="-1" y="227.5" width="366" height="63.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2I-jh-hBI" userLabel="Artist Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVP-Zo-hY7" userLabel="Current Song Name Label">
-                                                <rect key="frame" x="0.0" y="22.5" width="138.5" height="41"/>
+                                                <rect key="frame" x="0.0" y="22.5" width="366" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="366" id="ZAH-Zc-gQQ"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0059594263130000004" green="0.023491967240000002" blue="0.1386734181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -965,7 +960,7 @@
                                     <constraint firstItem="EVa-qN-3DD" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" id="8bc-2S-rKx"/>
                                     <constraint firstAttribute="height" constant="341" id="E2J-j3-CJ9"/>
                                     <constraint firstAttribute="bottom" secondItem="c8N-F9-fAm" secondAttribute="bottom" constant="50" id="LYs-62-V0U"/>
-                                    <constraint firstItem="c8N-F9-fAm" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" constant="113.33" id="PFA-UV-s3g"/>
+                                    <constraint firstItem="c8N-F9-fAm" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" constant="-0.80000000000000004" id="f2b-sZ-Dto"/>
                                     <constraint firstItem="wiU-1Y-9dp" firstAttribute="top" secondItem="q77-J1-M6a" secondAttribute="top" id="fwa-2l-b4i"/>
                                     <constraint firstAttribute="width" constant="366" id="mMC-6c-kxA"/>
                                     <constraint firstItem="wiU-1Y-9dp" firstAttribute="leading" secondItem="q77-J1-M6a" secondAttribute="leading" id="ncB-s3-Hdl"/>
