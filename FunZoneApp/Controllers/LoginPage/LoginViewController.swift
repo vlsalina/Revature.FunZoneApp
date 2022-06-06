@@ -24,13 +24,21 @@ class LoginViewController: UIViewController {
     }
     
     func initialize() {
-        let emailDefault = defaults.string(forKey: userDefaultEmailKey)
-        let passDefault = RememberMeHelper.get(email: emailDefault!)
-        
-        if (emailDefault != nil) {
-            email.text = emailDefault
-            password.text = passDefault
+        if (defaults.bool(forKey: "remember")) {
+            let emailDefault = defaults.string(forKey: userDefaultEmailKey)
+            let passDefault = RememberMeHelper.get(email: emailDefault!)
+            
+            if (emailDefault != nil) {
+                email.text = emailDefault
+                password.text = passDefault
+                remember.isOn = true
+            }
+        } else {
+            email.text = ""
+            password.text = ""
+            remember.isOn = false
         }
+        
     }
     
     @IBAction func login(_ sender: Any) {
@@ -51,7 +59,10 @@ class LoginViewController: UIViewController {
         if (existingUser) {
             // remember user
             if (remember.isOn) {
+                defaults.set(true, forKey: "remember")
                 RememberMeHelper.save(email: email.text!, password: password.text!)
+            } else {
+                defaults.set(false, forKey: "remember")
             }
             
             print("login successful")

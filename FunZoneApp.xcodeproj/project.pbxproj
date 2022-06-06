@@ -57,6 +57,7 @@
 		61CA44B4284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */; };
 		61CA44B5284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */; };
 		61CA44B6284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */; };
+		61CA44B9284D860700323176 /* SettingsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CA44B8284D860700323176 /* SettingsPageViewController.swift */; };
 		61DEC5D7284073290033838F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5D6284073290033838F /* SignUpViewController.swift */; };
 		61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DB284079A60033838F /* LoginViewController.swift */; };
 		61DEC5DF28407B820033838F /* addBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DEC5DE28407B820033838F /* addBorderRadius.swift */; };
@@ -115,6 +116,7 @@
 		61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3"; sourceTree = "<group>"; };
 		61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; sourceTree = "<group>"; };
 		61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3"; sourceTree = "<group>"; };
+		61CA44B8284D860700323176 /* SettingsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageViewController.swift; sourceTree = "<group>"; };
 		61DEC5D6284073290033838F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61DEC5DB284079A60033838F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61DEC5DE28407B820033838F /* addBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBorderRadius.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		61544A72283ED3E000FC70CE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61CA44B7284D85C400323176 /* SettingsPage */,
 				6189A9E2284B0C67003BFA7C /* CreateNotePage */,
 				6189A9DD284AA6FE003BFA7C /* NotePage */,
 				6189A99A284A7F2E003BFA7C /* WebPage */,
@@ -340,6 +343,14 @@
 			path = NotesPage;
 			sourceTree = "<group>";
 		};
+		61CA44B7284D85C400323176 /* SettingsPage */ = {
+			isa = PBXGroup;
+			children = (
+				61CA44B8284D860700323176 /* SettingsPageViewController.swift */,
+			);
+			path = SettingsPage;
+			sourceTree = "<group>";
+		};
 		61DEC5D5284072FD0033838F /* SignUpPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +467,7 @@
 				61AEBE5D2846E8D000DDF871 /* Notes.swift in Sources */,
 				615DE8BD2848509D0010692A /* SearchBrowsers.swift in Sources */,
 				61A38DBF2844710300CABC1C /* SongPageViewController.swift in Sources */,
+				61CA44B9284D860700323176 /* SettingsPageViewController.swift in Sources */,
 				6189A9E1284AB7B0003BFA7C /* NoteTableViewCell.swift in Sources */,
 				61A38DC5284486E800CABC1C /* SongsActions.swift in Sources */,
 				61DEC5DC284079A60033838F /* LoginViewController.swift in Sources */,
