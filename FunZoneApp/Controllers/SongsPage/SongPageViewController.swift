@@ -76,6 +76,7 @@ class SongPageViewController: UIViewController {
         audioPlayer?.stop()
         audioPlayer?.currentTime = 0
         songCounter.text = "00:00"
+        timer?.invalidate()
         status = false
     }
     
@@ -139,10 +140,9 @@ class SongPageViewController: UIViewController {
         
         songCounter.text = formatTimeFor(seconds: Double((audioPlayer?.currentTime.description)!)!)
         
-        if (t == Float(1)) {
-            songCounter.text = "00:00"
+        if (Float(audioPlayer!.currentTime) == Float(0)) {
+            resetMusic()
             playbackBTN.setImage(UIImage(systemName: "play.fill"), for: .normal)
-            status = false
         }
         
     }
