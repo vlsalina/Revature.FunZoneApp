@@ -55,6 +55,9 @@
 		61AEBE5F2846E8E300DDF871 /* NotesActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE5E2846E8E300DDF871 /* NotesActions.swift */; };
 		61AEBE612846EC2600DDF871 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBE602846EC2600DDF871 /* NotesViewController.swift */; };
 		61BA91B7284DC87C0082A991 /* KeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BA91B6284DC87C0082A991 /* KeychainConstants.swift */; };
+		61BA91B9284E7E630082A991 /* Hatchet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 61BA91B8284E7E630082A991 /* Hatchet.pdf */; };
+		61BA91BB284E7FDF0082A991 /* Gatsby_PDF_FullText.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 61BA91BA284E7FDF0082A991 /* Gatsby_PDF_FullText.pdf */; };
+		61BA91BD284E808D0082A991 /* Catcher in the Rye.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 61BA91BC284E808D0082A991 /* Catcher in the Rye.pdf */; };
 		61CA44B4284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */; };
 		61CA44B5284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */; };
 		61CA44B6284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */; };
@@ -115,6 +118,9 @@
 		61AEBE5E2846E8E300DDF871 /* NotesActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesActions.swift; sourceTree = "<group>"; };
 		61AEBE602846EC2600DDF871 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		61BA91B6284DC87C0082A991 /* KeychainConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainConstants.swift; sourceTree = "<group>"; };
+		61BA91B8284E7E630082A991 /* Hatchet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Hatchet.pdf; path = ../../../../../../Downloads/Hatchet.pdf; sourceTree = "<group>"; };
+		61BA91BA284E7FDF0082A991 /* Gatsby_PDF_FullText.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Gatsby_PDF_FullText.pdf; path = ../../../../../../Downloads/Gatsby_PDF_FullText.pdf; sourceTree = "<group>"; };
+		61BA91BC284E808D0082A991 /* Catcher in the Rye.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Catcher in the Rye.pdf"; path = "../../../../../../Downloads/Catcher in the Rye.pdf"; sourceTree = "<group>"; };
 		61CA44B1284D49BE00323176 /* Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/Michelle_Branch_-_All_You_Wanted_O_(getmp3.pro).mp3"; sourceTree = "<group>"; };
 		61CA44B2284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/Taylor_Swift_-_Our_Song_(getmp3.pro).mp3"; sourceTree = "<group>"; };
 		61CA44B3284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3"; path = "../../../../../../Downloads/funZoneApp/David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3"; sourceTree = "<group>"; };
@@ -227,6 +233,9 @@
 		615DE8B3284840FC0010692A /* books */ = {
 			isa = PBXGroup;
 			children = (
+				61BA91BC284E808D0082A991 /* Catcher in the Rye.pdf */,
+				61BA91BA284E7FDF0082A991 /* Gatsby_PDF_FullText.pdf */,
+				61BA91B8284E7E630082A991 /* Hatchet.pdf */,
 				615DE8B42848417F0010692A /* swiftui-apprentice.pdf */,
 			);
 			path = books;
@@ -452,9 +461,12 @@
 				61544A6B283ED34E00FC70CE /* LaunchScreen.storyboard in Resources */,
 				615DE8B52848417F0010692A /* swiftui-apprentice.pdf in Resources */,
 				61CA44B5284D49BE00323176 /* Taylor_Swift_-_Our_Song_(getmp3.pro).mp3 in Resources */,
+				61BA91B9284E7E630082A991 /* Hatchet.pdf in Resources */,
 				61544A68283ED34E00FC70CE /* Assets.xcassets in Resources */,
+				61BA91BD284E808D0082A991 /* Catcher in the Rye.pdf in Resources */,
 				61544A63283ED34C00FC70CE /* Main.storyboard in Resources */,
 				61CA44B6284D49BE00323176 /* David_Bowie_-_Heroes_Official_Vide_(getmp3.pro).mp3 in Resources */,
+				61BA91BB284E7FDF0082A991 /* Gatsby_PDF_FullText.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
