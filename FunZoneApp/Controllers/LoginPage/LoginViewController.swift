@@ -54,16 +54,16 @@ class LoginViewController: UIViewController {
         }
         
         // MARK: - implement code to check user against users database
-        let existingUser = DBHelperClass.dbHelper.getUser(email: email.text!)
-        if (email.text == existingUser.email && password.text == existingUser.password) {
+        let existingUser = DBHelperClass.dbHelper.userExists(email: email.text!)
+        if (existingUser && password.text == RememberMeHelper.get(email: email.text!)) {
             // remember user
             if (remember.isOn) {
                 defaults.set(remember.isOn, forKey: "remember")
-                RememberMeHelper.save(email: email.text!, password: password.text!)
+                RememberMeHelper.save(email: emai.text!, password: password.text!)
             } else {
                 defaults.set(false, forKey: "remember")
             }
-            
+
             print("login successful")
             errorLabel.text = ""
             self.performSegue(withIdentifier: "TabSegue1", sender: self)
