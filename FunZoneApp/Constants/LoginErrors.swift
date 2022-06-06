@@ -9,6 +9,7 @@ import Foundation
 
 enum LoginErrors : Error {
     case invalidLoginCredentials
+    case userNotFound
     case passwordsDoNotMatch
     case unknown(OSStatus)
 }

@@ -55,7 +55,15 @@ class LoginViewController: UIViewController {
         }
         
         // MARK: - implement code to check user against users database
-        let existingUser = DBHelperClass.dbHelper.getUser(email: email.text!)
+        var existingUser = User()
+        
+        do {
+            existingUser = try DBHelperClass.dbHelper.getUser(email: email.text!)
+        } catch LoginErrors.userNotFound {
+            errorLabel.text = LoginConstants.noUserFound.rawValue
+        } catch {
+            errorLabel.text = LoginConstants.unknownLoginError.rawValue
+        }
         
         if (DBHelperClass.flag) {
             if (email.text == existingUser.email && password.text == existingUser.password) {
@@ -74,9 +82,7 @@ class LoginViewController: UIViewController {
                 print("login unsuccessful")
                 errorLabel.text = LoginConstants.invalidLoginCredentails.rawValue
             }
-            
         }
-        
         
     }
     

@@ -75,25 +75,21 @@ class DBHelperClass {
     //        return student
     //    }
     
-    func getUser(email: String) -> User {
+    func getUser(email: String) throws -> User {
         var user = User()
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         fetchRequest.predicate = NSPredicate(format: "email == %@", email)
         
         fetchRequest.fetchLimit = 1
-        do {
             let request = try context?.fetch(fetchRequest) as! [User]
             if (request.count != 0) {
                 user = request.first!
                 DBHelperClass.flag = true
             } else {
                 DBHelperClass.flag = false
-                print("No student found")
+                throw LoginErrors.userNotFound
             }
-        } catch {
-            print("Error detected")
-        }
         
         return user
         
