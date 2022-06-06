@@ -40,6 +40,7 @@ class LoginViewController: UIViewController {
         }
     }
     
+    
     @IBAction func login(_ sender: Any) {
         
         // error handling for login credentials
@@ -54,24 +55,31 @@ class LoginViewController: UIViewController {
         }
         
         // MARK: - implement code to check user against users database
-        let existingUser = DBHelperClass.dbHelper.userExists(email: email.text!)
-        if (existingUser && password.text == RememberMeHelper.get(email: email.text!)) {
-            // remember user
-            if (remember.isOn) {
-                defaults.set(remember.isOn, forKey: "remember")
-                RememberMeHelper.save(email: emai.text!, password: password.text!)
+        let existingUser = DBHelperClass.dbHelper.getUser(email: email.text!)
+        
+        if (DBHelperClass.flag) {
+            if (email.text == existingUser.email && password.text == existingUser.password) {
+                // remember user
+                if (remember.isOn) {
+                    defaults.set(remember.isOn, forKey: "remember")
+                    RememberMeHelper.save(email: email.text!, password: password.text!)
+                } else {
+                    defaults.set(false, forKey: "remember")
+                }
+                
+                print("login successful")
+                errorLabel.text = ""
+                self.performSegue(withIdentifier: "TabSegue1", sender: self)
             } else {
-                defaults.set(false, forKey: "remember")
+                print("login unsuccessful")
+                errorLabel.text = LoginConstants.invalidLoginCredentails.rawValue
             }
-
-            print("login successful")
-            errorLabel.text = ""
-            self.performSegue(withIdentifier: "TabSegue1", sender: self)
-        } else {
-            print("login unsuccessful")
-            errorLabel.text = LoginConstants.invalidLoginCredentails.rawValue
+            
         }
+        
+        
     }
+    
     
     /*
      // MARK: - Navigation

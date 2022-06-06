@@ -12,6 +12,7 @@ import CoreData
 class DBHelperClass {
     
     static var dbHelper = DBHelperClass()
+    static var flag : Bool = false
     
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
@@ -76,6 +77,7 @@ class DBHelperClass {
     
     func getUser(email: String) -> User {
         var user = User()
+        
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
         fetchRequest.predicate = NSPredicate(format: "email == %@", email)
         
@@ -84,7 +86,9 @@ class DBHelperClass {
             let request = try context?.fetch(fetchRequest) as! [User]
             if (request.count != 0) {
                 user = request.first!
+                DBHelperClass.flag = true
             } else {
+                DBHelperClass.flag = false
                 print("No student found")
             }
         } catch {
@@ -92,6 +96,7 @@ class DBHelperClass {
         }
         
         return user
+        
     }
     
     func getNote(title: String) -> Bool {
