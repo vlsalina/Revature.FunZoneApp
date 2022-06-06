@@ -33,11 +33,11 @@ class SignUpViewController: UIViewController {
             status = true
         } catch LoginErrors.invalidLoginCredentials {
             
-            errorLabel.text = invalidLoginCredentails
+            errorLabel.text = LoginConstants.invalidLoginCredentails.rawValue
         } catch LoginErrors.passwordsDoNotMatch {
-            errorLabel.text = passwordsDoNotMatch
+            errorLabel.text = LoginConstants.passwordsDoNotMatch.rawValue
         } catch {
-            errorLabel.text = unknownSignUpError
+            errorLabel.text = SignupConstants.unknownSignUpError.rawValue
         }
         
         // MARK: - add user to database code here

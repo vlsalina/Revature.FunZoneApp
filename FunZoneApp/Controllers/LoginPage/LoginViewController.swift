@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     
     func initialize() {
         if (defaults.bool(forKey: "remember")) {
-            let emailDefault = defaults.string(forKey: userDefaultEmailKey)
+            let emailDefault = defaults.string(forKey: LoginConstants.userDefaultEmailKey.rawValue)
             let passDefault = RememberMeHelper.get(email: emailDefault!)
             
             if (emailDefault != nil) {
@@ -38,7 +38,6 @@ class LoginViewController: UIViewController {
             password.text = ""
             remember.isOn = false
         }
-        
     }
     
     @IBAction func login(_ sender: Any) {
@@ -47,10 +46,10 @@ class LoginViewController: UIViewController {
         do {
             try validateLoginCredentials(email: email.text!, password: password.text!)
         } catch LoginErrors.invalidLoginCredentials {
-            errorLabel.text = invalidLoginCredentails
+            errorLabel.text = LoginConstants.invalidLoginCredentails.rawValue
             return
         } catch {
-            errorLabel.text = unknownLoginError
+            errorLabel.text = LoginConstants.unknownLoginError.rawValue
             return
         }
         
@@ -59,7 +58,7 @@ class LoginViewController: UIViewController {
         if (email.text == existingUser.email && password.text == existingUser.password) {
             // remember user
             if (remember.isOn) {
-                defaults.set(true, forKey: "remember")
+                defaults.set(remember.isOn, forKey: "remember")
                 RememberMeHelper.save(email: email.text!, password: password.text!)
             } else {
                 defaults.set(false, forKey: "remember")
@@ -70,7 +69,7 @@ class LoginViewController: UIViewController {
             self.performSegue(withIdentifier: "TabSegue1", sender: self)
         } else {
             print("login unsuccessful")
-            errorLabel.text = noUserFound
+            errorLabel.text = LoginConstants.invalidLoginCredentails.rawValue
         }
     }
     

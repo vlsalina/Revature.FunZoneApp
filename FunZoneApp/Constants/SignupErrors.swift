@@ -14,4 +14,5 @@ enum SignupErrors : Error {
 enum SignupConstants : String {
     case registered = "Congrats! You're all signed up!"
     case duplicateEntry = "User already exists"
+    case unknownSignUpError = "Unknown sign up error"
 }

@@ -14,12 +14,13 @@ enum LoginErrors : Error {
 }
 
 // login constants
-let userDefaultEmailKey = "userdefault-email"
-let invalidLoginCredentails = "Invalid email or password"
-let unknownLoginError = "Unknown login error"
-let unknownSignUpError = "Unknown sign up error"
-let passwordsDoNotMatch = "Passwords do not match"
-let noUserFound = "No user found"
 
-
+enum LoginConstants : String {
+    case userDefaultEmailKey = "userdefault-email"
+    case invalidLoginCredentails = "Invalid email or password"
+    case unknownLoginError = "Unknown login error"
+    case unknownSignUpError = "Unknown sign up error"
+    case passwordsDoNotMatch = "Passwords do not match"
+    case noUserFound = "No user found"
+}
 
