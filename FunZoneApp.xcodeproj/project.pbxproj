@@ -138,8 +138,6 @@
 		61544A4F283ED34C00FC70CE = {
 			isa = PBXGroup;
 			children = (
-				6189A9E5284B28C9003BFA7C /* Note+CoreDataClass.swift */,
-				6189A9E6284B28C9003BFA7C /* Note+CoreDataProperties.swift */,
 				61544A5A283ED34C00FC70CE /* FunZoneApp */,
 				61544A59283ED34C00FC70CE /* Products */,
 			);
@@ -254,6 +252,7 @@
 		6189A9682849B2CB003BFA7C /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				61B9C170285641C100A8BA1C /* Notes */,
 				6189A9692849B2D1003BFA7C /* User */,
 			);
 			path = Entities;
@@ -344,6 +343,15 @@
 				61AEBE602846EC2600DDF871 /* NotesViewController.swift */,
 			);
 			path = NotesPage;
+			sourceTree = "<group>";
+		};
+		61B9C170285641C100A8BA1C /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				6189A9E5284B28C9003BFA7C /* Note+CoreDataClass.swift */,
+				6189A9E6284B28C9003BFA7C /* Note+CoreDataProperties.swift */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 		61CA44B7284D85C400323176 /* SettingsPage */ = {
